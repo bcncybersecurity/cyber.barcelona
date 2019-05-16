@@ -1,0 +1,8 @@
+[project]
+name = cyber.barcelona
+url = https://cyber.barcelona/
+url_style = relative
+locale = en
+
+[servers.ghpages]
+target = ghpages+https://bcncybersecurity/bcncybersecurity.github.io?cname=cyber.barcelona
