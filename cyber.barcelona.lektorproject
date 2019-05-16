@@ -5,4 +5,4 @@ url_style = relative
 locale = en
 
 [servers.ghpages]
-target = ghpages+https://bcncybersecurity/bcncybersecurity.github.io?cname=cyber.barcelona
+target = ghpages+https://bcncybersecurity/cyber.barcelona?cname=cyber.barcelona
