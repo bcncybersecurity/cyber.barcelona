@@ -1,8 +1,27 @@
 [project]
 name = cyber.barcelona
-url = https://cyber.barcelona/
-url_style = relative
-locale = en
 
-[servers.ghpages]
-target = ghpages+https://bcncybersecurity/cyber.barcelona?cname=cyber.barcelona
+[theme_settings]
+title = BCN Cybersecurity Official Website
+content_lang = en-US
+author = BCN Cybersecurity
+copyright = &copy; 2019 BCN Cybersecurity Contributors
+description = Official website for the BCN Cybersecurity association
+keywords = lektor, cybersecurity, bcncybersecurity, hacking, security, meetup, barcelona
+favicon_path = /static/images/favicon.png
+theme_accent_color = #4452FF
+theme_pipe_color = rgb(255, 76, 82)
+custom_css = /static/css/example-custom-styles.css
+content_security_policy = true
+content_security_policy_frame_src =
+content_security_policy_script_src =
+content_security_policy_style_src =
+loader_enable = true
+nav_logo_path = /static/images/bcncyber-logo.png
+nav_logo_text = 
+nav_extralinks = Github: https://github.com/bcncybersecurity
+footer_links = Github: https://github.com/bcncybersecurity, Linkedin: https://www.linkedin.com/company/cyber-barcelona, Twitter: https://twitter.com/BCNCyberSec
+footer_license_name = MIT (Code); CC-BY-SA 4.0 (Content)
+footer_license_link = https://github.com/bcncybersecurity/cyber.barcelona/blob/master/LICENSE.txt
+disqus_name =
+atom_enable =

@@ -1,5 +1,367 @@
-title: Hello World
+_model: single-layout
 ---
-body: Barcelona Cybersecurity is a nonprofit, technology focused, organization, fostering research, education and outreach activities. We are based in Barcelona and our main focus is the local community.
+
+
+show_home_nav: true
 ---
-_template: homepage.html
+hero_title: Barcelona Cybersecurity
+---
+hero_description:
+
+The first cybersecurity community in Barcelona
+---
+hero_image: camg-clover-bg.jpg
+---
+starting_block_bg: light
+---
+
+
+
+main_content:
+
+
+#### content ####
+section_id: overview
+----
+title: Barcelona Cybersecurity
+----
+description: from, to and for the local community
+----
+nav_label: About
+----
+content:
+
+Barcelona Cybersecurity is a nonprofit, technology focused, organization, fostering research, education and outreach activities. We are based in Barcelona and our main focus is the local community.
+----
+
+#### mission ####
+section_id: modules
+----
+enable_images: true
+----
+initial_tab_index: 1
+----
+items:
+
+##### mission_tab #####
+section_id: singlepage
+-----
+title: Mission
+-----
+subtitle:
+
+
+-----
+description:
+
+Barcelona Cybersecurity is a nonprofit, technology focused, organization, fostering research, education and outreach activities. We are based in Barcelona and our main focus is the local community.
+-----
+image: full-singlepage.jpg
+-----
+
+
+##### mission_tab #####
+section_id: blog
+-----
+title: Vision
+-----
+subtitle:
+
+
+-----
+description:
+
+Barcelona cybersecurity connects and brings together everyone interested on the topics of cyber security, privacy and digital rights, fosters a culture of collectiveness and participation, promotes diversity and encourages transparency and inclusiveness.
+-----
+image: full-blog.png
+-----
+
+
+##### mission_tab #####
+section_id: page
+-----
+title: Core Values
+-----
+subtitle:
+
+-----
+description:
+<ul>
+   <li> Participation and collectiveness. We invite everyone to participate actively, we believe in the value each and every individual can bring to our group.</li>
+
+    <li>Inclusiveness and trust. We want to create an inclusive space and cultivate an atmosphere of trust for the community to share knowledge and foster collaboration. We believe in diversity, and will encourage people belonging to minorities to join us bringing their perspectives and share their knowledge.</li>
+
+    <li>Transparency and accountability. We believe in being open and transparent about our activities and source of founding.</li>
+
+    <li>Community of Communities. Barcelona cybersecurity is composed by different people belonging to different organizations and groups. We want to bridge different entities and allow our community to foster innovation and collaboration.</li>
+</ul>
+-----
+image: full-page.png
+-----
+----
+
+#### services ####
+section_id: features
+----
+title: Activities
+----
+description: To keep and grow our community we organize several different activities in Barcelona. Here is a list of the macro categories.
+----
+nav_label: Activities
+----
+services:
+
+##### service #####
+title: Meetups
+-----
+description:
+
+Our main activity, a monthly meetup held in different spaces around Barcelona. To share, to include, blabla.
+-----
+icon: flexible-design.png
+-----
+
+
+##### service #####
+title: Workshop
+-----
+description:
+
+Hands on is a typical hacker attitude
+-----
+icon: responsive-layout.png
+-----
+
+
+##### service #####
+title: BSidesBCN
+-----
+description:
+
+Barcelona Cybersecurity is the BSides Barcelona's organizer.
+-----
+icon: bsidesbcn_logo.png
+-----
+----
+
+
+
+#### team ####
+section_id: credits
+----
+title: Members
+----
+description:
+
+The key people without which this community wouldn't be possible.
+----
+nav_label: Members
+----
+members:
+
+##### member #####
+name: Silvia Puglisi
+-----
+position: President
+-----
+description:
+
+Silvia has been part of the internet freedom community for the past 8 years, and is an active open source developer and advocate for privacy, decentralization and the open web.
+-----
+image: silvia.jpg
+-----
+website: https://www.hiro7.eu/
+-----
+twitter: https://twitter.com/nopressure
+-----
+instagram:
+-----
+github: https://github.com/hiromipaw
+-----
+linkedin: https://www.linkedin.com/in/silviapuglisi
+-----
+
+
+##### member #####
+name: Davide Barbato
+-----
+position: Vice-President
+-----
+description:
+
+Davide has been in IT for around 15 years. Privacy and digital rights are fundamental part of his mindset and he has been involved in several projects around those topics.
+-----
+image: davide.jpg
+-----
+website: 
+-----
+facebook:
+-----
+twitter: https://twitter.com/davbarbato
+-----
+instagram:
+-----
+github: https://github.com/davinerd
+-----
+linkedin: https://www.linkedin.com/in/davbarbato/
+-----
+
+
+##### member #####
+name: Alejandro Ortuno
+-----
+position: Treasure
+-----
+description:
+
+He deals with money
+-----
+image: alejandro.jpeg
+-----
+website: 
+-----
+facebook:
+-----
+twitter: https://twitter.com/aomanzanera
+-----
+instagram:
+-----
+github: https://github.com/alejandroortuno
+-----
+linkedin: https://www.linkedin.com/in/aortuno/
+-----
+
+
+##### member #####
+name: Cristhian Amaya Ortiz
+-----
+position: Secretary
+-----
+description:
+
+He does stuff!
+-----
+image: cris.jpg
+-----
+website: http://camaya.co/
+-----
+facebook: 
+-----
+twitter: https://twitter.com/_camaya
+-----
+instagram:
+-----
+github: https://github.com/camaya
+-----
+linkedin: https://www.linkedin.com/in/cristhian-amaya/
+-----
+
+
+##### member #####
+name: Diana Kramer
+-----
+position: Organizer
+-----
+description:
+
+Diana Kramer is currently working as Senior Security Engineer at King and has a background in network security and security monitoring. She is an engineer that enjoys understanding how things work and applies this to her everyday work. In her free time, she likes to play videogames and mentor fellow gamers into tech careers. Founder of the WoSEC Barcelona chapter.
+-----
+image: diana.jpg
+-----
+website: https://www.meetup.com/es/WoSEC-Barcelona/‬
+-----
+facebook:
+-----
+twitter: https://twitter.com/rorutza
+-----
+instagram:
+-----
+github: https://github.com/rorutza
+-----
+linkedin: http://linkedin.com/in/diana-kramer-93b38326
+-----
+
+
+##### member #####
+name: Nico Esteves
+-----
+position: Organizer
+-----
+description:
+
+Nicooo
+-----
+image:
+-----
+website:
+-----
+facebook:
+-----
+twitter:
+-----
+instagram:
+-----
+github:
+-----
+linkedin:
+-----
+
+
+##### member #####
+name: Guillermo Grande
+-----
+position: Organizer
+-----
+description:
+
+Guille
+-----
+image:
+-----
+website:
+-----
+facebook:
+-----
+twitter:
+-----
+instagram:
+-----
+github:
+-----
+linkedin:
+-----
+----
+
+#### content ####
+section_id: Contacts
+----
+title: Contacts
+----
+description: To get in touch with us you can write us an email to cyber at barcelona dot cybersecurity or join our Slack workspace by clicking the button below
+----
+nav_label: Contacts
+----
+button_type: image
+----
+button_content: slack-logo.png
+----
+button_link: https://barcelonacybersec.herokuapp.com/
+----
+----
+
+#### content ####
+section_id: donate
+----
+title: Donate
+----
+description: Help support BCN Cybersecurity's activities!
+----
+nav_label: Donate
+----
+button_type: image
+----
+button_content: collective.svg
+----
+button_link: https://opencollective.com/spyder/
+----
+---
