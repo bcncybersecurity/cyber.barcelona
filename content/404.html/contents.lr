@@ -12,9 +12,9 @@ bg_image_fadeout: 0.3
 ---
 message:
 
-This is an example of a 404 page.
+We are deeply sorry. We can assure you, we were wearing pants when we made this website.
 
-You can customize its title, message, and background image, and apply a fade-out effect to the latter.
-It won't appear in the navbar (or direct navigation or queries, assuming you include ``_discoverable: no`` in its ``contents.lr``), and you'll need to create it manually see see it appear in the admin UI.
-If not setup with Lektor, your server/host's default 404 page will be used.
+<div align="center">
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/OwvPaMolTFU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</div>
 ---

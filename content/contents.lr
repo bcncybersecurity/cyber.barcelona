@@ -10,7 +10,7 @@ hero_description:
 
 The first cybersecurity community in Barcelona
 ---
-hero_image: camg-clover-bg.jpg
+hero_image: bcnmeetup.jpeg
 ---
 starting_block_bg: light
 ---
@@ -291,19 +291,19 @@ description:
 
 Nicooo
 -----
-image:
+image: nico.jpg
 -----
-website:
+website: https://hamstah.com
 -----
-facebook:
+facebook: 
 -----
 twitter:
 -----
 instagram:
 -----
-github:
+github: https://github.com/hamstah
 -----
-linkedin:
+linkedin: https://linkedin.com/in/nesteves
 -----
 
 
