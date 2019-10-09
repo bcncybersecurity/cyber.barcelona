@@ -37,7 +37,7 @@ Barcelona Cybersecurity is a nonprofit, technology focused, organization, foster
 #### mission ####
 section_id: modules
 ----
-enable_images: true
+enable_images: false
 ----
 initial_tab_index: 1
 ----
@@ -116,20 +116,20 @@ title: Meetups
 -----
 description:
 
-Our main activity, a monthly meetup held in different spaces around Barcelona. To share, to include, blabla.
+A monthly meetup held in different spaces around Barcelona. To share, to include, to create community.
 -----
-icon: flexible-design.png
+icon: meetup_front_2.jpeg
 -----
 
 
 ##### service #####
-title: Workshop
+title: Workshops
 -----
 description:
 
-Hands on is a typical hacker attitude
+Dedicated sessions to hacking: breaking and fixing stuff, from physical to digital world.
 -----
-icon: responsive-layout.png
+icon: workshops_temp.jpg
 -----
 
 
@@ -138,7 +138,7 @@ title: BSidesBCN
 -----
 description:
 
-Barcelona Cybersecurity is the BSides Barcelona's organizer.
+Barcelona Cybersecurity is the official BSides Barcelona's organizer.
 -----
 icon: bsidesbcn_logo.png
 -----
@@ -239,7 +239,7 @@ position: Secretary
 -----
 description:
 
-He does stuff!
+Infosec professional and programmer. Currently working as security engineer at Typeform. Interested mostly on the defensive side of security, specially DFIR and RE. Outside of computers, he enjoys boxing, reading books, and messing around with his cat.
 -----
 image: cris.jpg
 -----
@@ -264,7 +264,7 @@ position: Organizer
 -----
 description:
 
-Diana Kramer is currently working as Senior Security Engineer at King and has a background in network security and security monitoring. She is an engineer that enjoys understanding how things work and applies this to her everyday work. In her free time, she likes to play videogames and mentor fellow gamers into tech careers. Founder of the WoSEC Barcelona chapter.
+Diana Kramer is currently working as Senior Security Engineer at King and has a background in network security and security monitoring. She is an engineer that enjoys understanding how things work and applies this to her everyday work. Founder of the WoSEC Barcelona chapter.
 -----
 image: diana.jpg
 -----
