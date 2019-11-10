@@ -1,5 +1,7 @@
+_model: home
+---
 title: Hello World
 ---
 body: Barcelona Cybersecurity is a nonprofit, technology focused, organization, fostering research, education and outreach activities. We are based in Barcelona and our main focus is the local community.
 ---
-_template: homepage.html
+_hidden: no
