@@ -44,4 +44,19 @@
 		</div>
 	</div>
 </div>
+<div class="steps landing__section">
+	<div class="container">
+		<h2>Members</h2>
+		<p>The key people without which this community wouldn't be possible.</p>
+	</div>
+	<div class="container">
+		{% for member_row in this.members.blocks | batch(3) %}
+			<div class="steps__inner">
+			{% for member in member_row %}
+				{{member}}
+			{% endfor %}
+			</div>
+		{% endfor %}
+	</div>
+</div>
 {% endblock %}
