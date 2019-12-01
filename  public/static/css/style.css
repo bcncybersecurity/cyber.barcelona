@@ -976,14 +976,8 @@ select {
       border-top: none;
       width: auto; } }
 
-.step > ul > li {
-  display: inline;
-  padding-right: 20px;
-}
-
 .step__media {
   margin: 16pt 0; }
-
   @media (min-width: 992px) {
     .step__media {
       margin: 32pt 0; } }
