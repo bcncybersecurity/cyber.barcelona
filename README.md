@@ -1,6 +1,6 @@
 # cyber.barcelona
 BCN Cybersecurity web page
 
-This project is built w Lektor (https://www.getlektor.com/)
+This project is built w github pages
 
-Push to master and Travis CI will push the generated html pages to the gh-pages branch. Don't push to gh-pages!!! :P
+Push to main ang github will do its magic. 
