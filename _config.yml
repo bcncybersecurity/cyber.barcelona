@@ -18,10 +18,10 @@ facebook_url:
 github_url: https://github.com/bcncybersecurity/
 gitlab_url: 
 googleplus_url: 
-instagram_url: https://www.linkedin.com/company/cyber-barcelona/
-linkedin_url: 
-pinterest_url: https://cyberbcn.slack.com/
-slack_url:
+instagram_url: 
+linkedin_url: https://www.linkedin.com/company/cyber-barcelona/
+pinterest_url: 
+slack_url: https://cyberbcn.slack.com/
 twitter_url: https://twitter.com/bcncybersec
 
 # Build settings
