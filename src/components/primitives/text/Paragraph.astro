@@ -1,0 +1,7 @@
+---
+const { text, alignment, extraCss } = Astro.props;
+var textCssClass ="text-2xl font-normal tracking-tight text-white mx-auto text-" + alignment 
+textCssClass = textCssClass + " " + extraCss
+---
+
+<p class={textCssClass}>{text}</p>

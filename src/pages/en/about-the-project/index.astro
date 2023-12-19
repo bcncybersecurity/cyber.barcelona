@@ -1,0 +1,116 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/screens/Header.astro';
+import Footer from '../../../components/screens/Footer.astro';
+import BigTitle from '../../../components/primitives/text/BigTitle.astro';
+import MediumTitle from '../../../components/primitives/text/MediumTitle.astro';
+import Paragraph from '../../../components/primitives/text/Paragraph.astro';
+import TeamMemberCard from '../../../components/blocks/TeamMemberCard.astro';
+import olmoPhoto from '../../../../public/img/pictures/olmo.jpg'
+import lauraPhoto from '../../../../public/img/pictures/laura.jpg'
+import eduPhoto from '../../../../public/img/pictures/edu.jpg'
+import eliasPhoto from '../../../../public/img/pictures/elias.jpg'
+import ivanPhoto from '../../../../public/img/pictures/ivan.jpeg'
+import neusPhoto from '../../../../public/img/pictures/neus.png'
+import aaronPhoto from '../../../../public/img/pictures/aaron.png'
+import alexandraPhoto from '../../../../public/img/pictures/alexandra.png'
+
+const lang = "en"
+---
+
+<Layout title="About the project">
+	<main class="bg-gradient-to-br from-[#465FFF] to-[#FFFFFF] max-w-3xl md:max-w-none">
+		<Header lang={lang}/>
+		<br/>
+		<BigTitle titleText="The team" alignment="center"/>
+		<Paragraph text="Meet the passionate team that makes this community possible." alignment="center"/>
+		<br/>
+		<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-16 mx-auto content-center w-2/3 p-6 rounded-3xl">
+			<div>
+				<TeamMemberCard photo={olmoPhoto} photoAltText="Olmo Rayón" name="Olmo Rayón" position="President & Coordination Responsible" linkedinLink="https://www.linkedin.com/in/olmorayon/"/>
+			</div>
+			<div>
+				<TeamMemberCard photo={lauraPhoto} photoAltText="Laura Del Barrio" name="Laura Del Barrio" position="Secretary & Operations Responsible" linkedinLink="https://www.linkedin.com/in/laura-del-barrio-diaz/"/>
+			</div>
+			<div>
+				<TeamMemberCard photo={eduPhoto} photoAltText="Eduard Xancó" name="Eduard Xancó" position="Treasurer & Corporate Responsible" linkedinLink="https://www.linkedin.com/in/eduardxanco/"/>
+			</div>
+			<div>
+				<TeamMemberCard photo={eliasPhoto} photoAltText="Elías Solana" name="Elías Solana" position="External Relations" linkedinLink="https://www.linkedin.com/in/elias-solana/"/>
+			</div>
+			<div>
+				<TeamMemberCard photo={ivanPhoto} photoAltText="Iván Mendez" name="Iván Mendez" position="Content creator" linkedinLink="https://www.linkedin.com/in/ivanmendezrodriguez/"/>
+			</div>
+			<div>
+				<TeamMemberCard photo={neusPhoto} photoAltText="Neus Boix" name="Neus Boix" position="Operations Support" linkedinLink="https://www.linkedin.com/in/nbc-1885aa108"/>
+			</div>
+			<div>
+				<TeamMemberCard photo={aaronPhoto} photoAltText="Aarón Simón" name="Aarón Simón" position="Legal" linkedinLink="https://www.linkedin.com/in/aaronsimonbrown"/>
+			</div>
+			<div>
+				<TeamMemberCard photo={alexandraPhoto} photoAltText="Alexandra Voicu" name="Alexandra Voicu" position="Operations Support" linkedinLink="https://www.linkedin.com/in/alexandra-voicu-92786563"/>
+			</div>
+		</div>
+		<br/>
+		<div class="w-2/3 mx-auto mb-16">
+			<div class="mx-auto py-16 px-32 content-center w-auto p-6 rounded-3xl flex flex-col items-center bg-gradient-to-br from-[#465FFF] to-[#837EDC]">
+				<MediumTitle titleText="Objectives" alignment="center"/>
+				<Paragraph text="Our organization and our community are based on the following objectives:" alignment="center"/>
+				<br/>
+				<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-2 gap-8 mx-auto content-center w-full p-6 rounded-3xl">
+					<div>
+						<div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
+							<div class="my-auto h-auto">
+								<img class="mx-auto w-full align-middle rounded-full bg-[#A8ACFF] p-2" src="/icons/image.svg" alt="Icon"/>
+							</div>
+							<div class="ml-4 my-auto h-auto">
+								<Paragraph text="Recognized brand" alignment="justify" extraCss="text-[#3E37C9]"/>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
+							<div class="my-auto h-auto">
+								<img class="mx-auto w-full align-middle rounded-full bg-[#A8ACFF] p-2" src="/icons/compass.svg" alt="Icon"/>
+							</div>
+							<div class="ml-4 my-auto h-auto">
+								<Paragraph text="One mind" alignment="justify" extraCss="text-[#3E37C9]"/>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
+							<div class="my-auto h-auto">
+								<img class="mx-auto w-full align-middle rounded-full bg-[#A8ACFF] p-2" src="/icons/handshake.svg" alt="Icon"/>
+							</div>
+							<div class="ml-4 my-auto h-auto">
+								<Paragraph text="Strong community" alignment="justify" extraCss="text-[#3E37C9]"/>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
+							<div class="my-auto h-auto">
+								<img class="mx-auto w-full align-middle rounded-full bg-[#A8ACFF] p-2" src="/icons/map.svg" alt="Icon"/>
+							</div>
+							<div class="ml-4 my-auto h-auto">
+								<Paragraph text="Sustainable organization" alignment="justify" extraCss="text-[#3E37C9]"/>
+							</div>
+						</div>
+					</div>
+					<div>
+						<div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
+							<div class="my-auto h-auto">
+								<img class="mx-auto w-full align-middle rounded-full bg-[#A8ACFF] p-2" src="/icons/keyboard.svg" alt="Icon"/>
+							</div>
+							<div class="ml-4 my-auto h-auto">
+								<Paragraph text="Best-in-class products" alignment="justify" extraCss="text-[#3E37C9]"/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<Footer lang={lang}/>
+	</main>
+</Layout>
