@@ -6,10 +6,10 @@ import Paragraph from '../primitives/text/Paragraph.astro';
 import MediumTitle from '../primitives/text/MediumTitle.astro';
 ---
 <div class="mx-auto py-16 px-32 content-center w-auto p-6 rounded-3xl flex flex-col items-center bg-gradient-to-br from-[#465FFF] to-[#837EDC]">
-    <MediumTitle titleText={title} alignment="center"/>
-    <SmallTitle titleText={subtitle} alignment="center"/>
+    <MediumTitle titleText={title} extraCss="text-center"/>
+    <SmallTitle titleText={subtitle} extraCss="text-center"/>
     <br/>
-    <a href={buttonLink}>
+    <a href={buttonLink} target="_blank">
         <button class="mx-auto bg-transparent text-white font-bold py-2 px-4 rounded-full border hover:bg-white hover:text-[#465FFF] hover:transition">
             {buttonText}
         </button>

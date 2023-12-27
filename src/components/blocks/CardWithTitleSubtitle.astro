@@ -7,6 +7,6 @@ import Paragraph from '../primitives/text/Paragraph.astro';
 <div class="mx-auto content-center w-auto p-6 rounded-3xl bg-[#E3E0FA]">
     <Image class="rounded-3xl w-auto mx-auto" src={photo} alt={photoAltText}/>
     <br/>
-    <SmallTitle titleText={title} alignment="justify" extraCss="text-[#3E37C9]"/>
-    <Paragraph text={subtitle} alignment="justify" extraCss="text-[#3E37C9]"/>
+    <SmallTitle titleText={title} extraCss="text-[#3E37C9] text-left"/>
+    <Paragraph text={subtitle} extraCss="text-[#3E37C9] text-justify"/>
 </div>

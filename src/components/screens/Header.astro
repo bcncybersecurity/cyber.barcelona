@@ -18,10 +18,6 @@ const slugTranslations = {
     en: "/en/gallery",
     es: "/es/galeria"
   },
-  BlogLink: {
-    en: "/en/blog",
-    es: "/es/blog"
-  },
   JoinTheCommunityLink: {
     en: "/en/become-a-member",
     es: "/es/hazte-miembro"
@@ -36,7 +32,6 @@ let AboutTheProjectLink = getSlugTranslation('AboutTheProjectLink', lang);
 let WhatWeDoLink = getSlugTranslation('WhatWeDoLink', lang);
 let EventsLink = getSlugTranslation('EventsLink', lang);
 let GalleryLink = getSlugTranslation('GalleryLink', lang);
-let BlogLink = getSlugTranslation('BlogLink', lang);
 let JoinTheCommunityLink = getSlugTranslation('JoinTheCommunityLink', lang);
 
 const stringTranslations = {
@@ -60,10 +55,6 @@ const stringTranslations = {
     en: "Gallery",
     es: "Galería"
   },
-  BlogString: {
-    en: "Blog",
-    es: "Blog"
-  },
   JoinTheCommunityString: {
     en: "Join the community",
     es: "Únete a la comunidad"
@@ -78,8 +69,8 @@ let AboutTheProjectString = getStringTranslation('AboutTheProjectString', lang);
 let WhatWeDoString = getStringTranslation('WhatWeDoString', lang);
 let EventsString = getStringTranslation('EventsString', lang);
 let GalleryString = getStringTranslation('GalleryString', lang);
-let BlogString = getStringTranslation('BlogString', lang);
 let JoinTheCommunityString = getStringTranslation('JoinTheCommunityString', lang);
+
 ---
 
 <nav class="bg-white w-full z-20 top-0 start-0 border-b border-gray-200">
@@ -105,19 +96,16 @@ let JoinTheCommunityString = getStringTranslation('JoinTheCommunityString', lang
 			<a href={homeLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">{HomeString}</a>
 			</li>
 			<li>
-			<a href={AboutTheProjectLink} class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">{AboutTheProjectString}</a>
+			<a href={AboutTheProjectLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{AboutTheProjectString}</a>
 			</li>
 			<li>
-			<a href={WhatWeDoLink} class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">{WhatWeDoString}</a>
+			<a href={WhatWeDoLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{WhatWeDoString}</a>
 			</li>
 			<li>
-			<a href={EventsLink} class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">{EventsString}</a>
+			<a href={EventsLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{EventsString}</a>
 			</li>
 			<li>
-				<a href={GalleryLink} class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">{GalleryString}</a>
-			</li>
-			<li>
-				<a href={BlogLink} class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0">{BlogString}</a>
+				<a href={GalleryLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{GalleryString}</a>
 			</li>
 		</ul>
 		</div>

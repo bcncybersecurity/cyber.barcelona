@@ -1,0 +1,17 @@
+---
+const { iconName, text } = Astro.props;
+import { Image } from 'astro:assets';
+import SmallTitle from '../primitives/text/SmallTitle.astro';
+import Paragraph from '../primitives/text/Paragraph.astro';
+const IconURL = '/icons/' + iconName + '.svg';
+---
+<div class="my-auto">
+    <div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
+        <div class="my-auto h-auto">
+            <img class="mx-auto w-full align-middle max-w-[3rem]" src={IconURL} alt="Icon"/>
+        </div>
+        <div class="ml-4 my-auto h-auto">
+            <Paragraph text={text} extraCss="text-[#3E37C9] text-left"/>
+        </div>
+    </div>
+</div>

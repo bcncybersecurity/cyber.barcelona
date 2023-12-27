@@ -7,10 +7,10 @@ const iconURL = '/icons/' + iconName + '.svg';
 ---
 <div class="grid md:grid-cols-[0.25fr,1fr] p-4 rounded-3xl bg-[#E3E0FA] p-6">
     <div class="my-auto h-auto">
-        <img class="mx-auto w-2/3 align-middle rounded-full bg-[#A8ACFF] p-5" src={iconURL} alt="Icon"/>
+        <img class="mx-auto w-2/3 align-middle p-5 max-w-[6rem]" src={iconURL} alt="Icon"/>
     </div>
     <div class="my-auto h-auto">
-        <SmallTitle titleText={title} alignment="justify" extraCss="text-[#3E37C9]"/>
-        <Paragraph text={subtitle} alignment="justify" extraCss="text-[#3E37C9]"/>
+        <SmallTitle titleText={title} extraCss="text-[#3E37C9] text-left"/>
+        <Paragraph text={subtitle} extraCss="text-[#3E37C9] text-justify"/>
     </div>
 </div>

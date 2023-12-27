@@ -14,6 +14,7 @@ import ivanPhoto from '../../../../public/img/pictures/ivan.jpeg'
 import neusPhoto from '../../../../public/img/pictures/neus.png'
 import aaronPhoto from '../../../../public/img/pictures/aaron.png'
 import alexandraPhoto from '../../../../public/img/pictures/alexandra.png'
+import IconCardWithText from '../../../components/blocks/IconCardWithText.astro';
 
 const lang = "en"
 ---
@@ -22,8 +23,8 @@ const lang = "en"
 	<main class="bg-gradient-to-br from-[#465FFF] to-[#FFFFFF] max-w-3xl md:max-w-none">
 		<Header lang={lang}/>
 		<br/>
-		<BigTitle titleText="The team" alignment="center"/>
-		<Paragraph text="Meet the passionate team that makes this community possible." alignment="center"/>
+		<BigTitle titleText="The team" extraCss="text-center"/>
+		<Paragraph text="Meet the passionate team that makes this community possible." extraCss="text-center"/>
 		<br/>
 		<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-16 mx-auto content-center w-2/3 p-6 rounded-3xl">
 			<div>
@@ -54,60 +55,15 @@ const lang = "en"
 		<br/>
 		<div class="w-2/3 mx-auto mb-16">
 			<div class="mx-auto py-16 px-32 content-center w-auto p-6 rounded-3xl flex flex-col items-center bg-gradient-to-br from-[#465FFF] to-[#837EDC]">
-				<MediumTitle titleText="Objectives" alignment="center"/>
-				<Paragraph text="Our organization and our community are based on the following objectives:" alignment="center"/>
+				<MediumTitle titleText="Objectives" extraCss="text-center"/>
+				<Paragraph text="Our organization and our community are based on the following objectives:" extraCss="text-center"/>
 				<br/>
 				<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-2 gap-8 mx-auto content-center w-full p-6 rounded-3xl">
-					<div>
-						<div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
-							<div class="my-auto h-auto">
-								<img class="mx-auto w-full align-middle rounded-full bg-[#A8ACFF] p-2" src="/icons/image.svg" alt="Icon"/>
-							</div>
-							<div class="ml-4 my-auto h-auto">
-								<Paragraph text="Recognized brand" alignment="justify" extraCss="text-[#3E37C9]"/>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
-							<div class="my-auto h-auto">
-								<img class="mx-auto w-full align-middle rounded-full bg-[#A8ACFF] p-2" src="/icons/compass.svg" alt="Icon"/>
-							</div>
-							<div class="ml-4 my-auto h-auto">
-								<Paragraph text="One mind" alignment="justify" extraCss="text-[#3E37C9]"/>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
-							<div class="my-auto h-auto">
-								<img class="mx-auto w-full align-middle rounded-full bg-[#A8ACFF] p-2" src="/icons/handshake.svg" alt="Icon"/>
-							</div>
-							<div class="ml-4 my-auto h-auto">
-								<Paragraph text="Strong community" alignment="justify" extraCss="text-[#3E37C9]"/>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
-							<div class="my-auto h-auto">
-								<img class="mx-auto w-full align-middle rounded-full bg-[#A8ACFF] p-2" src="/icons/map.svg" alt="Icon"/>
-							</div>
-							<div class="ml-4 my-auto h-auto">
-								<Paragraph text="Sustainable organization" alignment="justify" extraCss="text-[#3E37C9]"/>
-							</div>
-						</div>
-					</div>
-					<div>
-						<div class="grid md:grid-cols-[0.75fr,4fr] p-6 rounded-3xl bg-[#E3E0FA]">
-							<div class="my-auto h-auto">
-								<img class="mx-auto w-full align-middle rounded-full bg-[#A8ACFF] p-2" src="/icons/keyboard.svg" alt="Icon"/>
-							</div>
-							<div class="ml-4 my-auto h-auto">
-								<Paragraph text="Best-in-class products" alignment="justify" extraCss="text-[#3E37C9]"/>
-							</div>
-						</div>
-					</div>
+					<IconCardWithText iconName="image" text="Recognized brand"/>
+					<IconCardWithText iconName="compass" text="One mind"/>
+					<IconCardWithText iconName="handshake" text="Strong community"/>
+					<IconCardWithText iconName="map" text="Sustainable organization"/>
+					<IconCardWithText iconName="compass" text="Best-in-class products"/>
 				</div>
 			</div>
 		</div>

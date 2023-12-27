@@ -1,0 +1,41 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/screens/Header.astro';
+import Footer from '../../../components/screens/Footer.astro';
+import BigTitle from '../../../components/primitives/text/BigTitle.astro';
+import Paragraph from '../../../components/primitives/text/Paragraph.astro';
+import Image from 'astro/components/Image.astro';
+import FinalEventPhoto from '../../../../public/img/pictures/final-event.jpeg'
+import EventPublicPhoto from '../../../../public/img/pictures/event-public.jpeg'
+import HoneypotsPresentationPhoto from '../../../../public/img/pictures/honeypots-presentation.jpeg'
+import SkyscannerPresentationPhoto from '../../../../public/img/pictures/skyscanner-presentation.jpeg'
+import MartinVigoPhoto from '../../../../public/img/pictures/martin-vigo.jpeg'
+import GoinPublicPhoto from '../../../../public/img/pictures/goin-public.jpeg'
+import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
+import SkyscannerPublicPhoto from '../../../../public/img/pictures/skyscanner-public.jpeg'
+import IronhackPublicPhoto from '../../../../public/img/pictures/ironhack-public.jpeg'
+
+
+const lang = "en"
+---
+<Layout title="Gallery">
+	<main class="bg-gradient-to-br from-[#465FFF] to-[#FFFFFF] max-w-7xl md:max-w-none">
+		<Header lang={lang}/>
+		<br/>
+		<BigTitle titleText="Gallery" extraCss="text-center"/>
+		<Paragraph text="Here you can find some photos from previous events!" extraCss="max-w-7xl text-center"/>
+		<br/>
+		<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-8 mx-auto content-center w-4/5 p-6 rounded-3xl mb-16">
+			<Image class="rounded-3xl w-full mx-auto" src={FinalEventPhoto} alt="Barcelona cybersecurity event photo"/>
+			<Image class="rounded-3xl w-full mx-auto" src={EventPublicPhoto} alt="Barcelona cybersecurity event photo"/>
+			<Image class="rounded-3xl w-full mx-auto" src={HoneypotsPresentationPhoto} alt="Barcelona cybersecurity event photo"/>
+			<Image class="rounded-3xl w-full mx-auto" src={SkyscannerPresentationPhoto} alt="Barcelona cybersecurity event photo"/>
+			<Image class="rounded-3xl w-full mx-auto" src={MartinVigoPhoto} alt="Barcelona cybersecurity event photo"/>
+			<Image class="rounded-3xl w-full mx-auto" src={GoinPublicPhoto} alt="Barcelona cybersecurity event photo"/>
+			<Image class="rounded-3xl w-full mx-auto" src={FinalEventTerracePhoto} alt="Barcelona cybersecurity event photo"/>
+			<Image class="rounded-3xl w-full mx-auto" src={SkyscannerPublicPhoto} alt="Barcelona cybersecurity event photo"/>
+			<Image class="rounded-3xl w-full mx-auto" src={IronhackPublicPhoto} alt="Barcelona cybersecurity event photo"/>
+		</div>
+		<Footer lang={lang}/>
+	</main>
+</Layout>
