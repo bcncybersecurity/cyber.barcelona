@@ -27,11 +27,11 @@ const lang = "en"
 		<Header lang={lang}/>
 		<br/>
 		<BigTitle titleText="Events" extraCss="text-center"/>
-		<Paragraph text="Explore all the events organized by Barcelona Cybersecurity! Join us and be part of the growth and strengthening of the cybersecurity industry!" extraCss="max-w-7xl text-center"/>
+		<Paragraph text="Explore all the events organized by Barcelona Cybersecurity! Join us and be part of the growth and strengthening of the cybersecurity industry!" extraCss="max-w-7xl text-center md:px-0 px-6"/>
 		<br/>
-		<Paragraph text="Welcome to the exciting world of cybersecurity events organized by our organization. We are committed to creating a unique space where professionals, enthusiasts and experts can come together and share their passion for cybersecurity. From meetups and trainings… to corporate and networking events, are you going to miss it?" extraCss="max-w-7xl text-center"/>
+		<Paragraph text="Welcome to the exciting world of cybersecurity events organized by our organization. We are committed to creating a unique space where professionals, enthusiasts and experts can come together and share their passion for cybersecurity. From meetups and trainings… to corporate and networking events, are you going to miss it?" extraCss="max-w-7xl text-center md:px-0 px-6"/>
 		<br/>
-		<Paragraph text="In addition, as part of our community, you will have access to members-only events, where you will enjoy lectures and presentations from renowned experts. These unique experiences will keep you up to date with the latest trends and allow you to gain privileged insights." extraCss="max-w-7xl text-center"/>
+		<Paragraph text="In addition, as part of our community, you will have access to members-only events, where you will enjoy lectures and presentations from renowned experts. These unique experiences will keep you up to date with the latest trends and allow you to gain privileged insights." extraCss="max-w-7xl text-center md:px-0 px-6"/>
 		<br/>
 		<br/>
 		<BigTitle titleText="Upcoming event" extraCss="text-center"/>
@@ -39,8 +39,7 @@ const lang = "en"
 			<br/>
 			<SmallTitle titleText="Nothing here for now. Stay tuned!" extraCss="text-center"/>
 		</div>
-		<div class="hidden max-w-6xl grid md:grid-cols-[3.5fr,0.1fr,3fr] grid-cols-1 grid-rows-4 md:grid-rows-1 gap-4 mx-auto content-center p-12 rounded-3xl bg-gradient-to-br from-[#3E37C9] to-[#000000]">
-			<br/>
+		<div class="hidden mx-4 max-w-6xl grid md:grid-cols-[3.5fr,0.1fr,3fr] md:grid-rows-1 gap-4 md:mx-auto content-center p-6 md:p-12 rounded-3xl bg-gradient-to-br from-[#3E37C9] to-[#000000]">
 			<div>
 				<MediumTitle titleText="Explotaciones en Red Team, no todo es sota, caballo y rey." extraCss="text-left"/>
 				<Paragraph text="Thursday November 23th, 18:45, Thoughtworks Barcelona office" extraCss="text-justify"/>
@@ -51,7 +50,7 @@ const lang = "en"
 			</div>
 		</div>
 		<br/>
-		<BigTitle titleText="Past events"/>
+		<BigTitle titleText="Past events" extraCss="text-center mx-2 md:mx-auto"/>
 		<Paragraph text="If you missed it and want to enjoy again a past event…" extraCss="max-w-7xl text-center"/>
 		<br/>
 		<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-8 mx-auto content-center w-4/5 p-6 rounded-3xl">
@@ -126,6 +125,7 @@ const lang = "en"
 				</a>
 			</div>
 		</div>
+		<br/>
 		<Footer lang={lang}/>
 	</main>
 </Layout>
