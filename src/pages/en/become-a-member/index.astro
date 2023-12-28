@@ -18,8 +18,8 @@ const lang = "en"
 ---
 
 <Layout title="Barcelona Cybersecurity">
-	<main class="bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] max-w-7xl md:max-w-none">
-		<Header lang={lang}/>
+	<Header lang={lang}/>
+	<main class="bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] max-w-7xl md:max-w-none" transition:animate="slide">
 		<br/>
 		<BigTitle titleText="Become a member" extraCss="text-center"/>
 		<SmallTitle titleText="Join the largest cybersecurity community in Barcelona and boost your growth" extraCss="text-center"/>
@@ -122,6 +122,6 @@ const lang = "en"
 			</p>
 		</div>
 		<br/>
-		<Footer lang={lang}/>
 	</main>
+	<Footer lang={lang}/>
 </Layout>

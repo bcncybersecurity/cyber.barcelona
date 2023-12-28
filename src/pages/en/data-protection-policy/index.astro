@@ -11,8 +11,8 @@ const lang = "en"
 ---
 
 <Layout title="Events">
-	<main class="bg-gradient-to-br from-[#3E37C9] to-[#837EDC] max-w-7xl md:max-w-none">
-		<Header lang={lang}/>
+	<Header lang={lang}/>
+	<main class="bg-gradient-to-br from-[#3E37C9] to-[#837EDC] max-w-7xl md:max-w-none" transition:animate="slide">
 		<br/>
 		<BigTitle titleText="Data protection policy" extraCss="text-center"/>
 		<br/>
@@ -23,7 +23,6 @@ const lang = "en"
 		<br/>
 		<Paragraph text="This data privacy policy is intended to inform users about how their personal data is managed and protected within Barcelona Cybersecurity. Any changes to this policy will be notified to users in a timely manner." extraCss="max-w-7xl text-justify px-6"/>
 		<br/>
-
 		<SmallTitle titleText="2. Collection of personal data" extraCss="text-justify max-w-7xl px-6"/>
 		<Paragraph text="Barcelona Cybersecurity collects the following personal data from its users:" extraCss="max-w-7xl text-justify px-6"/>
 		<br/>
@@ -47,25 +46,20 @@ const lang = "en"
 		<SmallTitle titleText="4. Duration of Data Retention" extraCss="text-justify max-w-7xl px-6"/>
 		<Paragraph text="Personal data will be retained only for the time necessary to fulfill the above purposes and for the operation of the membership." extraCss="max-w-7xl text-justify px-6"/>
 		<br/>
-
-
 		<SmallTitle titleText="5. Data Security" extraCss="text-justify max-w-7xl px-6"/>
 		<Paragraph text="Barcelona Cybersecurity implements security measures to protect personal data from unauthorized access, loss or modification. Access to data is restricted to the entity's administrators and is protected by secure passwords." extraCss="max-w-7xl text-justify px-6"/>
 		<br/>
-
 		<SmallTitle titleText="6. User Privacy Rights" extraCss="text-justify max-w-7xl px-6"/>
 		<Paragraph text="Users have the right to access, rectify, delete or request the limitation of the processing of their personal data. To exercise these rights or make any query related to data privacy, users can contact us via email at rgpd@cybersec.barcelona." extraCss="max-w-7xl text-justify px-6"/>
 		<br/>
-
-
 		<SmallTitle titleText="7. Cookie Policy and Tracking" extraCss="text-justify max-w-7xl px-6"/>
 		<Paragraph text="No cookie or tracking policy is used on the Barcelona Cybersecurity website." extraCss="max-w-7xl text-justify px-6"/>
 		<br/>
-
 		<SmallTitle titleText="8. Legal Compliance and Legitimation" extraCss="text-justify max-w-7xl px-6"/>
 		<Paragraph text="Barcelona Cybersecurity is committed to complying with all applicable data protection laws, including the General Data Protection Regulation (GDPR) in the European Union." extraCss="max-w-7xl text-justify px-6"/>
 		<br/>
 		<Paragraph text="Document last updated on: 2023-10-09" extraCss="max-w-7xl text-justify px-6"/>
-		<br/>		<Footer lang={lang}/>
+		<br/>
 	</main>
+	<Footer lang={lang}/>
 </Layout>

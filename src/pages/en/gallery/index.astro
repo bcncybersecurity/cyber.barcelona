@@ -19,8 +19,8 @@ import IronhackPublicPhoto from '../../../../public/img/pictures/ironhack-public
 const lang = "en"
 ---
 <Layout title="Gallery">
-	<main class="bg-gradient-to-br from-[#465FFF] to-[#FFFFFF] max-w-7xl md:max-w-none">
-		<Header lang={lang}/>
+	<Header lang={lang}/>
+	<main class="bg-gradient-to-br from-[#465FFF] to-[#FFFFFF] max-w-7xl md:max-w-none" transition:animate="slide">
 		<br/>
 		<BigTitle titleText="Gallery" extraCss="text-center"/>
 		<Paragraph text="Here you can find some photos from previous events!" extraCss="max-w-7xl text-center md:px-0 px-4"/>
@@ -36,6 +36,7 @@ const lang = "en"
 			<Image class="rounded-3xl w-full mx-auto" src={SkyscannerPublicPhoto} alt="Barcelona cybersecurity event photo"/>
 			<Image class="rounded-3xl w-full mx-auto" src={IronhackPublicPhoto} alt="Barcelona cybersecurity event photo"/>
 		</div>
-		<Footer lang={lang}/>
+		<br/>
 	</main>
+	<Footer lang={lang}/>
 </Layout>

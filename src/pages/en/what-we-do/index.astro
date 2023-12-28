@@ -12,8 +12,8 @@ const lang = "en"
 ---
 
 <Layout title="What we do">
-	<main class="bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] max-w-3xl md:max-w-none">
-		<Header lang={lang}/>
+	<Header lang={lang}/>
+	<main class="bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] max-w-3xl md:max-w-none" transition:animate="slide">
 		<br/>
 		<BigTitle titleText="What we do" extraCss="text-center md:px-0 px-2"/>
 		<Paragraph text="More information about the events we organize" extraCss="text-center md:px-0 px-4"/>
@@ -61,6 +61,6 @@ const lang = "en"
 			</div>
 		</div>
 		<br/>
-		<Footer lang={lang}/>
 	</main>
+	<Footer lang={lang}/>
 </Layout>
