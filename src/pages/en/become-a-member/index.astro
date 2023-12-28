@@ -25,20 +25,20 @@ const lang = "en"
 		<SmallTitle titleText="Join the largest cybersecurity community in Barcelona and boost your growth" extraCss="text-center"/>
 		<br/>
 		<MediumTitle titleText="MENTORING PROGRAM" extraCss="text-center"/>
-		<div class="grid grid-cols-2 grid-rows-1 gap-4 mx-auto content-center w-full p-6">
+		<div class="md:grid grid-cols-2 grid-rows-1 gap-4 mx-auto content-center w-full p-6">
 			<div class="my-auto">
 				<Image class="rounded-3xl mx-auto" src={FinalEventPhoto} alt="Barcelona cybersecurity community"/>
 			</div>
 			<div class="mt-8">
 				<IconCardWithTitleSubtitle iconName="chart-bar" title="Are you ready to take your cybersecurity career to new levels?" subtitle="We are excited to introduce our innovative mentoring program designed to connect cybersecurity professionals and help them grow together. Whether you are a professional eager to share your knowledge or you are interested in developing your full potential, our program offers you the perfect platform to grow and develop."/>
 				<br/>
-				<div class="grid grid-cols-2 gap-8 mx-auto content-center w-full p-8">
-					<div class="pt-32">
+				<div class="md:grid grid-cols-2 gap-8 mx-auto content-center w-full md:p-8 p-2">
+					<div class="md:pt-32">
 						<IconCardWithText iconName="compass" text="Ongoing support and regular checks to ensure progress and growth"/>
 						<br/>
 						<IconCardWithText iconName="handshake" text="Build lifelong connections and friendships in the cybersecurity community."/>
 					</div>
-					<div>
+					<div class="md:pt-0 pt-6">
 						<IconCardWithText iconName="clipboard" text="Personalized matchings based on interests, experience and goals"/>
 						<br/>
 						<IconCardWithText iconName="building" text="Access to a network of leading industry professionals"/>
@@ -49,18 +49,18 @@ const lang = "en"
 			</div>
 			<br/>
 		</div>
-		<MediumTitle titleText="INTERNAL SLACK ENHANCED" extraCss="text-center"/>
-		<div class="grid grid-cols-2 grid-rows-1 gap-4 mx-auto content-center w-full p-6">
-			<div class="mt-8">
+		<MediumTitle titleText="INTERNAL SLACK ENHANCED" extraCss="text-center md:p-0 px-2"/>
+		<div class="md:grid grid-cols-2 grid-rows-1 gap-4 mx-auto content-center w-full p-6">
+			<div class="md:mt-8">
 				<IconCardWithTitleSubtitle iconName="bell" title="Promoting an Interactive, Instantaneous and Collaborative Communication Channel" subtitle="An exclusive space for members to share resources, articles, security reports, events and keep up to date with everything related to the world of cybersecurity."/>
 				<br/>
-				<div class="grid grid-cols-2 gap-8 mx-auto content-center w-full p-8">
-					<div class="pt-12">
+				<div class="md:grid grid-cols-2 grid-rows-1 gap-8 mx-auto content-center w-full p-2 md:p-8">
+					<div class="md:pt-12">
 						<IconCardWithText iconName="comment" text="Educational content and knowledge sharing"/>
 						<br/>
 						<IconCardWithText iconName="handshake" text="Collaborations with experts and companies"/>
 					</div>
-					<div>
+					<div class="md:pt-0 pt-6">
 						<IconCardWithText iconName="lightbulb" text="Internal events, workshops and training"/>
 						<br/>
 						<IconCardWithText iconName="building" text="Job opportunities"/>
@@ -69,25 +69,25 @@ const lang = "en"
 					</div>
 				</div>
 			</div>
-			<div class="my-auto">
+			<div class="my-auto mt-4 md:mt-0">
 				<Image class="rounded-3xl mx-auto" src={LauraLaptopPhoto} alt="Barcelona cybersecurity community photo"/>
 			</div>
 			<br/>
 		</div>
 
 		<MediumTitle titleText="OFFICIAL MERCHANDISING" extraCss="text-center"/>
-		<div class="grid grid-cols-2 grid-rows-1 gap-4 mx-auto content-center w-full p-6">
+		<div class="md:grid grid-cols-2 grid-rows-1 gap-4 mx-auto content-center w-full p-6">
 			<div class="my-auto">
 				<Image class="rounded-3xl mx-auto" src={MerchandisingTablePhoto} alt="Barcelona cybersecurity community photo"/>
 			</div>
-			<div class="mt-32">
-				<div class="px-12 pb-12">
+			<div class="md:mt-32 mt-8">
+				<div class="md:px-12 pb-12">
 					<IconCardWithText iconName="gem" text="Now, as an official member of the community, you will have access to new merchandising designed especially for you."/>
 				</div>
-				<div class="px-12 pb-12">
+				<div class="md:px-12 pb-12">
 					<IconCardWithText iconName="heart" text="We want you to feel that you are part of something unique and special, and what better way to show it than with exclusive products that reflect your commitment to our organization."/>
 				</div>
-				<div class="px-12">
+				<div class="md:px-12">
 					<IconCardWithText iconName="hand-scissors" text="With your subscription to Barcelona Cybersecurity, you can get the t-shirt and tote bag of the year 2024."/>
 				</div>
 			</div>
@@ -95,20 +95,20 @@ const lang = "en"
 		</div>
 
 		<MediumTitle titleText="INTERNAL EVENTS" extraCss="text-center"/>
-		<div class="grid grid-cols-2 grid-rows-1 gap-4 mx-auto content-center w-full p-6">
+		<div class="md:grid grid-cols-2 grid-rows-1 gap-4 mx-auto content-center w-full p-2 md:p-6">
 			<div>
-				<div class="px-12 pb-12">
+				<div class="p-4 md:px-12 pb-12">
 					<IconCardWithTitleSubtitle iconName="building" title="Join us in our exclusive events" subtitle="designed only for members, an unparalleled opportunity for our valued members to immerse themselves in the enriching landscape of the cybersecurity community"/>
 				</div>
-				<div class="px-12 pb-12">
+				<div class="p-4 md:px-12 pb-12">
 					<IconCardWithTitleSubtitle iconName="handshake" title="Network and learn" subtitle="Barcelona Cybersecurity internal events promise not only professional development but also a unique chance to build lasting connections in a vibrant and dynamic atmosphere."/>
 				</div>
-				<div class="px-12">
+				<div class="p-4 md:px-12">
 					<IconCardWithTitleSubtitle iconName="newspaper" title="Many open opportunities" subtitle="Members will be able to attend our opening ceremony, summer break event, networkings, afterworks and much more!"/>
 				</div>
 			</div>
 			<div class="my-auto">
-				<Image class="rounded-3xl mx-auto" src={TeamPortraitPhoto} alt="Barcelona cybersecurity community photo"/>
+				<Image class="rounded-3xl mx-auto md:p-0 p-3" src={TeamPortraitPhoto} alt="Barcelona cybersecurity community photo"/>
 			</div>
 			<br/>
 		</div>
