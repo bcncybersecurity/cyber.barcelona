@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://cyber.barcelona/sitemap-index.xml
