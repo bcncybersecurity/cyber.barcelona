@@ -6,6 +6,7 @@ interface Props {
 
 const { title, lang } = Astro.props;
 import { ViewTransitions } from 'astro:transitions';
+import CookieConsent from '../components/screens/CookieConsent.astro';
 ---
 
 <!doctype html>
@@ -21,6 +22,7 @@ import { ViewTransitions } from 'astro:transitions';
 	</head>
 	<body>
 		<slot />
+		<CookieConsent/>
 	</body>
 </html>
 <style is:global>

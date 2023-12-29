@@ -1,0 +1,47 @@
+---
+const { lang } = Astro.props;
+---
+
+<div id="cookie-consent" class="fixed bottom-0 w-full p-4 bg-gray-200 text-center z-50">
+  <p class="text-sm text-gray-700">
+    We use cookies to improve your experience. Please select the types of cookies you want to enable.
+  </p>
+  <div class="flex justify-center space-x-4 mt-2">
+    <div>
+    <input type="checkbox" id="necessary-cookies" name="cookies" value="necessary" checked disabled>
+    <label for="necessary-cookies">Necessary</label>
+    </div>
+    <div>
+    <input type="checkbox" id="analytics-cookies" name="cookies" value="analytics">
+    <label for="analytics-cookies">Analytics</label>
+    </div>
+  </div>
+  <button onclick="saveCookiePreferences()" class="mt-2 px-4 py-2 text-sm text-white bg-blue-500 rounded">
+    Save preferences
+  </button>
+  <br>  <br>  <br>  <br>  <br>  <br>
+</div>
+<script is:inline>
+  var consentCookieName = "consentCookiesSet"
+  // Check if the cookie exists
+  if (document.cookie.indexOf(consentCookieName) != -1) {
+    var cookieBanner = document.getElementById("cookie-consent");
+    cookieBanner.style.display = 'none';
+  } else {
+    function saveCookiePreferences() {
+      // Set a cookie named "consentCookiesSet" to "true" that expires in 90 days
+      var now = new Date();
+      var time = now.getTime();
+      var expireTime = time + 1000*36000*90;
+      now.setTime(expireTime);
+      document.cookie = consentCookieName + "=true; path=/;expires=" + now.toUTCString();
+    // Set the cookies that the Cookie banner handles
+      document.cookie = "consentNecessaryCookies=true; path=/;expires=" + now.toUTCString();
+      var analyticsCookieChoice = document.getElementById('analytics-cookies').checked;
+      document.cookie = "consentAnalyticsCookies=" + analyticsCookieChoice + "; path=/;expires=" + now.toUTCString();
+      //Hide the banner after saving the preferences
+      var cookieBanner = document.getElementById('cookie-consent');
+      cookieBanner.style.display = 'none';
+    }
+  }
+</script>
