@@ -7,13 +7,12 @@ import Paragraph from '../../../components/primitives/text/Paragraph.astro';
 import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
 import { Image } from 'astro:assets';
 import eventPhoto from '../../../../public/img/pictures/meetup-photo.jpeg'
-
 const lang = "en"
 ---
 
 <Layout lang={lang} title="What we do">
 	<Header lang={lang}/>
-	<main class="bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] max-w-3xl md:max-w-none" transition:animate="slide">
+	<main class="bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] max-w-3xl md:max-w-none">
 		<br/>
 		<BigTitle titleText="What we do" extraCss="text-center md:px-0 px-2"/>
 		<Paragraph text="More information about the events we organize" extraCss="text-center md:px-0 px-4"/>
