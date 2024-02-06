@@ -22,6 +22,10 @@ const slugTranslations = {
   JoinTheCommunityLink: {
     en: "/en/become-a-member",
     es: "/es/hazte-miembro"
+  },
+  BlogLink: {
+    en: "/en/blog",
+    es: "es/blog"
   }
 }
 
@@ -33,6 +37,7 @@ let AboutTheProjectLink = getSlugTranslation('AboutTheProjectLink', lang);
 let WhatWeDoLink = getSlugTranslation('WhatWeDoLink', lang);
 let EventsLink = getSlugTranslation('EventsLink', lang);
 let GalleryLink = getSlugTranslation('GalleryLink', lang);
+let BlogLink = getSlugTranslation('BlogLink', lang);
 let JoinTheCommunityLink = getSlugTranslation('JoinTheCommunityLink', lang);
 
 const stringTranslations = {
@@ -59,6 +64,10 @@ const stringTranslations = {
   JoinTheCommunityString: {
     en: "Join the community",
     es: "Únete a la comunidad"
+  },
+  BlogString: {
+    en: "Blog",
+    es: "Blog"
   }
 }
 
@@ -70,6 +79,7 @@ let AboutTheProjectString = getStringTranslation('AboutTheProjectString', lang);
 let WhatWeDoString = getStringTranslation('WhatWeDoString', lang);
 let EventsString = getStringTranslation('EventsString', lang);
 let GalleryString = getStringTranslation('GalleryString', lang);
+let BlogString = getStringTranslation('BlogString', lang);
 let JoinTheCommunityString = getStringTranslation('JoinTheCommunityString', lang);
 
 ---
@@ -98,6 +108,9 @@ let JoinTheCommunityString = getStringTranslation('JoinTheCommunityString', lang
           </li>
           <li class="pb-2 md:pb-0">
             <a href={GalleryLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{GalleryString}</a>
+          </li>
+          <li class="pb-2 md:pb-0">
+            <a href={BlogLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{BlogString}</a>
           </li>
           <li class="md:hidden pb-2 md:pb-0">
             <a href={JoinTheCommunityLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{JoinTheCommunityString}</a>
