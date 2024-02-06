@@ -2,11 +2,12 @@
 import Layout from '../../layouts/Layout.astro';
 import Header from '../../components/screens/Header.astro';
 import Footer from '../../components/screens/Footer.astro';
-import BigTitle from '../../components/primitives/text/BigTitle.astro';
 import MediumTitle from '../../components/primitives/text/MediumTitle.astro';
 import Paragraph from '../../components/primitives/text/Paragraph.astro';
 import { Image } from 'astro:assets';
-import groupPhoto from "../../../public/img/pictures/final-event-group-photo.jpeg"
+import build38Logo from "../../../public/img/sponsors/build38.png"
+import innoITLogo from "../../../public/img/sponsors/innoit.png"
+import siemensLogo from "../../../public/img/sponsors/siemens.png"
 import CybersecurityEnthusiastsPhoto from "../../../public/img/pictures/cybersecurity-enthusiasts.jpeg"
 import SeniorProfessionalsPhoto from "../../../public/img/pictures/senior-professionals.jpeg"
 import ValuesPhoto from "../../../public/img/pictures/bcncyber-meeting-room.jpeg"
@@ -84,7 +85,15 @@ const lang = "en"
 					<Paragraph text="Speakers" extraCss="text-left"/>
 				</div>
 			</div>
-			<br/>	
+			<br/>
+			<br/>
+			<MediumTitle titleText="Backed by the best" extraCss="text-center p-4 md:p-0"/>
+			<div class="md:grid md:grid-cols-2 grid-cols-1 md:grid-rows-1 gap-16 mx-auto content-center w-5/6 md:w-2/3 p-6">
+				<Image class="w-4/5 mx-auto pb-4" src={build38Logo} alt="Build38 logo"/>
+				<Image class="w-4/5 mx-auto pb-4" src={innoITLogo} alt="InnoIT consulting logo"/>
+				{/*<Image class="w-4/5 mx-auto pb-4 hidden" src={siemensLogo} alt="Siemens Healthineers logo"/>*/}
+			</div>
+			<br/>
 		<br>
 	</main>
 	<Footer lang={lang}/>
