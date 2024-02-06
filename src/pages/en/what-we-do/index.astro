@@ -7,6 +7,8 @@ import Paragraph from '../../../components/primitives/text/Paragraph.astro';
 import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
 import { Image } from 'astro:assets';
 import eventPhoto from '../../../../public/img/pictures/meetup-photo.jpeg'
+import whiteboardPhoto from '../../../../public/img/pictures/postits-whiteboard.jpeg'
+import cisoAuditorium from '../../../../public/img/pictures/ciso-auditorium.jpeg'
 const lang = "en"
 ---
 
@@ -37,7 +39,7 @@ const lang = "en"
 				 		</a>
 					</div>
 				</div>
-				<Image class="rounded-3xl w-auto mx-auto" src={eventPhoto} alt="Meetup event"/>
+				<Image class="rounded-3xl w-auto mx-auto" src={whiteboardPhoto} alt="Meetup event"/>
 				<br/>
 				<Paragraph text="The place where the most cutting-edge cybersecurity startups will meet"  extraCss="text-justify"/>
 				<br/>
@@ -54,7 +56,7 @@ const lang = "en"
 				 		</a>
 					</div>
 				</div>
-				<Image class="rounded-3xl w-auto mx-auto" src={eventPhoto} alt="Meetup event"/>
+				<Image class="rounded-3xl w-auto mx-auto" src={cisoAuditorium} alt="Meetup event"/>
 				<br/>
 				<Paragraph text="CISO Club is an exclusive hub designed for information security leaders to provide a collaborative and learning environment for Barcelona's CISOs."  extraCss="text-justify"/>
 			</div>
