@@ -8,7 +8,8 @@ import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
 import { Image } from 'astro:assets';
 import eventPhoto from '../../../../public/img/pictures/meetup-photo.jpeg'
 import whiteboardPhoto from '../../../../public/img/pictures/postits-whiteboard.jpeg'
-import cisoAuditorium from '../../../../public/img/pictures/ciso-auditorium.jpeg'
+import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
+
 const lang = "en"
 ---
 
@@ -39,7 +40,7 @@ const lang = "en"
 				 		</a>
 					</div>
 				</div>
-				<Image class="rounded-3xl w-auto mx-auto" src={whiteboardPhoto} alt="Meetup event"/>
+				<Image class="rounded-3xl w-auto mx-auto" src={whiteboardPhoto} alt="Brainstorming session"/>
 				<br/>
 				<Paragraph text="The place where the most cutting-edge cybersecurity startups will meet"  extraCss="text-justify"/>
 				<br/>
@@ -48,7 +49,7 @@ const lang = "en"
 			<div>
 				<div class="grid md:grid-cols-[3.5fr,0.5fr] grid-cols-2gap-4 mx-auto content-center">
 					<div class="my-auto">
-						<SmallTitle titleText="CISO Club" extraCss="text-left"/>
+						<SmallTitle titleText="Membership" extraCss="text-left"/>
 					</div>
 					<div class="my-auto mb-4">
 						<a role="button" class="bg-black text-white text-md px-4 py-2 border rounded-full">
@@ -56,9 +57,9 @@ const lang = "en"
 				 		</a>
 					</div>
 				</div>
-				<Image class="rounded-3xl w-auto mx-auto" src={cisoAuditorium} alt="Meetup event"/>
+				<Image class="rounded-3xl w-auto mx-auto" src={FinalEventTerracePhoto} alt="Final event community photo"/>
 				<br/>
-				<Paragraph text="CISO Club is an exclusive hub designed for information security leaders to provide a collaborative and learning environment for Barcelona's CISOs."  extraCss="text-justify"/>
+				<Paragraph text="the Barcelona Cybersecurity membership grants you access to benefits like member-only events, a private slack community, and our mentoring program so you can boost your career!" extraCss="text-justify"/>
 			</div>
 		</div>
 		<br/>

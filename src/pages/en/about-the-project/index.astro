@@ -12,8 +12,6 @@ import eduPhoto from '../../../../public/img/pictures/edu.jpg'
 import eliasPhoto from '../../../../public/img/pictures/elias.jpg'
 import ivanPhoto from '../../../../public/img/pictures/ivan.jpeg'
 import neusPhoto from '../../../../public/img/pictures/neus.png'
-import aaronPhoto from '../../../../public/img/pictures/aaron.png'
-import alexandraPhoto from '../../../../public/img/pictures/alexandra.png'
 import IconCardWithText from '../../../components/blocks/IconCardWithText.astro';
 
 const lang = "en"
@@ -45,12 +43,6 @@ const lang = "en"
 			<div class="pb-6 md:pb-0">
 				<TeamMemberCard photo={neusPhoto} photoAltText="Neus Boix" name="Neus Boix" position="Operations Support" linkedinLink="https://www.linkedin.com/in/nbc-1885aa108"/>
 			</div>
-			<div class="pb-6 md:pb-0">
-				<TeamMemberCard photo={aaronPhoto} photoAltText="Aarón Simón" name="Aarón Simón" position="Legal" linkedinLink="https://www.linkedin.com/in/aaronsimonbrown"/>
-			</div>
-			<div>
-				<TeamMemberCard photo={alexandraPhoto} photoAltText="Alexandra Voicu" name="Alexandra Voicu" position="Operations Support" linkedinLink="https://www.linkedin.com/in/alexandra-voicu-92786563"/>
-			</div>
 		</div>
 		<br/>
 		<div class="w-5/6 md:w-2/3 mx-auto mb-16">
@@ -58,10 +50,8 @@ const lang = "en"
 				<MediumTitle titleText="Objectives" extraCss="text-center"/>
 				<Paragraph text="Our organization and our community are based on the following objectives:" extraCss="text-center"/>
 				<br/>
-				<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-2 gap-8 mx-auto content-center w-full p-6 rounded-3xl">
-					<IconCardWithText iconName="image" text="Recognized brand"/>
-					<IconCardWithText iconName="compass" text="One mind"/>
-					<IconCardWithText iconName="handshake" text="Strong community"/>
+				<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-8 mx-auto content-center w-full p-6 rounded-3xl">
+					<IconCardWithText iconName="handshake" text="A strong community"/>
 					<IconCardWithText iconName="map" text="Sustainable organization"/>
 					<IconCardWithText iconName="compass" text="Best-in-class products"/>
 				</div>
