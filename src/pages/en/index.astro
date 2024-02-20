@@ -8,10 +8,7 @@ import { Image } from 'astro:assets';
 import build38Logo from "../../../public/img/sponsors/build38.png"
 import innoITLogo from "../../../public/img/sponsors/innoit.png"
 import siemensLogo from "../../../public/img/sponsors/siemens.png"
-import CybersecurityEnthusiastsPhoto from "../../../public/img/pictures/cybersecurity-enthusiasts.jpeg"
-import SeniorProfessionalsPhoto from "../../../public/img/pictures/senior-professionals.jpeg"
 import ValuesPhoto from "../../../public/img/pictures/bcncyber-meeting-room.jpeg"
-import CardWithTitleSubtitle from '../../components/blocks/CardWithTitleSubtitle.astro';
 import IconCardWithTitleSubtitle from '../../components/blocks/IconCardWithTitleSubtitle.astro';
 import CallToAction from '../../components/blocks/CallToAction.astro';
 import SmallTitle from '../../components/primitives/text/SmallTitle.astro';
@@ -29,25 +26,6 @@ const lang = "en"
 			<div class="max-w-6xl mx-auto mb-16">
 				<CallToAction title="Do you want to be part of our community?" subtitle="New project ideas await you!" buttonText="I want to join!" buttonLink="/en/become-a-member/"/>
 			</div>
-			<MediumTitle titleText="Our audience" extraCss="text-center"/>
-			<div class="md:grid md:grid-cols-[3fr,3fr,4fr] grid-rows-1 gap-4 mx-auto content-center w-4/5 p-6">
-				<div class="mt-6 mb-4 md:mb-0">
-					<CardWithTitleSubtitle photo={CybersecurityEnthusiastsPhoto} photoAltText="test test" title="Cybersecurity enthusiasts" subtitle="Our projects and ideas await, become the leader of tomorrow!"/>
-				</div>
-				<div class="my-auto">
-					<CardWithTitleSubtitle photo={SeniorProfessionalsPhoto} photoAltText="test test" title="Senior professionals in cybersecurity" subtitle="Opportunity to mentor the best up and coming cybersecurity talent, inspire tomorrow's leaders!"/>
-				</div>
-				<div class="mt-4 md:ml-16">
-					<p class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-4xl mx-auto">Our community is made up of industry professionals committed to sharing their knowledge and experience.</p>
-					<p class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-4xl mx-auto">Whether you're interested in learning about the latest trends in cybersecurity, networking with others in the industry or keeping up to date, you're in the right place.</p>
-					<ul>
-						<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-4xl mx-auto">✓ Events</li>
-						<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-4xl mx-auto">✓ Trainings</li>
-						<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-4xl mx-auto">✓ Networking</li>
-					</ul>
-				</div>
-			</div>
-			<br/>
 			<MediumTitle titleText="Our values" extraCss="text-center"/>
 			<div class="md:grid md:grid-cols-2 md:grid-rows-1 md:gap-4 mx-auto content-center w-4/5 p-6">
 				<div class="my-auto md:ml-16">
