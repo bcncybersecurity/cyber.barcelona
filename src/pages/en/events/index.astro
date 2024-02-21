@@ -7,7 +7,7 @@ import MediumTitle from '../../../components/primitives/text/MediumTitle.astro';
 import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
 import Paragraph from '../../../components/primitives/text/Paragraph.astro';
 import { Image } from 'astro:assets';
-import UpcomingEventPhoto from '../../../../public/img/events/red-team-sota-caballo-rey.webp'
+import UpcomingEventPhoto from '../../../../public/img/events/de-dev-a-devastacion.webp'
 import SotaCaballoYReyPhoto from '../../../../public/img/events/red-team-sota-caballo-rey.webp'
 import SeguridadDeAlturaPhoto from '../../../../public/img/events/seguridad-de-altura.webp'
 import TrustButVerifyPhoto from '../../../../public/img/events/trust-but-verify.webp'
@@ -34,14 +34,16 @@ const lang = "en"
 		<br/>
 		<br/>
 		<BigTitle titleText="Upcoming event" extraCss="text-center"/>
-		<div class="">
+		<div class="hidden">
 			<br/>
 			<SmallTitle titleText="Nothing here for now. Stay tuned!" extraCss="text-center"/>
 		</div>
-		<div class="hidden mx-4 max-w-6xl grid md:grid-cols-[3.5fr,0.1fr,3fr] md:grid-rows-1 gap-4 md:mx-auto content-center p-6 md:p-12 rounded-3xl bg-gradient-to-br from-[#3E37C9] to-[#000000]">
+		<div class="mx-4 max-w-6xl grid md:grid-cols-[3.5fr,0.1fr,3fr] md:grid-rows-1 gap-4 md:mx-auto content-center p-6 md:p-12 rounded-3xl bg-gradient-to-br from-[#3E37C9] to-[#000000]">
 			<div>
-				<MediumTitle titleText="Explotaciones en Red Team, no todo es sota, caballo y rey." extraCss="text-left"/>
-				<Paragraph text="Thursday November 23th, 18:45, Thoughtworks Barcelona office" extraCss="text-justify"/>
+				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/299273534/" target="blank">
+					<MediumTitle titleText="De Dev a Devastación: Explotación de Flujos CICD para Infiltración y Persistencia." extraCss="text-left underline"/>
+				</a>
+				<Paragraph text="Thursday March 7th, 18:45, EPITECH Barcelona office" extraCss="text-justify"/>
 			</div>
 			<div class="hidden md:inline"/>
 			<div class="my-1 md:my-auto h-auto">
