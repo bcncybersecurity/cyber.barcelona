@@ -3,16 +3,13 @@ import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/screens/Header.astro';
 import Footer from '../../../components/screens/Footer.astro';
 import BigTitle from '../../../components/primitives/text/BigTitle.astro';
-import MediumTitle from '../../../components/primitives/text/MediumTitle.astro';
 import { Image } from 'astro:assets';
-import IconCardWithTitleSubtitle from '../../../components/blocks/IconCardWithTitleSubtitle.astro';
-import IconCardWithText from '../../../components/blocks/IconCardWithText.astro';
 import CallToAction from '../../../components/blocks/CallToAction.astro';
 import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
-import FinalEventPhoto from '../../../../public/img/pictures/final-event.jpeg'
+import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
 import LauraLaptopPhoto from '../../../../public/img/pictures/laura-laptop.png'
 import MerchandisingTablePhoto from '../../../../public/img/pictures/merchandising-table.jpeg'
-import TeamPortraitPhoto from '../../../../public/img/pictures/team-portrait.jpeg'
+import whiteboardPhoto from '../../../../public/img/pictures/postits-whiteboard.jpeg'
 import Paragraph from '../../../components/primitives/text/Paragraph.astro';
 const lang = "en"
 ---
@@ -29,21 +26,25 @@ const lang = "en"
 				<br/>
 				<SmallTitle titleText="GET INTO OUR MENTORING PROGRAM" extraCss="text-[#3E37C9] px-2 text-center"/>
 				<Paragraph text="We are excited to introduce our innovative mentoring program designed to connect cybersecurity professionals and help them grow together." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
+				<Image class="rounded-7xl w-5/6 px-2 md:px-8 mx-auto pb-4" src={LauraLaptopPhoto} alt="Mentoring"/>
 			</div>
 			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
 				<br/>
 				<SmallTitle titleText="CHECK OUR INTERNAL SLACK ENHANCED" extraCss="text-[#3E37C9] px-2 text-center"/>
 				<Paragraph text="An exclusive space for members to share resources, articles, security reports, events and keep up to date with everything related to the world of cybersecurity." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
+				<Image class="rounded-7xl w-5/6 px-2 mx-auto pb-4" src={FinalEventTerracePhoto} alt="Community"/>
 			</div>
 			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
 				<br/>
 				<SmallTitle titleText="GET THE OFFICIAL MERCHANDISING" extraCss="text-[#3E37C9] px-2 text-center"/>
 				<Paragraph text="We want you to feel that you are part of something unique and special, and what better way to show it than with exclusive products that reflect your commitment to our organization." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
+				<Image class="rounded-7xl w-5/6 px-2 mx-auto pb-4" src={MerchandisingTablePhoto} alt="Meetup event"/>
 			</div>
 			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
 				<br/>
 				<SmallTitle titleText="ACCESS EXCLUSIVE INTERNAL EVENTS" extraCss="text-[#3E37C9] px-2 text-center"/>
-				<Paragraph text="designed only for members, an unparalleled opportunity for our valued members to immerse themselves in the enriching landscape of the cybersecurity community." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
+				<Paragraph text="designed only for members, an unparalleled opportunity for you to immerse yourself in the enriching landscape of the cybersecurity community." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
+				<Image class="rounded-7xl w-5/6 px-2 mx-auto pb-4" src={whiteboardPhoto} alt="Community workshop"/>
 			</div>
 		</div>
 		<br/>
