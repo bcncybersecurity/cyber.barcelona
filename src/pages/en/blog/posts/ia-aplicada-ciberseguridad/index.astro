@@ -1,0 +1,44 @@
+---
+import Layout from '../../../../../layouts/Layout.astro';
+import Header from '../../../../../components/screens/Header.astro';
+import Footer from '../../../../../components/screens/Footer.astro';
+import Paragraph from '../../../../../components/primitives/text/Paragraph.astro';
+import SmallTitle from '../../../../../components/primitives/text/SmallTitle.astro';
+import MediumTitle from '../../../../../components/primitives/text/MediumTitle.astro';
+
+const lang = "en"
+---
+
+<Layout lang={lang} title="Blog">
+	<Header lang={lang}/>
+	<main class="bg-gradient-to-br from-[#465FFF] to-[#837EDC] max-w-7xl md:max-w-none">
+		<br/>
+		<br/>
+		<div class="md:max-w-5xl mx-auto">
+			<MediumTitle titleText="IA aplicada a la seguridad: ¿Sueñan los androides con criminales adversarios?" extraCss="text-center"/>
+			<hr/>
+			<br/>
+			<Paragraph text="A menos que lleves de 9 a 11 meses viviendo en una granja sin cobertura en la montaña, ya le habrás dado un tiento o dos a ChatGPT. A finales del año pasado, sin verlo venir por ninguna parte si no se estaba dentro del mundillo, de repente había accesible un asistente de texto con todo el conocimiento (y desconocimiento) de internet, acumulado en una ventana de chat a la que preguntarle. Hay matemáticas grandes detrás de ello, pero a nivel usuario, para ti podría perfectamente ser ✨magia✨. Nos dedicamos a preguntarle cosas por entretenimiento, y a ir probando poco a poco casos de uso, pero entonces teníamos aún poco presente que estábamos delante de una revolución sin precedentes." extraCss="mb-4 text-justify px-8 md:px-0"/>
+			<SmallTitle titleText="¿Cómo hemos llegado aquí?" extraCss="text-justify px-8 md:px-0"/>
+			<Paragraph text="Tras algunos cambios de modelos, Microsoft abriendo billetera a lo grande, nuevos competidores entrando al campo, y más single-page applications con un API token de OpenAI de los que puedo contar a día de hoy, en este último año ha cambiado completamente nuestra forma de interactuar con la búsqueda de información y de trabajar. Todo el mundo tiene de repente, en la palma de la mano, un compañero que le responda con total confianza (que no veracidad, ya llegaremos a eso) cualquier pregunta que se le ocurra. Contactos de linkedin que se olvidan de borrar el “Regenerate response” al final del mensaje, bootstrapping de aplicaciones de PHP con inyecciones SQL, generaciones de imágenes para márketing con más o menos dedos de lo normal. Es el salvaje oeste, y es una proeza seguirle el ritmo a esta tendencia." extraCss="mb-4 text-justify px-8 md:px-0"/>
+			<SmallTitle titleText="¿Qué se puede hacer con todo esto?" extraCss="text-justify px-8 md:px-0"/>
+			<Paragraph text="En este caso, si eres parte de la industria de la ciberseguridad, probablemente hayas estado explorando opciones para tener una ayuda en el día a día. Si caes por el lado rojo de la balanza, seguro que ya habrás experimentado con generación de scripts básicos, esqueletos de herramientas, explicaciones de conceptos si estás aprendiendo, es como tener un compañero que se ha leído toda la documentación que puedas necesitar. Si por otro lado, como es mi caso, caes en el lado azul, más defensivo, te estará ayudando a relacionar conceptos y sacar primeros pasos de procedimiento, o ayuda procesando información. Herramientas en las que he trabajado, como atomic threat hunter o trivyalreporting se han desarrollado mucho antes de lo que hubiera sido capaz de hacer por mi cuenta." extraCss="mb-4 text-justify px-8 md:px-0"/>
+			<SmallTitle titleText="La magia tras el escenario" extraCss="text-justify px-8 md:px-0"/>
+			<Paragraph text="Si has estado leyendo un poco sobre el funcionamiento de los Large Language Models como GPT-4, habrás visto que sus datos se entrenan “hasta cierta fecha“. Esto implica que no se puede mantener al día con el volumen de información que generamos diariamente. Un buen ejemplo es que si está entrenado con la documentación de Amazon Web Services hasta finales de 2021, pero a principios de 2023 se lanza un servicio nuevo, el modelo de lenguaje no sabe que existe. Para el modelo, ese día se paró el mundo." extraCss="mb-4 text-justify px-8 md:px-0"/>
+			<Paragraph text="La traducción de esto a nuestro terreno en seguridad defensiva es la necesidad de tener disponibles datos constantes de inteligencia de ciberamenazas. Por mucho que exista esta base de “conocimiento” en la plataforma, no sirve de nada si no se mantiene tan al día como tú debes hacerlo con tus propias plataformas de datos. " extraCss="mb-4 text-justify px-8 md:px-0"/>
+			<SmallTitle titleText="Los parches para casos de uso" extraCss="text-justify px-8 md:px-0"/>
+			<Paragraph text="Los grandes jugadores están empezando a intentar parchear este problema, por el lado de OpenAI a través de plugins que le permitan recibir e insertar datos de internet, y por el lado de seguridad, por ejemplo, a través de Microsoft Security Copilot, una herramienta de la suite de Microsoft que recibe una pregunta de lenguaje natural sobre el estado de tu plataforma y los incidentes de seguridad que pueden haber presentes, y responde con un informe que adjunta datos en directo de tu entorno." extraCss="mb-4 text-justify px-8 md:px-0"/>
+			<SmallTitle titleText="La caja de pandora ya está abierta" extraCss="text-justify px-8 md:px-0"/>
+			<Paragraph text="Todo esto, estés en el lado en el que estés, implica un cambio de escenario total que hay que aceptar y aprovechar. La asistencia por inteligencia artificial es algo que ha llegado para quedarse, y es imprescindible aprovecharlo, porque tu adversario y tu competencia ya lo están haciendo. Una carrera de armamento en forma de campos de texto y algoritmos está en marcha, y si no te subes al carro, te quedarás atrás. Pero no te preocupes, esto no significa que la inteligencia artificial vaya a reemplazarte en tu trabajo, sino que será una herramienta más para ayudarte a tomar decisiones más informadas y a mantener tu plataforma segura en un entorno cada vez más complejo y cambiante." extraCss="mb-4 text-justify px-8 md:px-0"/>
+			<Paragraph text="Dicho esto, hay que tomarse todo esto con bastante atención. Se habla mucho de inteligencia artificial, pero lo que tenemos disponible actualmente no se acerca a lo que ese concepto conlleva. No tiene memoria aislada, no puede tomar decisiones, no puede crear nada que no haya visto antes. Es un motor de autocompletado carísimo. Sí, es mucho mejor que el que hay en el teclado de tu teléfono, pero un autocompletado un millón de veces más potente que el de tu Mac sigue siendo eso, un autocompletado. Esto es algo que hay que tener en mente, porque sin estas comprobaciones y sin hacer diligencia por tu lado, lo que tendrás delante es una calculadora que, con absoluta confianza, a veces te dice que dos y dos son siete." extraCss="mb-4 text-justify px-8 md:px-0"/>
+			<SmallTitle titleText="No estamos ante el santo grial" extraCss="text-justify px-8 md:px-0"/>
+			<Paragraph text="Es importante recordar que la inteligencia artificial es una herramienta, no una solución mágica que resuelve todos los problemas. La toma de decisiones basadas en datos es una práctica cada vez más extendida, pero siempre hay que tener en cuenta que estos datos pueden ser incompletos, imprecisos o incluso incorrectos. Por lo tanto, es esencial complementar la información de la inteligencia artificial con la experiencia y el conocimiento humano." extraCss="mb-4 text-justify px-8 md:px-0"/>
+			<Paragraph text="Solo combinando la inteligencia artificial y la inteligencia humana, se pueden tomar decisiones informadas y precisas en un mundo cada vez más complejo y dinámico. En definitiva, la inteligencia artificial puede ser una gran aliada en seguridad, pero siempre debemos estar conscientes de sus limitaciones y de nuestra responsabilidad en la toma de decisiones." extraCss="mb-4 text-justify px-8 md:px-0"/>
+			<hr/>
+			<a href="https://www.linkedin.com/in/ivanmendezrodriguez/"><SmallTitle titleText="Iván Méndez" extraCss="mt-3 underline underline-offset-4 px-8 md:px-0"/></a>
+			<Paragraph text="Always looking for something new to poke at (and to write about after). Reading documentation is not my thing, I like pulling levers and pressing buttons!" extraCss="mb-8 text-justify px-8 md:px-0"/>
+		</div>
+		<br/>
+	</main>
+	<Footer lang={lang}/>
+</Layout>

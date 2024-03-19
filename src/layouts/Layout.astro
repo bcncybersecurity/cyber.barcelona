@@ -1,0 +1,52 @@
+---
+interface Props {
+	title: string;
+	lang: string;
+}
+
+const { title, lang } = Astro.props;
+import CookieConsent from '../components/screens/CookieConsent.astro';
+---
+
+<!doctype html>
+<html lang={lang}>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="Barcelona Cybersecurity" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.png" />
+		<meta name="generator" content={Astro.generator} />
+		<title>{title}</title>
+	</head>
+	<body>
+		<slot />
+		{/*<CookieConsent/>*/} 
+	</body>
+</html>
+<style is:global>
+	@font-face {
+		font-family: 'Rubik';
+		src: url('/fonts/rubik.woff') format('woff');
+		font-weight: normal;
+		font-style: normal;
+		font-display: swap;
+	}
+	html {
+		font-family: 'rubik', system-ui, sans-serif;
+	}
+	code {
+		font-family:
+			Menlo,
+			Monaco,
+			Lucida Console,
+			Liberation Mono,
+			DejaVu Sans Mono,
+			Bitstream Vera Sans Mono,
+			Courier New,
+			monospace;
+	}
+	/* Set default text color */
+	h1, h3, h5, p {
+		color: white;
+	}
+</style>

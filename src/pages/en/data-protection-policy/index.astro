@@ -1,0 +1,65 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/screens/Header.astro';
+import Footer from '../../../components/screens/Footer.astro';
+import BigTitle from '../../../components/primitives/text/BigTitle.astro';
+import MediumTitle from '../../../components/primitives/text/MediumTitle.astro';
+import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
+import Paragraph from '../../../components/primitives/text/Paragraph.astro';
+
+const lang = "en"
+---
+
+<Layout lang={lang} title="Data protection policy">
+	<Header lang={lang}/>
+	<main class="bg-gradient-to-br from-[#3E37C9] to-[#837EDC] max-w-7xl md:max-w-none">
+		<br/>
+		<BigTitle titleText="Data protection policy" extraCss="text-center"/>
+		<br/>
+		<SmallTitle titleText="1. Responsible for the processing of your data" extraCss="text-justify max-w-7xl px-6"/>
+		<Paragraph text="Barcelona Cybersecurity (G67355958) with address at Via Laietana, 44 Pra-1 B 08003, Barcelona is the entity responsible for the processing of your data." extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<Paragraph text="For any questions or concerns related to data privacy, you can contact our Data Protection Officer (DPO) at the e-mail address rgpd@cybersec.barcelona." extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<Paragraph text="This data privacy policy is intended to inform users about how their personal data is managed and protected within Barcelona Cybersecurity. Any changes to this policy will be notified to users in a timely manner." extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<SmallTitle titleText="2. Collection of personal data" extraCss="text-justify max-w-7xl px-6"/>
+		<Paragraph text="Barcelona Cybersecurity collects the following personal data from its users:" extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<ul class="list-disc px-12 md:p-0">
+			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Name</li>
+			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">E-mail and postal address</li>
+			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Professional information (position and company)</li>
+			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Economic data (payment information)</li>
+		</ul>
+		<Paragraph text="This data is obtained directly from users through an online form during the organization's membership registration process and to provide essential services." extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<SmallTitle titleText="3. Purpose of Data Processing" extraCss="text-justify max-w-7xl px-6"/>
+		<Paragraph text="Personal data is collected and used for the following purposes:" extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<ul class="list-disc px-12 md:p-0">
+			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Registration and management of Barcelona Cybersecurity membership.</li>
+			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Provide services and resources related to cybersecurity within the Barcelona Cybersecurity entity.</li>
+			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Communications through a newsletter to keep users informed about events, updates and relevant news.</li>
+		</ul>
+		<br/>
+		<SmallTitle titleText="4. Duration of Data Retention" extraCss="text-justify max-w-7xl px-6"/>
+		<Paragraph text="Personal data will be retained only for the time necessary to fulfill the above purposes and for the operation of the membership." extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<SmallTitle titleText="5. Data Security" extraCss="text-justify max-w-7xl px-6"/>
+		<Paragraph text="Barcelona Cybersecurity implements security measures to protect personal data from unauthorized access, loss or modification. Access to data is restricted to the entity's administrators and is protected by secure passwords." extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<SmallTitle titleText="6. User Privacy Rights" extraCss="text-justify max-w-7xl px-6"/>
+		<Paragraph text="Users have the right to access, rectify, delete or request the limitation of the processing of their personal data. To exercise these rights or make any query related to data privacy, users can contact us via email at rgpd@cybersec.barcelona." extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<SmallTitle titleText="7. Cookie Policy and Tracking" extraCss="text-justify max-w-7xl px-6"/>
+		<Paragraph text="No cookie or tracking policy is used on the Barcelona Cybersecurity website." extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<SmallTitle titleText="8. Legal Compliance and Legitimation" extraCss="text-justify max-w-7xl px-6"/>
+		<Paragraph text="Barcelona Cybersecurity is committed to complying with all applicable data protection laws, including the General Data Protection Regulation (GDPR) in the European Union." extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+		<Paragraph text="Document last updated on: 2023-10-09" extraCss="max-w-7xl text-justify px-6"/>
+		<br/>
+	</main>
+	<Footer lang={lang}/>
+</Layout>

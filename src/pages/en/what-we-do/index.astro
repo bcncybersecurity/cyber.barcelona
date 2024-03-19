@@ -1,0 +1,68 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/screens/Header.astro';
+import Footer from '../../../components/screens/Footer.astro';
+import BigTitle from '../../../components/primitives/text/BigTitle.astro';
+import Paragraph from '../../../components/primitives/text/Paragraph.astro';
+import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
+import { Image } from 'astro:assets';
+import eventPhoto from '../../../../public/img/pictures/meetup-photo.jpeg'
+import whiteboardPhoto from '../../../../public/img/pictures/postits-whiteboard.jpeg'
+import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
+
+const lang = "en"
+---
+
+<Layout lang={lang} title="What we do">
+	<Header lang={lang}/>
+	<main class="bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] max-w-3xl md:max-w-none">
+		<br/>
+		<BigTitle titleText="What we do" extraCss="text-center md:px-0 px-2"/>
+		<Paragraph text="More information about the events we organize" extraCss="text-center md:px-0 px-4"/>
+		<br/>
+		<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-24 mx-auto content-center w-5/6 md:w-2/3 p-4 rounded-3xl">
+			<div>
+				<SmallTitle titleText="Meetup" extraCss="text-left"/>
+				<Image class="rounded-3xl w-auto mx-auto" src={eventPhoto} alt="Meetup event"/>
+				<br/>
+				<Paragraph text="Conversations with experts on technical topics with a networking session at the end." extraCss="text-justify"/>
+				<br/>
+				<Paragraph text="A new event every month!" extraCss="text-justify"/>
+			</div>
+			<div>
+				<div class="grid md:grid-cols-[3.5fr,0.5fr] grid-cols-2gap-4 mx-auto content-center">
+					<div class="my-auto">
+						<SmallTitle titleText="Startups Hub" extraCss="text-left"/>
+					</div>
+					<div class="my-auto mb-4">
+						<a role="button" class="bg-black text-white text-md px-4 py-2 border rounded-full">
+							New
+				 		</a>
+					</div>
+				</div>
+				<Image class="rounded-3xl w-auto mx-auto" src={whiteboardPhoto} alt="Brainstorming session"/>
+				<br/>
+				<Paragraph text="The place where the most cutting-edge cybersecurity startups will meet"  extraCss="text-justify"/>
+				<br/>
+				<Paragraph text="More information coming soon!" extraCss="text-justify"/>
+			</div>
+			<div>
+				<div class="grid md:grid-cols-[3.5fr,0.5fr] grid-cols-2gap-4 mx-auto content-center">
+					<div class="my-auto">
+						<SmallTitle titleText="Membership" extraCss="text-left"/>
+					</div>
+					<div class="my-auto mb-4">
+						<a role="button" class="bg-black text-white text-md px-4 py-2 border rounded-full">
+							New
+				 		</a>
+					</div>
+				</div>
+				<Image class="rounded-3xl w-auto mx-auto" src={FinalEventTerracePhoto} alt="Final event community photo"/>
+				<br/>
+				<Paragraph text="the Barcelona Cybersecurity membership grants you access to benefits like member-only events, a private slack community, and our mentoring program so you can boost your career!" extraCss="text-justify"/>
+			</div>
+		</div>
+		<br/>
+	</main>
+	<Footer lang={lang}/>
+</Layout>

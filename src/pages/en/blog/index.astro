@@ -1,0 +1,57 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/screens/Header.astro';
+import Footer from '../../../components/screens/Footer.astro';
+import BigTitle from '../../../components/primitives/text/BigTitle.astro';
+import Paragraph from '../../../components/primitives/text/Paragraph.astro';
+import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
+
+const lang = "en"
+---
+
+<Layout lang={lang} title="Blog">
+	<Header lang={lang}/>
+	<main class="bg-gradient-to-br from-[#465FFF] to-[#837EDC] max-w-7xl md:max-w-none">
+		<br/>
+		<BigTitle titleText="Blog" extraCss="text-center"/>
+		<Paragraph text="Explore the topics we've covered on Barcelona Cybersecurity" extraCss="max-w-7xl text-center md:px-0 px-6"/>
+		<br/>
+		<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-8 mx-auto content-center w-4/5 p-6 rounded-3xl">
+			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
+				<a href="/en/blog/posts/2024-cybersecurity-trends/">
+					<SmallTitle titleText="2024 cybersecurity trends: what you should focus your energy on" extraCss="text-[#465FFF] underline text-justify"/>
+				</a>
+				<br/>
+				<Paragraph text="It's that time of a new year! we're past the date of eating too much, meeting family and relaxing, and it's time to get back into the proverbial trenches of our industry. Attackers unfortunately don't tend to respect vacation time, so you need to stay two steps ahead! But that begs the question: two steps..." extraCss="text-[#465FFF] text-justify"/>
+				<br/>
+				<a href="/en/blog/posts/2024-cybersecurity-trends/">
+					<Paragraph text="Read more" extraCss="text-[#465FFF] font-black underline text-left"/>
+				</a>
+			</div>
+			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
+				<a href="/en/blog/posts/ia-aplicada-ciberseguridad/">
+					<SmallTitle titleText="IA aplicada a la seguridad: ¿Sueñan los androides con criminales adversarios?" extraCss="text-[#465FFF] underline text-justify"/>
+				</a>
+				<br/>
+				<Paragraph text="A menos que lleves de 9 a 11 meses viviendo en una granja sin cobertura en la montaña, ya le habrás dado un tiento o dos a ChatGPT. A finales del año pasado, sin verlo venir por ninguna parte si no se estaba dentro del mundillo, de repente había accesible un asistente de texto con..." extraCss="text-[#465FFF] text-justify"/>
+				<br/>
+				<a href="/en/blog/posts/ia-aplicada-ciberseguridad/">
+					<Paragraph text="Read more" extraCss="text-[#465FFF] font-black underline text-left"/>
+				</a>
+			</div>
+
+			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
+				<a href="/en/blog/posts/zero-trust-scramble-egg-bite-onion/">
+					<SmallTitle titleText="Zero trust: Scramble the egg and bite the onion" extraCss="text-[#465FFF] underline text-justify"/>
+				</a>
+				<br/>
+				<Paragraph text="If you've been anywhere near a tech news source lately, you've probably figured out two things: everything is hacked all the time, and everything moves very fast. But what can you do to stay on to of your security policies?" extraCss="text-[#465FFF] text-justify"/>
+				<br/>
+				<a href="/en/blog/posts/zero-trust-scramble-egg-bite-onion/">
+					<Paragraph text="Read more" extraCss="text-[#465FFF] font-black underline text-left"/>
+				</a>
+			</div>
+		<br/>
+	</main>
+	<Footer lang={lang}/>
+</Layout>
