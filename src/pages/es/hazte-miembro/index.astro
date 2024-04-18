@@ -1,0 +1,83 @@
+---
+import Layout from '../../../layouts/Layout.astro';
+import Header from '../../../components/screens/Header.astro';
+import Footer from '../../../components/screens/Footer.astro';
+import BigTitle from '../../../components/primitives/text/BigTitle.astro';
+import { Image } from 'astro:assets';
+import CallToAction from '../../../components/blocks/CallToAction.astro';
+import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
+import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
+import LauraLaptopPhoto from '../../../../public/img/pictures/laura-laptop.png'
+import MerchandisingTablePhoto from '../../../../public/img/pictures/merchandising-table.jpeg'
+import whiteboardPhoto from '../../../../public/img/pictures/postits-whiteboard.jpeg'
+import Paragraph from '../../../components/primitives/text/Paragraph.astro';
+const lang = "es"
+---
+
+<Layout lang={lang} title="Hazte miembro">
+	<Header lang={lang}/>
+	<main class="bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] max-w-7xl md:max-w-none">
+		<br/>
+		<BigTitle titleText="Hazte miembro" extraCss="text-center"/>
+		<SmallTitle titleText="Únete a la mayor comunidad de ciberseguridad de Barcelona e impulsa tu crecimiento" extraCss="text-center px-2"/>
+		<br/>
+		<div class="md:grid md:grid-cols-4 grid-cols-1 md:grid-rows-1 gap-12 mx-auto content-center px-4 rounded-3xl md:mb-16">
+			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
+				<br/>
+				<SmallTitle titleText="ÚNETE AL PROGRAMA DE MENTORING" extraCss="text-[#3E37C9] px-2 text-center"/>
+				<Paragraph text="Nos complace presentar nuestro innovador programa de mentoring, diseñado para conectar a los profesionales de la ciberseguridad y ayudarles a crecer juntos." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
+				<Image class="rounded-7xl w-5/6 px-2 md:px-8 mx-auto pb-4" src={LauraLaptopPhoto} alt="Mentoring"/>
+			</div>
+			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
+				<br/>
+				<SmallTitle titleText="ACCEDE A NUESTRO SLACK INTERNO" extraCss="text-[#3E37C9] px-2 text-center"/>
+				<Paragraph text="Un espacio exclusivo para que los miembros compartan recursos, artículos, informes de seguridad, eventos y se mantengan al día de todo lo relacionado con el mundo de la ciberseguridad." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
+				<Image class="rounded-7xl w-5/6 px-2 mx-auto pb-4" src={FinalEventTerracePhoto} alt="Community"/>
+			</div>
+			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
+				<br/>
+				<SmallTitle titleText="CONSIGUE EL MERCHANDISING OFICIAL" extraCss="text-[#3E37C9] px-2 text-center"/>
+				<Paragraph text="Queremos que sientas que formas parte de algo único y especial, y qué mejor manera de demostrarlo que con productos exclusivos que reflejen tu compromiso con nuestra organización." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
+				<Image class="rounded-7xl w-5/6 px-2 mx-auto pb-4" src={MerchandisingTablePhoto} alt="Meetup event"/>
+			</div>
+			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
+				<br/>
+				<SmallTitle titleText="ACCEDE A EVENTOS INTERNOS EXCLUSIVOS" extraCss="text-[#3E37C9] px-2 text-center"/>
+				<Paragraph text="diseñado sólo para miembros, una oportunidad sin igual para sumergirse en el enriquecedor panorama de la comunidad de ciberseguridad." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
+				<Image class="rounded-7xl w-5/6 px-2 mx-auto pb-4" src={whiteboardPhoto} alt="Community workshop"/>
+			</div>
+		</div>
+		<br/>
+		<SmallTitle titleText="Mejora tu experiencia" extraCss="text-center"/>
+		<div class="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-8 max-w-5xl mx-auto mb-4">
+			<div class=" md:pt-4 pb-2 md:px-12 content-center md:w-auto p-6 rounded-3xl flex flex-col items-center bg-[#E3E0FA] mb-4 mx-4 md:m-0">
+				<SmallTitle titleText="Experiencias comprobadas..." extraCss="text-center text-[#3E37C9]"/>
+				<div class=" mx-auto w-full content-center p-2 rounded-3xl">
+					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Eventos de meetup</div>
+					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Afterworks</div>
+				</div>
+			</div>
+			<div class=" md:pt-4 pb-2 md:px-12 content-center md:w-auto p-6 rounded-3xl flex flex-col items-center bg-[#E3E0FA] mb-8 mx-4 md:m-0">
+				<SmallTitle titleText="...Ahora mejoradas" extraCss="text-center text-[#3E37C9]"/>
+				<div class=" mx-auto w-full content-center p-2 rounded-3xl">
+					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Eventos externos</div>
+					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Mentoring</div>
+					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Comunidad de slack privada</div>
+					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Camiseta</div>
+					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Tote bag</div>
+					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Eventos exclusivos</div>
+				</div>
+			</div>
+		</div>
+		<div class="max-w-7xl mx-auto mb-4">
+			<CallToAction title="¿TE INTERESA? ¡ÚNETE A NOSOTROS!" subtitle="Impulsa tu carrera en ciberseguridad" buttonText="Quiero hacerme miembro!" buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSe5eRPaKk5GeACxzHxTSHIATE_VWyw-6jtt2lnBKgiFyVOlGA/viewform"/>
+		</div>
+		<div>
+			<p class="text-2xl font-normal tracking-tight mx-auto text-center">
+				*¿Te interesa que su empresa compre un paquete de memberships? <a class="underline text-[#44546aff]" href="mailto:external.relations@cybersec.barcelona ">¡hablemos!</a>
+			</p>
+		</div>
+		<br/>
+	</main>
+	<Footer lang={lang}/>
+</Layout>

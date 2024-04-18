@@ -25,7 +25,11 @@ const slugTranslations = {
   },
   BlogLink: {
     en: "/en/blog",
-    es: "es/blog"
+    es: "/es/blog"
+  },
+  LanguageLink: {
+    en: "/es/",
+    es: "/en/"
   }
 }
 
@@ -39,6 +43,7 @@ let EventsLink = getSlugTranslation('EventsLink', lang);
 let GalleryLink = getSlugTranslation('GalleryLink', lang);
 let BlogLink = getSlugTranslation('BlogLink', lang);
 let JoinTheCommunityLink = getSlugTranslation('JoinTheCommunityLink', lang);
+let LanguageLink = getSlugTranslation('LanguageLink', lang);
 
 const stringTranslations = {
   HomeString: {
@@ -68,6 +73,10 @@ const stringTranslations = {
   BlogString: {
     en: "Blog",
     es: "Blog"
+  },
+  LanguageString: {
+    en: "Cambiar a Español",
+    es: "Switch to English"
   }
 }
 
@@ -81,6 +90,7 @@ let EventsString = getStringTranslation('EventsString', lang);
 let GalleryString = getStringTranslation('GalleryString', lang);
 let BlogString = getStringTranslation('BlogString', lang);
 let JoinTheCommunityString = getStringTranslation('JoinTheCommunityString', lang);
+let LanguageString = getStringTranslation('LanguageString', lang);
 
 ---
 <header class="md:flex p-5 gap-5 max-w-screen-xl mx-auto">
@@ -116,10 +126,21 @@ let JoinTheCommunityString = getStringTranslation('JoinTheCommunityString', lang
             <a href={JoinTheCommunityLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{JoinTheCommunityString}</a>
           </li>
         </ul>
+        <a class="md:hidden order-2 space-x-0 rtl:space-x-reverse items-left underline" href={LanguageLink}>
+          <div>
+            {LanguageString}
+          </div>
+        </a>
     </MenuItems>
+
 		<a class="hidden md:flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse md:items-center" href={JoinTheCommunityLink}>
 			<div>
 				<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">{JoinTheCommunityString}</button>
+			</div>
+		</a>
+		<a class="hidden md:flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse md:items-left underline" href={LanguageLink}>
+			<div>
+				{LanguageString}
 			</div>
 		</a>
   </div>
