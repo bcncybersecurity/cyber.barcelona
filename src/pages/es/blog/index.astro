@@ -2,33 +2,38 @@
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/screens/Header.astro';
 import Footer from '../../../components/screens/Footer.astro';
-import BigTitle from '../../../components/primitives/text/BigTitle.astro';
-import Paragraph from '../../../components/primitives/text/Paragraph.astro';
-import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
+import Main from '../../../components/ui/Main.astro';
+import BlogCard from '../../../components/ui/BlogCard.astro';
+import Content from '../../../components/ui/Content.astro';
+import Page from '../../../components/ui/Page.astro';
+import Heading from '../../../components/ui/Heading.astro';
 
 const lang = "es"
 ---
 
 <Layout lang={lang} title="Blog">
-	<Header lang={lang}/>
-	<main class="bg-gradient-to-br from-[#465FFF] to-[#837EDC] max-w-7xl md:max-w-none">
-		<br/>
-		<BigTitle titleText="Blog" extraCss="text-center"/>
-		<Paragraph text="Explora los temas que hemos tratado en Barcelona Cybersecurity" extraCss="max-w-7xl text-center md:px-0 px-6"/>
-		<br/>
-		<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-8 mx-auto content-center w-4/5 p-6 rounded-3xl">
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<a href="/en/blog/posts/ia-aplicada-ciberseguridad/">
-					<SmallTitle titleText="IA aplicada a la seguridad: ¿Sueñan los androides con criminales adversarios?" extraCss="text-[#465FFF] underline text-justify"/>
-				</a>
-				<br/>
-				<Paragraph text="A menos que lleves de 9 a 11 meses viviendo en una granja sin cobertura en la montaña, ya le habrás dado un tiento o dos a ChatGPT. A finales del año pasado, sin verlo venir por ninguna parte si no se estaba dentro del mundillo, de repente había accesible un asistente de texto con..." extraCss="text-[#465FFF] text-justify"/>
-				<br/>
-				<a href="/en/blog/posts/ia-aplicada-ciberseguridad/">
-					<Paragraph text="Read more" extraCss="text-[#465FFF] font-black underline text-left"/>
-				</a>
-			</div>
-		<br/>
-	</main>
-	<Footer lang={lang}/>
+	<Page>
+		<!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
+		<div>
+			<Header lang={lang}/>
+			<Main>
+				<Heading>
+					<h1>Blog</h1>
+					<p>Explora los temas que hemos tratado en Barcelona Cybersecurity.</p>
+				</Heading>
+				<Content>
+					<section>
+						<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+							<BlogCard
+								title="IA aplicada a la seguridad: ¿Sueñan los androides con criminales adversarios?"
+								excerpt="A menos que lleves de 9 a 11 meses viviendo en una granja sin cobertura en la montaña, ya le habrás dado un tiento o dos a ChatGPT. A finales del año pasado, sin verlo venir por ninguna parte si no se estaba dentro del mundillo, de repente había accesible un asistente de texto con..."
+								url="/es/blog/posts/ia-aplicada-ciberseguridad/"
+							/>
+						</div>
+					</section>
+				</Content>
+			</Main>
+		</div>
+		<Footer lang={lang}/>
+	</Page>
 </Layout>

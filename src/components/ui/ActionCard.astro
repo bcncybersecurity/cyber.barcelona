@@ -1,0 +1,12 @@
+---
+const { imgSrc, imgAltText, title, description } = Astro.props;
+import { Image } from 'astro:assets';
+import Card from './Card.astro';
+
+---
+
+<Card>
+    <Image class="rounded-t-lg w-full grayscale mb-6" src={imgSrc} alt={imgAltText}/>
+    <h3>{title}</h3>
+    <p class="py-3">{description}</p>
+</Card>

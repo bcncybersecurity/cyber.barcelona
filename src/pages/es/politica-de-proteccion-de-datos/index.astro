@@ -2,64 +2,71 @@
 import Layout from '../../../layouts/Layout.astro';
 import Header from '../../../components/screens/Header.astro';
 import Footer from '../../../components/screens/Footer.astro';
-import BigTitle from '../../../components/primitives/text/BigTitle.astro';
-import MediumTitle from '../../../components/primitives/text/MediumTitle.astro';
-import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
-import Paragraph from '../../../components/primitives/text/Paragraph.astro';
+import Page from '../../../components/ui/Page.astro';
+import Main from '../../../components/ui/Main.astro';
+import Heading from '../../../components/ui/Heading.astro';
+import Content from '../../../components/ui/Content.astro';
 
 const lang = "es"
 ---
 
 <Layout lang={lang} title="Política de protección de datos">
-	<Header lang={lang}/>
-	<main class="bg-gradient-to-br from-[#3E37C9] to-[#837EDC] max-w-7xl md:max-w-none">
-		<br/>
-		<BigTitle titleText="Política de protección de datos" extraCss="text-center"/>
-		<br/>
-		<SmallTitle titleText="1. Responsable del tratamiento de sus datos" extraCss="text-justify max-w-7xl px-6"/>
-		<Paragraph text="Barcelona Cybersecurity (G67355958) con domicilio en Via Laietana, 44 Pra-1 B 08003, Barcelona es la entidad responsable del tratamiento de sus datos." extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<Paragraph text="Para cualquier pregunta o duda relacionada con la privacidad de los datos, puede ponerse en contacto con nuestro Delegado de Protección de Datos (DPO) en la dirección de correo electrónico rgpd@cybersec.barcelona." extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<Paragraph text="Esta política de privacidad de datos tiene por objeto informar a los usuarios sobre cómo se gestionan y protegen sus datos personales en Barcelona Cybersecurity. Cualquier cambio en esta política será notificado a los usuarios de manera oportuna." extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<SmallTitle titleText="2. Recogida de datos personales" extraCss="text-justify max-w-7xl px-6"/>
-		<Paragraph text="Barcelona Cybersecurity recoge los siguientes datos personales de sus usuarios:" extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<ul class="list-disc px-12 md:p-0">
-			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Nombre</li>
-			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">E-mail y dirección postal</li>
-			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Información profesional (posición y empresa)</li>
-			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Información económica (datos de pago)</li>
-		</ul>
-		<Paragraph text="Estos datos se obtienen directamente de los usuarios a través de un formulario en línea durante el proceso de registro de miembros de la organización y para proporcionar servicios esenciales." extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<SmallTitle titleText="3. Finalidad del tratamiento de datos" extraCss="text-justify max-w-7xl px-6"/>
-		<Paragraph text="Los datos personales se recogen y utilizan con las siguientes finalidades" extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<ul class="list-disc px-12 md:p-0">
-			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Registro y gestión de la membresía de Barcelona Cybersecurity.</li>
-			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Prestar servicios y recursos relacionados con la ciberseguridad dentro de la entidad Barcelona Cybersecurity.</li>
-			<li class="mb-4 text-2xl font-normal tracking-tight text-white text-left max-w-6xl mx-auto">Comunicaciones a través de una newsletter para mantener informados a los usuarios sobre eventos, actualizaciones y noticias relevantes.</li>
-		</ul>
-		<br/>
-		<SmallTitle titleText="4. Duración de la conservación de datos" extraCss="text-justify max-w-7xl px-6"/>
-		<Paragraph text="Los datos personales se conservarán únicamente durante el tiempo necesario para el cumplimiento de las finalidades anteriores y para el funcionamiento de la afiliación." extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<SmallTitle titleText="5. Seguridad de los datos" extraCss="text-justify max-w-7xl px-6"/>
-		<Paragraph text="Barcelona Ciberseguridad aplica medidas de seguridad para proteger los datos personales frente a accesos no autorizados, pérdidas o modificaciones. El acceso a los datos está restringido a los administradores de la entidad y está protegido por contraseñas seguras." extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<SmallTitle titleText="6. Derechos de privacidad de los usuarios" extraCss="text-justify max-w-7xl px-6"/>
-		<Paragraph text="Los usuarios tienen derecho a acceder, rectificar, suprimir o solicitar la limitación del tratamiento de sus datos personales. Para ejercer estos derechos o realizar cualquier consulta relacionada con la privacidad de los datos, los usuarios pueden ponerse en contacto con nosotros a través del correo electrónico rgpd@cybersec.barcelona." extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<SmallTitle titleText="7. Política de cookies y rastreo" extraCss="text-justify max-w-7xl px-6"/>
-		<Paragraph text="En la web de Barcelona Ciberseguridad no se utiliza ninguna política de cookies ni de rastreo." extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<SmallTitle titleText="8. Cumplimiento Legal y Legitimación" extraCss="text-justify max-w-7xl px-6"/>
-		<Paragraph text="Barcelona Cybersecurity se compromete a cumplir con todas las leyes de protección de datos aplicables, incluido el Reglamento General de Protección de Datos (GDPR) de la Unión Europea." extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-		<Paragraph text="Documento actualizado por última vez en: 2023-10-09" extraCss="max-w-7xl text-justify px-6"/>
-		<br/>
-	</main>
-	<Footer lang={lang}/>
+	<Page>
+		<!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
+		<div>
+			<Header lang={lang}/>
+			<Main>
+				<Heading>
+					<h1>Política de protección de datos</h1>
+				</Heading>
+				<Content>
+					<div class="max-w-[640px] m-auto py-12">
+
+						<h2>1. Responsable del tratamiento de sus datos</h2>
+						<p>Barcelona Cybersecurity (G67355958) con domicilio en Via Laietana, 44 Pra-1 B 08003, Barcelona es la entidad responsable del tratamiento de sus datos.</p>
+						<p>Para cualquier pregunta o duda relacionada con la privacidad de los datos, puede ponerse en contacto con nuestro Delegado de Protección de Datos (DPO) en la dirección de correo electrónico rgpd@cybersec.barcelona.</p>
+						<p>Esta política de privacidad de datos tiene por objeto informar a los usuarios sobre cómo se gestionan y protegen sus datos personales en Barcelona Cybersecurity. Cualquier cambio en esta política será notificado a los usuarios de manera oportuna.</p>
+					
+						<h2>2. Recogida de datos personales</h2>
+						<p>Barcelona Cybersecurity recoge los siguientes datos personales de sus usuarios:</p>
+						<ul>
+							<li>Nombre</li>
+							<li>E-mail y dirección postal</li>
+							<li>Información profesional (posición y empresa)</li>
+							<li>Información económica (datos de pago)</li>
+						</ul>
+						<p>Estos datos se obtienen directamente de los usuarios a través de un formulario en línea durante el proceso de registro de miembros de la organización y para proporcionar servicios esenciales.</p>
+					
+						<h2>3. Finalidad del tratamiento de datos</h2>
+						<p>Los datos personales se recogen y utilizan con las siguientes finalidades</p>
+						<ul>
+							<li>Registro y gestión de la membresía de Barcelona Cybersecurity.</li>
+							<li>Prestar servicios y recursos relacionados con la ciberseguridad dentro de la entidad Barcelona Cybersecurity.</li>
+							<li>Comunicaciones a través de una newsletter para mantener informados a los usuarios sobre eventos, actualizaciones y noticias relevantes.</li>
+						</ul>
+					
+						<h2>4. Duración de la conservación de datos</h2>
+						<p>Los datos personales se conservarán únicamente durante el tiempo necesario para el cumplimiento de las finalidades anteriores y para el funcionamiento de la afiliación.</p>
+					
+						<h2>5. Seguridad de los datos</h2>
+						<p>Barcelona Ciberseguridad aplica medidas de seguridad para proteger los datos personales frente a accesos no autorizados, pérdidas o modificaciones. El acceso a los datos está restringido a los administradores de la entidad y está protegido por contraseñas seguras.</p>
+					
+						<h2>6. Derechos de privacidad de los usuarios</h2>
+						<p>Los usuarios tienen derecho a acceder, rectificar, suprimir o solicitar la limitación del tratamiento de sus datos personales. Para ejercer estos derechos o realizar cualquier consulta relacionada con la privacidad de los datos, los usuarios pueden ponerse en contacto con nosotros a través del correo electrónico rgpd@cybersec.barcelona.</p>
+					
+						<h2>7. Política de cookies y rastreo</h2>
+						<p>En la web de Barcelona Ciberseguridad no se utiliza ninguna política de cookies ni de rastreo.</p>
+					
+						<h2>8. Cumplimiento Legal y Legitimación</h2>
+						<p>Barcelona Cybersecurity se compromete a cumplir con todas las leyes de protección de datos aplicables, incluido el Reglamento General de Protección de Datos (GDPR) de la Unión Europea.</p>
+					
+						<div class="py-12">
+							<p>Documento actualizado por última vez en: 2023-10-09</p>
+						</div>
+					</div>
+				</Content>
+			</Main>
+		</div>
+		<Footer lang={lang}/>
+	</Page>
 </Layout>
