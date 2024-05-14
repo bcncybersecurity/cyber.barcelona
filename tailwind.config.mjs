@@ -11,7 +11,7 @@ export default {
       darkblue: "#26273B",
       navy: "#232441",
       indigo: "#465FFF",
-      gray: "#6F708B",
+      gray: "#ACADC1",
       gray01: "#F0F0F5",
       gray02: "#D6D6E1",
       gray03: "#ACADC1",
