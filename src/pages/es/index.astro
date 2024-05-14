@@ -1,93 +1,131 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import Header from '../../components/screens/Header.astro';
-import Footer from '../../components/screens/Footer.astro';
-import { Image } from 'astro:assets';
-import build38Logo from "../../../public/img/sponsors/build38.png"
-import innoITLogo from "../../../public/img/sponsors/innoit.png"
-import siemensLogo from "../../../public/img/sponsors/siemens.png"
-import CallToAction from '../../components/ui/CallToAction.astro';
-import Main from '../../components/ui/Main.astro';
-import IconCardWithTitleText from '../../components/ui/IconCardWithTitleText.astro';
-import SkylineGraphic from '../../components/ui/SkylineGraphic.astro';
-import Page from '../../components/ui/Page.astro';
+import Layout from "../../layouts/Layout.astro";
+import Header from "../../components/screens/Header.astro";
+import Footer from "../../components/screens/Footer.astro";
+import { Image } from "astro:assets";
+import build38Logo from "../../../public/img/sponsors/build38.png";
+import innoITLogo from "../../../public/img/sponsors/innoit.png";
+import siemensLogo from "../../../public/img/sponsors/siemens.png";
+import CallToAction from "../../components/ui/CallToAction.astro";
+import Main from "../../components/ui/Main.astro";
+import IconCardWithTitleText from "../../components/ui/IconCardWithTitleText.astro";
+import SkylineGraphic from "../../components/ui/SkylineGraphic.astro";
+import Page from "../../components/ui/Page.astro";
 
-const lang = "es"
+const lang = "es";
 ---
 
 <Layout lang={lang} title="Barcelona Cybersecurity">
-	<Page>
-		<!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
-		<div>
-			<Header lang={lang}/>
-			<Main>
-				<div class="p-6 text-center">
-					<SkylineGraphic />
-					<h1>La comunidad de ciberseguridad en Barcelona</h1>
-					<p>Somos la NGO que inspira el liderazgo de ciberseguridad y privacidad del futuro.</p>
-				
-					<div class="py-12">
-						<h2>¿Quieres ser parte de la comunidad?</h2>
-						<p>¡Te esperan nuevas ideas de proyecto!<</p>>
-						<p>Join the largest cybersecurity community in Barcelona and boost your growth.</p>
-						<div class="pt-6">
-							<CallToAction text="¡Quiero unirme!" link="/es/hazte-miembro/" />
-						</div>
-					</div>
+  <Page>
+    <!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
+    <div>
+      <Header lang={lang} />
+      <Main>
+        <div class="p-6 text-center">
+          <SkylineGraphic />
+          <h1>La comunidad de ciberseguridad en Barcelona</h1>
+          <p>
+            Somos la NGO que inspira el liderazgo de ciberseguridad y privacidad
+            del futuro.
+          </p>
 
-				</div>
-				<div class="p-6">
-					<div class="max-w-[640px] mx-auto text-center">
-						<h2>Nuestros valores</h2>
-						<div class="grid grid-cols-2 gap-4 my-12">
-							<IconCardWithTitleText iconName="eye" title="Nuestra visión" text="Expandir el conocimiento de ciberseguridad en España"/>
-							<IconCardWithTitleText iconName="compass" title="Nuestra misión"  text="Crear una comunidad donde entusiastas de la ciberseguridad se reúnan para compartir conocimientos e inspirar a líderes de seguridad del futuro."/>
-						</div>
-					</div>
-				</div>
-				<div class="p-6">
-					<div class="max-w-[640px] mx-auto text-center">
-						<h2>Nuestra comunidad, en cifras</h2>
-						<p>Nuestra comunidad de Meetup nació en 2016.<br/>
-							Desde entonces hemos organizado más de 40 eventos
-						</p>
-						<div class="flex justify-center items-center p-6">
-							<div class="grid grid-cols-3 gap-24">
-								<div>
-									<div class="text-5xl font-medium text-center text-white">1200</div>
-									<p class="text-center">Miembros</p>
-								</div>
-								<div>
-									<div class="text-5xl font-medium text-center text-white">30</div>
-									<p class="text-center">Colaboraciones</p>
-								</div>
-								<div>
-									<div class="text-5xl font-medium text-center text-white">50+</div>
-									<p class="text-center">Ponentes</p>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<div class="p-6">
-					<div class="max-w-[640px] mx-auto text-center">
-						<h2>Con soporte de los mejores</h2>
-						<div class="flex justify-center items-center gap-6 p-6">
-							<div class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg">
-								<Image class="max-h-full w-auto" src={build38Logo} alt="Build38 logo"/>
-							</div>
-							<div class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg">
-								<Image class="max-h-full w-auto" src={innoITLogo} alt="InnoIT consulting logo"/>
-							</div>
-							<div class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg hidden">
-								<Image class="max-h-full w-auto" src={siemensLogo} alt="Siemens Healthineers logo"/>
-							</div>
-						</div>
-					</div>
-				</div>
-			</Main>
-		</div>
-		<!-- End of div including Header and Main which pushes the footer at the bottom of the page -->
-		<Footer lang={lang}/>
-	</Page>
+          <div class="py-12">
+            <h2>¿Quieres ser parte de la comunidad?</h2>
+            <p>¡Te esperan nuevas ideas de proyecto!<</p>>
+            <p>
+              Join the largest cybersecurity community in Barcelona and boost
+              your growth.
+            </p>
+            <div class="pt-6">
+              <CallToAction text="¡Quiero unirme!" link="/es/hazte-miembro/" />
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="max-w-[640px] mx-auto text-center">
+            <h2>Nuestros valores</h2>
+            <div class="grid grid-cols-2 gap-4 my-12">
+              <IconCardWithTitleText
+                iconName="eye"
+                title="Nuestra visión"
+                text="Expandir el conocimiento de ciberseguridad en España"
+              />
+              <IconCardWithTitleText
+                iconName="compass"
+                title="Nuestra misión"
+                text="Crear una comunidad donde entusiastas de la ciberseguridad se reúnan para compartir conocimientos e inspirar a líderes de seguridad del futuro."
+              />
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="max-w-[640px] mx-auto text-center">
+            <h2>Nuestra comunidad, en cifras</h2>
+            <p>
+              Nuestra comunidad de Meetup nació en 2016.<br />
+              Desde entonces hemos organizado más de 40 eventos
+            </p>
+            <div class="flex justify-center items-center p-6">
+              <div class="grid grid-cols-3 gap-24">
+                <div>
+                  <div class="text-5xl font-medium text-center text-white">
+                    1200
+                  </div>
+                  <p class="text-center">Miembros</p>
+                </div>
+                <div>
+                  <div class="text-5xl font-medium text-center text-white">
+                    30
+                  </div>
+                  <p class="text-center">Colaboraciones</p>
+                </div>
+                <div>
+                  <div class="text-5xl font-medium text-center text-white">
+                    50+
+                  </div>
+                  <p class="text-center">Ponentes</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="p-6">
+          <div class="max-w-[640px] mx-auto text-center">
+            <h2>Con soporte de los mejores</h2>
+            <div class="flex justify-center items-center gap-6 p-6">
+              <div
+                class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg"
+              >
+                <Image
+                  class="max-h-full w-auto"
+                  src={build38Logo}
+                  alt="Build38 logo"
+                />
+              </div>
+              <div
+                class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg"
+              >
+                <Image
+                  class="max-h-full w-auto"
+                  src={innoITLogo}
+                  alt="InnoIT consulting logo"
+                />
+              </div>
+              <div
+                class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg hidden"
+              >
+                <Image
+                  class="max-h-full w-auto"
+                  src={siemensLogo}
+                  alt="Siemens Healthineers logo"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </Main>
+    </div>
+    <!-- End of div including Header and Main which pushes the footer at the bottom of the page -->
+    <Footer lang={lang} />
+  </Page>
 </Layout>

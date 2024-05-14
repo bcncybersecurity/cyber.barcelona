@@ -1,9 +1,9 @@
 ---
 const { iconName, text } = Astro.props;
-const IconURL = '/icons/' + iconName + '.svg';
+const IconURL = "/icons/" + iconName + ".svg";
 ---
 
 <div class="flex gap-4 p-4 rounded-lg border border-dark">
-    <img class="w-6 h-auto" src={IconURL} alt="Icon"/>
-    <div>{text}</div>
+  <img class="w-6 h-auto" src={IconURL} alt="Icon" />
+  <div>{text}</div>
 </div>

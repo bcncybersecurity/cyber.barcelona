@@ -2,15 +2,14 @@
 import Card from "./Card.astro";
 
 const { title, excerpt, url } = Astro.props;
-
 ---
 
 <Card>
-    <div class="h-full flex flex-col justify-between">
-        <div>
-            <h3><a href={url}>{title}</a></h3>
-            <p class="py-4">{excerpt}</p>
-        </div>
-        <a href={url}>Read Article &rarr;</a>
+  <div class="h-full flex flex-col justify-between">
+    <div>
+      <h3><a href={url}>{title}</a></h3>
+      <p class="py-4">{excerpt}</p>
     </div>
+    <a href={url}>Read Article &rarr;</a>
+  </div>
 </Card>

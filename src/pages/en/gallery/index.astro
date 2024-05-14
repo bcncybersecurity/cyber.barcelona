@@ -1,51 +1,88 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import Header from '../../../components/screens/Header.astro';
-import Footer from '../../../components/screens/Footer.astro';
-import { Image } from 'astro:assets';
-import FinalEventPhoto from '../../../../public/img/pictures/final-event.jpeg'
-import EventPublicPhoto from '../../../../public/img/pictures/event-public.jpeg'
-import HoneypotsPresentationPhoto from '../../../../public/img/pictures/honeypots-presentation.jpeg'
-import SkyscannerPresentationPhoto from '../../../../public/img/pictures/skyscanner-presentation.jpeg'
-import MartinVigoPhoto from '../../../../public/img/pictures/martin-vigo.jpeg'
-import GoinPublicPhoto from '../../../../public/img/pictures/goin-public.jpeg'
-import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
-import SkyscannerPublicPhoto from '../../../../public/img/pictures/skyscanner-public.jpeg'
-import IronhackPublicPhoto from '../../../../public/img/pictures/ironhack-public.jpeg'
-import Main from '../../../components/ui/Main.astro';
-import Content from '../../../components/ui/Content.astro';
-import Page from '../../../components/ui/Page.astro';
-import Heading from '../../../components/ui/Heading.astro';
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/screens/Header.astro";
+import Footer from "../../../components/screens/Footer.astro";
+import { Image } from "astro:assets";
+import FinalEventPhoto from "../../../../public/img/pictures/final-event.jpeg";
+import EventPublicPhoto from "../../../../public/img/pictures/event-public.jpeg";
+import HoneypotsPresentationPhoto from "../../../../public/img/pictures/honeypots-presentation.jpeg";
+import SkyscannerPresentationPhoto from "../../../../public/img/pictures/skyscanner-presentation.jpeg";
+import MartinVigoPhoto from "../../../../public/img/pictures/martin-vigo.jpeg";
+import GoinPublicPhoto from "../../../../public/img/pictures/goin-public.jpeg";
+import FinalEventTerracePhoto from "../../../../public/img/pictures/final-event-terrace.jpeg";
+import SkyscannerPublicPhoto from "../../../../public/img/pictures/skyscanner-public.jpeg";
+import IronhackPublicPhoto from "../../../../public/img/pictures/ironhack-public.jpeg";
+import Main from "../../../components/ui/Main.astro";
+import Content from "../../../components/ui/Content.astro";
+import Page from "../../../components/ui/Page.astro";
+import Heading from "../../../components/ui/Heading.astro";
 
-const lang = "en"
+const lang = "en";
 ---
+
 <Layout lang={lang} title="Gallery">
-	<Page>
-		<!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
-		<div>
-			<Header lang={lang}/>
-			<Main>
-				<Heading>
-					<h1>Gallery</h1>
-					<p>Some snap shots from our previous events.</p>
-				</Heading>
-				<Content>
-					<section>
-						<div class="grid grid-cols-2 md:grid-cols-3 gap-6">
-							<Image class="rounded-md w-full mx-auto grayscale" src={FinalEventPhoto} alt="Barcelona cybersecurity event photo"/>
-							<Image class="rounded-md w-full mx-auto grayscale" src={EventPublicPhoto} alt="Barcelona cybersecurity event photo"/>
-							<Image class="rounded-md w-full mx-auto grayscale" src={HoneypotsPresentationPhoto} alt="Barcelona cybersecurity event photo"/>
-							<Image class="rounded-md w-full mx-auto grayscale" src={SkyscannerPresentationPhoto} alt="Barcelona cybersecurity event photo"/>
-							<Image class="rounded-md w-full mx-auto grayscale" src={MartinVigoPhoto} alt="Barcelona cybersecurity event photo"/>
-							<Image class="rounded-md w-full mx-auto grayscale" src={GoinPublicPhoto} alt="Barcelona cybersecurity event photo"/>
-							<Image class="rounded-md w-full mx-auto grayscale" src={FinalEventTerracePhoto} alt="Barcelona cybersecurity event photo"/>
-							<Image class="rounded-md w-full mx-auto grayscale" src={SkyscannerPublicPhoto} alt="Barcelona cybersecurity event photo"/>
-							<Image class="rounded-md w-full mx-auto grayscale" src={IronhackPublicPhoto} alt="Barcelona cybersecurity event photo"/>
-						</div>
-					</section>
-				</Content>
-			</Main>
-		</div>
-		<Footer lang={lang}/>
-	</Page>
+  <Page>
+    <!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
+    <div>
+      <Header lang={lang} />
+      <Main>
+        <Heading>
+          <h1>Gallery</h1>
+          <p>Some snap shots from our previous events.</p>
+        </Heading>
+        <Content>
+          <section>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-6">
+              <Image
+                class="rounded-md w-full mx-auto grayscale"
+                src={FinalEventPhoto}
+                alt="Barcelona cybersecurity event photo"
+              />
+              <Image
+                class="rounded-md w-full mx-auto grayscale"
+                src={EventPublicPhoto}
+                alt="Barcelona cybersecurity event photo"
+              />
+              <Image
+                class="rounded-md w-full mx-auto grayscale"
+                src={HoneypotsPresentationPhoto}
+                alt="Barcelona cybersecurity event photo"
+              />
+              <Image
+                class="rounded-md w-full mx-auto grayscale"
+                src={SkyscannerPresentationPhoto}
+                alt="Barcelona cybersecurity event photo"
+              />
+              <Image
+                class="rounded-md w-full mx-auto grayscale"
+                src={MartinVigoPhoto}
+                alt="Barcelona cybersecurity event photo"
+              />
+              <Image
+                class="rounded-md w-full mx-auto grayscale"
+                src={GoinPublicPhoto}
+                alt="Barcelona cybersecurity event photo"
+              />
+              <Image
+                class="rounded-md w-full mx-auto grayscale"
+                src={FinalEventTerracePhoto}
+                alt="Barcelona cybersecurity event photo"
+              />
+              <Image
+                class="rounded-md w-full mx-auto grayscale"
+                src={SkyscannerPublicPhoto}
+                alt="Barcelona cybersecurity event photo"
+              />
+              <Image
+                class="rounded-md w-full mx-auto grayscale"
+                src={IronhackPublicPhoto}
+                alt="Barcelona cybersecurity event photo"
+              />
+            </div>
+          </section>
+        </Content>
+      </Main>
+    </div>
+    <Footer lang={lang} />
+  </Page>
 </Layout>

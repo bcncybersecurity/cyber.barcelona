@@ -1,55 +1,55 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import Header from '../../../components/screens/Header.astro';
-import Footer from '../../../components/screens/Footer.astro';
-import eventPhoto from '../../../../public/img/pictures/meetup-photo.jpeg'
-import whiteboardPhoto from '../../../../public/img/pictures/postits-whiteboard.jpeg'
-import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
-import Main from '../../../components/ui/Main.astro';
-import ActionCard from '../../../components/ui/ActionCard.astro';
-import Content from '../../../components/ui/Content.astro';
-import Page from '../../../components/ui/Page.astro';
-import Heading from '../../../components/ui/Heading.astro';
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/screens/Header.astro";
+import Footer from "../../../components/screens/Footer.astro";
+import eventPhoto from "../../../../public/img/pictures/meetup-photo.jpeg";
+import whiteboardPhoto from "../../../../public/img/pictures/postits-whiteboard.jpeg";
+import FinalEventTerracePhoto from "../../../../public/img/pictures/final-event-terrace.jpeg";
+import Main from "../../../components/ui/Main.astro";
+import ActionCard from "../../../components/ui/ActionCard.astro";
+import Content from "../../../components/ui/Content.astro";
+import Page from "../../../components/ui/Page.astro";
+import Heading from "../../../components/ui/Heading.astro";
 
-const lang = "en"
+const lang = "en";
 ---
 
 <Layout lang={lang} title="What we do">
-	<Page>
-		<!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
-		<div>
-			<Header lang={lang}/>
-			<Main>
-				<Heading>
-					<h1>What we do</h1>
-					<p>More information about the events we organize.</p>
-				</Heading>
-				<Content>
-					<section>
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-							<ActionCard 
-								imgSrc={eventPhoto} 
-								imgAltText="Meetup event"
-								title="Meetup"
-								description="Conversations with experts on technical topics with a networking session at the end.A new event every month!"
-							/>
-							<ActionCard 
-								imgSrc={whiteboardPhoto}
-								imgAltText="Brainstorming session"
-								title="Startups Hub"
-								description="The place where the most cutting-edge cybersecurity startups will meet."
-							/>
-							<ActionCard 
-								imgSrc={FinalEventTerracePhoto}
-								imgAltText="Final event community"
-								title="Membership"
-								description="The Barcelona Cybersecurity membership grants you access to benefits like member-only events, a private slack community, and our mentoring program so you can boost your career!"
-							/>
-						</div>
-					</section>
-				</Content>
-			</Main>
-		</div>
-		<Footer lang={lang}/>
-	</Page>
+  <Page>
+    <!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
+    <div>
+      <Header lang={lang} />
+      <Main>
+        <Heading>
+          <h1>What we do</h1>
+          <p>More information about the events we organize.</p>
+        </Heading>
+        <Content>
+          <section>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <ActionCard
+                imgSrc={eventPhoto}
+                imgAltText="Meetup event"
+                title="Meetup"
+                description="Conversations with experts on technical topics with a networking session at the end.A new event every month!"
+              />
+              <ActionCard
+                imgSrc={whiteboardPhoto}
+                imgAltText="Brainstorming session"
+                title="Startups Hub"
+                description="The place where the most cutting-edge cybersecurity startups will meet."
+              />
+              <ActionCard
+                imgSrc={FinalEventTerracePhoto}
+                imgAltText="Final event community"
+                title="Membership"
+                description="The Barcelona Cybersecurity membership grants you access to benefits like member-only events, a private slack community, and our mentoring program so you can boost your career!"
+              />
+            </div>
+          </section>
+        </Content>
+      </Main>
+    </div>
+    <Footer lang={lang} />
+  </Page>
 </Layout>

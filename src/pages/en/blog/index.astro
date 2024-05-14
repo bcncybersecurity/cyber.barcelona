@@ -1,44 +1,44 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import Header from '../../../components/screens/Header.astro';
-import Footer from '../../../components/screens/Footer.astro';
-import Main from '../../../components/ui/Main.astro';
-import BlogCard from '../../../components/ui/BlogCard.astro';
-import Content from '../../../components/ui/Content.astro';
-import Page from '../../../components/ui/Page.astro';
-import Heading from '../../../components/ui/Heading.astro';
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/screens/Header.astro";
+import Footer from "../../../components/screens/Footer.astro";
+import Main from "../../../components/ui/Main.astro";
+import BlogCard from "../../../components/ui/BlogCard.astro";
+import Content from "../../../components/ui/Content.astro";
+import Page from "../../../components/ui/Page.astro";
+import Heading from "../../../components/ui/Heading.astro";
 
-const lang = "en"
+const lang = "en";
 ---
 
 <Layout lang={lang} title="Blog">
-	<Page>
-		<!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
-		<div>
-			<Header lang={lang}/>
-			<Main>
-				<Heading>
-					<h1>Blog</h1>
-					<p>Explore the topics we've covered on Barcelona Cybersecurity.</p>
-				</Heading>
-				<Content>
-					<section>
-						<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-							<BlogCard
-								title="2024 cybersecurity trends: what you should focus your energy on"
-								excerpt="It's that time of a new year! we're past the date of eating too much, meeting family and relaxing, and it's time to get back into the proverbial trenches of our industry. Attackers unfortunately don't tend to respect vacation time, so you need to stay two steps ahead! But that begs the question: two steps..."
-								url="/en/blog/posts/2024-cybersecurity-trends/"
-							/>
-							<BlogCard
-								title="Zero trust: Scramble the egg and bite the onion"
-								excerpt="If you've been anywhere near a tech news source lately, you've probably figured out two things: everything is hacked all the time, and everything moves very fast. But what can you do to stay on to of your security policies?"
-								url="/en/blog/posts/zero-trust-scramble-egg-bite-onion/"
-							/>
-						</div>
-					</section>
-				</Content>
-			</Main>
-		</div>
-		<Footer lang={lang}/>
-	</Page>
+  <Page>
+    <!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
+    <div>
+      <Header lang={lang} />
+      <Main>
+        <Heading>
+          <h1>Blog</h1>
+          <p>Explore the topics we've covered on Barcelona Cybersecurity.</p>
+        </Heading>
+        <Content>
+          <section>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <BlogCard
+                title="2024 cybersecurity trends: what you should focus your energy on"
+                excerpt="It's that time of a new year! we're past the date of eating too much, meeting family and relaxing, and it's time to get back into the proverbial trenches of our industry. Attackers unfortunately don't tend to respect vacation time, so you need to stay two steps ahead! But that begs the question: two steps..."
+                url="/en/blog/posts/2024-cybersecurity-trends/"
+              />
+              <BlogCard
+                title="Zero trust: Scramble the egg and bite the onion"
+                excerpt="If you've been anywhere near a tech news source lately, you've probably figured out two things: everything is hacked all the time, and everything moves very fast. But what can you do to stay on to of your security policies?"
+                url="/en/blog/posts/zero-trust-scramble-egg-bite-onion/"
+              />
+            </div>
+          </section>
+        </Content>
+      </Main>
+    </div>
+    <Footer lang={lang} />
+  </Page>
 </Layout>

@@ -1,39 +1,39 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import Header from '../../../components/screens/Header.astro';
-import Footer from '../../../components/screens/Footer.astro';
-import Main from '../../../components/ui/Main.astro';
-import BlogCard from '../../../components/ui/BlogCard.astro';
-import Content from '../../../components/ui/Content.astro';
-import Page from '../../../components/ui/Page.astro';
-import Heading from '../../../components/ui/Heading.astro';
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/screens/Header.astro";
+import Footer from "../../../components/screens/Footer.astro";
+import Main from "../../../components/ui/Main.astro";
+import BlogCard from "../../../components/ui/BlogCard.astro";
+import Content from "../../../components/ui/Content.astro";
+import Page from "../../../components/ui/Page.astro";
+import Heading from "../../../components/ui/Heading.astro";
 
-const lang = "es"
+const lang = "es";
 ---
 
 <Layout lang={lang} title="Blog">
-	<Page>
-		<!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
-		<div>
-			<Header lang={lang}/>
-			<Main>
-				<Heading>
-					<h1>Blog</h1>
-					<p>Explora los temas que hemos tratado en Barcelona Cybersecurity.</p>
-				</Heading>
-				<Content>
-					<section>
-						<div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
-							<BlogCard
-								title="IA aplicada a la seguridad: ¿Sueñan los androides con criminales adversarios?"
-								excerpt="A menos que lleves de 9 a 11 meses viviendo en una granja sin cobertura en la montaña, ya le habrás dado un tiento o dos a ChatGPT. A finales del año pasado, sin verlo venir por ninguna parte si no se estaba dentro del mundillo, de repente había accesible un asistente de texto con..."
-								url="/es/blog/posts/ia-aplicada-ciberseguridad/"
-							/>
-						</div>
-					</section>
-				</Content>
-			</Main>
-		</div>
-		<Footer lang={lang}/>
-	</Page>
+  <Page>
+    <!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
+    <div>
+      <Header lang={lang} />
+      <Main>
+        <Heading>
+          <h1>Blog</h1>
+          <p>Explora los temas que hemos tratado en Barcelona Cybersecurity.</p>
+        </Heading>
+        <Content>
+          <section>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <BlogCard
+                title="IA aplicada a la seguridad: ¿Sueñan los androides con criminales adversarios?"
+                excerpt="A menos que lleves de 9 a 11 meses viviendo en una granja sin cobertura en la montaña, ya le habrás dado un tiento o dos a ChatGPT. A finales del año pasado, sin verlo venir por ninguna parte si no se estaba dentro del mundillo, de repente había accesible un asistente de texto con..."
+                url="/es/blog/posts/ia-aplicada-ciberseguridad/"
+              />
+            </div>
+          </section>
+        </Content>
+      </Main>
+    </div>
+    <Footer lang={lang} />
+  </Page>
 </Layout>

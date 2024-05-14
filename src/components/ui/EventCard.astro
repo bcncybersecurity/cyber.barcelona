@@ -1,11 +1,10 @@
 ---
 const { imgSrc, imgAltText, title, url } = Astro.props;
-import { Image } from 'astro:assets';
-import Card from './Card.astro';
-
+import { Image } from "astro:assets";
+import Card from "./Card.astro";
 ---
 
 <Card>
-    <Image class="rounded-lg w-full mx-auto mb-4" src={imgSrc} alt={imgAltText}/>	
-    <h3><a href={url}>{title}</a></h3>
+  <Image class="rounded-lg w-full mx-auto mb-4" src={imgSrc} alt={imgAltText} />
+  <h3><a href={url}>{title}</a></h3>
 </Card>

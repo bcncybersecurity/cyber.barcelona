@@ -1,80 +1,136 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import Header from '../../../components/screens/Header.astro';
-import Main from '../../../components/ui/Main.astro';
-import Footer from '../../../components/screens/Footer.astro';
-import TeamMemberCard from '../../../components/ui/TeamMemberCard.astro';
-import olmoPhoto from '../../../../public/img/pictures/olmo.jpg'
-import lauraPhoto from '../../../../public/img/pictures/laura.jpg'
-import eduPhoto from '../../../../public/img/pictures/edu.jpg'
-import eliasPhoto from '../../../../public/img/pictures/elias.jpg'
-import ivanPhoto from '../../../../public/img/pictures/ivan.jpeg'
-import neusPhoto from '../../../../public/img/pictures/neus.png'
-import IconCardWithText from '../../../components/ui/IconCardWithText.astro';
-import CybersecurityEnthusiastsPhoto from "../../../../public/img/pictures/cybersecurity-enthusiasts.jpeg"
-import SeniorProfessionalsPhoto from "../../../../public/img/pictures/senior-professionals.jpeg"
-import AudienceCard from '../../../components/ui/AudienceCard.astro';
-import Content from '../../../components/ui/Content.astro';
-import Page from '../../../components/ui/Page.astro';
-import Heading from '../../../components/ui/Heading.astro';
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/screens/Header.astro";
+import Main from "../../../components/ui/Main.astro";
+import Footer from "../../../components/screens/Footer.astro";
+import TeamMemberCard from "../../../components/ui/TeamMemberCard.astro";
+import olmoPhoto from "../../../../public/img/pictures/olmo.jpg";
+import lauraPhoto from "../../../../public/img/pictures/laura.jpg";
+import eduPhoto from "../../../../public/img/pictures/edu.jpg";
+import eliasPhoto from "../../../../public/img/pictures/elias.jpg";
+import ivanPhoto from "../../../../public/img/pictures/ivan.jpeg";
+import neusPhoto from "../../../../public/img/pictures/neus.png";
+import IconCardWithText from "../../../components/ui/IconCardWithText.astro";
+import CybersecurityEnthusiastsPhoto from "../../../../public/img/pictures/cybersecurity-enthusiasts.jpeg";
+import SeniorProfessionalsPhoto from "../../../../public/img/pictures/senior-professionals.jpeg";
+import AudienceCard from "../../../components/ui/AudienceCard.astro";
+import Content from "../../../components/ui/Content.astro";
+import Page from "../../../components/ui/Page.astro";
+import Heading from "../../../components/ui/Heading.astro";
 
-const lang = "es"
+const lang = "es";
 ---
 
 <Layout lang={lang} title="Sobre el proyecto">
-	<Page>
-		<!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
-		<div>
-			<Header lang={lang}/>
-			<Main>
-				<Heading>
-					<h1>El proyecto</h1>
-					<p>Conoce a la gente que hace esto posible.</p>
-				</Heading>
-				<Content>
-					<section>
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-							<div>
-								<h2>Nuestra audiencia</h2>
-								<p class="mb-8">
-									Nuestra comunidad está formada por profesionales del sector comprometidos a compartir sus conocimientos y experiencia.
-				Tanto si estás interesado en conocer las últimas tendencias en ciberseguridad, como en establecer contactos con otros profesionales del sector o mantenerte al día, estás en el lugar adecuado.
-								</p>
-								<div class="flex flex-col gap-2">
-									<IconCardWithText iconName="check-circle" text="Eventos"/>
-									<IconCardWithText iconName="check-circle" text="Trainings"/>
-									<IconCardWithText iconName="check-circle" text="Networking"/>
-								</div>
-							</div>
-							<AudienceCard photo={CybersecurityEnthusiastsPhoto} photoAltText="Entusiastas de la ciberseguridad" title="Entusiastas de la ciberseguridad" subtitle="Te esperan nuevas ideas de proyectos. ¡Conviértete en líder del mañana!"/>
-							<AudienceCard photo={SeniorProfessionalsPhoto} photoAltText="Profesionales con experiencia" title="Profesionales con experiencia en ciberseguridad" subtitle="La oportunidad de enseñar a la siguiente generación de líderes en ciberseguridad!"/>
-						</div>
-					</section>
+  <Page>
+    <!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
+    <div>
+      <Header lang={lang} />
+      <Main>
+        <Heading>
+          <h1>El proyecto</h1>
+          <p>Conoce a la gente que hace esto posible.</p>
+        </Heading>
+        <Content>
+          <section>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <div>
+                <h2>Nuestra audiencia</h2>
+                <p class="mb-8">
+                  Nuestra comunidad está formada por profesionales del sector
+                  comprometidos a compartir sus conocimientos y experiencia.
+                  Tanto si estás interesado en conocer las últimas tendencias en
+                  ciberseguridad, como en establecer contactos con otros
+                  profesionales del sector o mantenerte al día, estás en el
+                  lugar adecuado.
+                </p>
+                <div class="flex flex-col gap-2">
+                  <IconCardWithText iconName="check-circle" text="Eventos" />
+                  <IconCardWithText iconName="check-circle" text="Trainings" />
+                  <IconCardWithText iconName="check-circle" text="Networking" />
+                </div>
+              </div>
+              <AudienceCard
+                photo={CybersecurityEnthusiastsPhoto}
+                photoAltText="Entusiastas de la ciberseguridad"
+                title="Entusiastas de la ciberseguridad"
+                subtitle="Te esperan nuevas ideas de proyectos. ¡Conviértete en líder del mañana!"
+              />
+              <AudienceCard
+                photo={SeniorProfessionalsPhoto}
+                photoAltText="Profesionales con experiencia"
+                title="Profesionales con experiencia en ciberseguridad"
+                subtitle="La oportunidad de enseñar a la siguiente generación de líderes en ciberseguridad!"
+              />
+            </div>
+          </section>
 
-					<section>
-						<h2>El equipo</h2>
-						<p>El equipo tras el telón.</p>
-						<div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
-							<TeamMemberCard photo={olmoPhoto} photoAltText="Olmo Rayón" name="Olmo Rayón" position="Presidente & Responsable de coordinación" linkedinLink="https://www.linkedin.com/in/olmorayon/"/>
-							<TeamMemberCard photo={lauraPhoto} photoAltText="Laura Del Barrio" name="Laura Del Barrio" position="Gestión & Responsable de Operaciones" linkedinLink="https://www.linkedin.com/in/laura-del-barrio-diaz/"/>
-							<TeamMemberCard photo={eduPhoto} photoAltText="Eduard Xancó" name="Eduard Xancó" position="Tesorería & Responsable de Corporate" linkedinLink="https://www.linkedin.com/in/eduardxanco/"/>
-							<TeamMemberCard photo={eliasPhoto} photoAltText="Elías Solana" name="Elías Solana" position="Relaciones Exteriores" linkedinLink="https://www.linkedin.com/in/elias-solana/"/>
-							<TeamMemberCard photo={ivanPhoto} photoAltText="Iván Mendez" name="Iván Mendez" position="Creación de contenido" linkedinLink="https://www.linkedin.com/in/ivanmendezrodriguez/"/>
-							<TeamMemberCard photo={neusPhoto} photoAltText="Neus Boix" name="Neus Boix" position="Soporte de Operaciones" linkedinLink="https://www.linkedin.com/in/nbc-1885aa108"/>
-						</div>
-					</section>
-					<section>
-						<h2>Nuestros objetivos</h2>
-						<p>Nuestra organización y comunidad se basan en estos mantras:</p>
-						<div class="grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-6 py-12">
-							<IconCardWithText iconName="handshake" text="Una comunidad fuerte"/>
-							<IconCardWithText iconName="map" text="Organización sostenible"/>
-							<IconCardWithText iconName="compass" text="Los mejores productos"/>
-						</div>
-					</section>
-				</Content>
-			</Main>
-		</div>
-		<Footer lang={lang}/>
-	</Page>
+          <section>
+            <h2>El equipo</h2>
+            <p>El equipo tras el telón.</p>
+            <div class="grid grid-cols-2 md:grid-cols-3 gap-4 my-8">
+              <TeamMemberCard
+                photo={olmoPhoto}
+                photoAltText="Olmo Rayón"
+                name="Olmo Rayón"
+                position="Presidente & Responsable de coordinación"
+                linkedinLink="https://www.linkedin.com/in/olmorayon/"
+              />
+              <TeamMemberCard
+                photo={lauraPhoto}
+                photoAltText="Laura Del Barrio"
+                name="Laura Del Barrio"
+                position="Gestión & Responsable de Operaciones"
+                linkedinLink="https://www.linkedin.com/in/laura-del-barrio-diaz/"
+              />
+              <TeamMemberCard
+                photo={eduPhoto}
+                photoAltText="Eduard Xancó"
+                name="Eduard Xancó"
+                position="Tesorería & Responsable de Corporate"
+                linkedinLink="https://www.linkedin.com/in/eduardxanco/"
+              />
+              <TeamMemberCard
+                photo={eliasPhoto}
+                photoAltText="Elías Solana"
+                name="Elías Solana"
+                position="Relaciones Exteriores"
+                linkedinLink="https://www.linkedin.com/in/elias-solana/"
+              />
+              <TeamMemberCard
+                photo={ivanPhoto}
+                photoAltText="Iván Mendez"
+                name="Iván Mendez"
+                position="Creación de contenido"
+                linkedinLink="https://www.linkedin.com/in/ivanmendezrodriguez/"
+              />
+              <TeamMemberCard
+                photo={neusPhoto}
+                photoAltText="Neus Boix"
+                name="Neus Boix"
+                position="Soporte de Operaciones"
+                linkedinLink="https://www.linkedin.com/in/nbc-1885aa108"
+              />
+            </div>
+          </section>
+          <section>
+            <h2>Nuestros objetivos</h2>
+            <p>Nuestra organización y comunidad se basan en estos mantras:</p>
+            <div class="grid grid-cols-1 gap-2 md:grid-cols-3 md:gap-6 py-12">
+              <IconCardWithText
+                iconName="handshake"
+                text="Una comunidad fuerte"
+              />
+              <IconCardWithText iconName="map" text="Organización sostenible" />
+              <IconCardWithText
+                iconName="compass"
+                text="Los mejores productos"
+              />
+            </div>
+          </section>
+        </Content>
+      </Main>
+    </div>
+    <Footer lang={lang} />
+  </Page>
 </Layout>

@@ -1,55 +1,55 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import Header from '../../../components/screens/Header.astro';
-import Footer from '../../../components/screens/Footer.astro';
-import eventPhoto from '../../../../public/img/pictures/meetup-photo.jpeg'
-import whiteboardPhoto from '../../../../public/img/pictures/postits-whiteboard.jpeg'
-import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
-import Main from '../../../components/ui/Main.astro';
-import ActionCard from '../../../components/ui/ActionCard.astro';
-import Content from '../../../components/ui/Content.astro';
-import Page from '../../../components/ui/Page.astro';
-import Heading from '../../../components/ui/Heading.astro';
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/screens/Header.astro";
+import Footer from "../../../components/screens/Footer.astro";
+import eventPhoto from "../../../../public/img/pictures/meetup-photo.jpeg";
+import whiteboardPhoto from "../../../../public/img/pictures/postits-whiteboard.jpeg";
+import FinalEventTerracePhoto from "../../../../public/img/pictures/final-event-terrace.jpeg";
+import Main from "../../../components/ui/Main.astro";
+import ActionCard from "../../../components/ui/ActionCard.astro";
+import Content from "../../../components/ui/Content.astro";
+import Page from "../../../components/ui/Page.astro";
+import Heading from "../../../components/ui/Heading.astro";
 
-const lang = "es"
+const lang = "es";
 ---
 
 <Layout lang={lang} title="Qué hacemos">
-	<Page>
-		<!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
-		<div>
-			<Header lang={lang}/>
-			<Main>
-				<Heading>
-					<h1>Qué hacemos</h1>
-					<p>Más información sobre los eventos que organizamos</p>
-				</Heading>
-				<Content>
-					<section>
-						<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-							<ActionCard 
-								imgSrc={eventPhoto} 
-								imgAltText="Meetup event"
-								title="Meetup"
-								description="Conversaciones con expertos sobre temas técnicos con una sesión de networking al final. Un evento nuevo cada mes!"
-							/>
-							<ActionCard 
-								imgSrc={whiteboardPhoto}
-								imgAltText="Brainstorming session"
-								title="Startups Hub"
-								description="El lugar donde se reunirán las startups de ciberseguridad más punteras"
-							/>
-							<ActionCard 
-								imgSrc={FinalEventTerracePhoto}
-								imgAltText="Final event community"
-								title="Membresía"
-								description="La membresía de Barcelona Cybersecurity te da acceso a beneficios como eventos exclusivos para miembros, una comunidad privada en slack y nuestro programa de mentores para que puedas impulsar tu carrera!"
-							/>
-						</div>
-					</section>
-				</Content>
-			</Main>
-		</div>
-		<Footer lang={lang}/>
-	</Page>
+  <Page>
+    <!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
+    <div>
+      <Header lang={lang} />
+      <Main>
+        <Heading>
+          <h1>Qué hacemos</h1>
+          <p>Más información sobre los eventos que organizamos</p>
+        </Heading>
+        <Content>
+          <section>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <ActionCard
+                imgSrc={eventPhoto}
+                imgAltText="Meetup event"
+                title="Meetup"
+                description="Conversaciones con expertos sobre temas técnicos con una sesión de networking al final. Un evento nuevo cada mes!"
+              />
+              <ActionCard
+                imgSrc={whiteboardPhoto}
+                imgAltText="Brainstorming session"
+                title="Startups Hub"
+                description="El lugar donde se reunirán las startups de ciberseguridad más punteras"
+              />
+              <ActionCard
+                imgSrc={FinalEventTerracePhoto}
+                imgAltText="Final event community"
+                title="Membresía"
+                description="La membresía de Barcelona Cybersecurity te da acceso a beneficios como eventos exclusivos para miembros, una comunidad privada en slack y nuestro programa de mentores para que puedas impulsar tu carrera!"
+              />
+            </div>
+          </section>
+        </Content>
+      </Main>
+    </div>
+    <Footer lang={lang} />
+  </Page>
 </Layout>

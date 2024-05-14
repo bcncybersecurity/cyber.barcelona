@@ -1,101 +1,129 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import Header from '../../../components/screens/Header.astro';
-import Footer from '../../../components/screens/Footer.astro';
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/screens/Header.astro";
+import Footer from "../../../components/screens/Footer.astro";
 
-import CallToAction from '../../../components/ui/CallToAction.astro';
+import CallToAction from "../../../components/ui/CallToAction.astro";
 
-import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
-import LauraLaptopPhoto from '../../../../public/img/pictures/laura-laptop.png'
-import MerchandisingTablePhoto from '../../../../public/img/pictures/merchandising-table.jpeg'
-import whiteboardPhoto from '../../../../public/img/pictures/postits-whiteboard.jpeg'
+import FinalEventTerracePhoto from "../../../../public/img/pictures/final-event-terrace.jpeg";
+import LauraLaptopPhoto from "../../../../public/img/pictures/laura-laptop.png";
+import MerchandisingTablePhoto from "../../../../public/img/pictures/merchandising-table.jpeg";
+import whiteboardPhoto from "../../../../public/img/pictures/postits-whiteboard.jpeg";
 
-import Main from '../../../components/ui/Main.astro';
-import Content from '../../../components/ui/Content.astro';
-import MembershipCard from '../../../components/ui/MembershipCard.astro';
-import Page from '../../../components/ui/Page.astro';
-import Heading from '../../../components/ui/Heading.astro';
+import Main from "../../../components/ui/Main.astro";
+import Content from "../../../components/ui/Content.astro";
+import MembershipCard from "../../../components/ui/MembershipCard.astro";
+import Page from "../../../components/ui/Page.astro";
+import Heading from "../../../components/ui/Heading.astro";
 
-const lang = "en"
+const lang = "en";
 ---
 
 <Layout lang={lang} title="Become a member">
-	<Page>
-		<!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
-		<div>
-	<Header lang={lang}/>
-	<Main>
-		<Heading>
-			<h1>Become a member</h1>
-			<p>Join the largest cybersecurity community in Barcelona and boost your growth.</p>
-		</Heading>
-		<Content>
-		<div class="grid grid-cols-1 md:grid-cols-2 gap-6 py-12">
-			<MembershipCard
-				imgSrc={LauraLaptopPhoto}
-				imgAltText="Mentoring"
-				title="Get into our mentoring program"
-				text="We are excited to introduce our innovative mentoring program designed to connect cybersecurity professionals and help them grow together."
-			/>
-			<MembershipCard
-				imgSrc={FinalEventTerracePhoto} 
-				imgAltText="Community"
-				title="Check our internal Slack"
-				text="An exclusive space for members to share resources, articles, security reports, events and keep up to date with everything related to the world of cybersecurity."
-			/>
-			<MembershipCard
-				imgSrc={MerchandisingTablePhoto} 
-				imgAltText="Meetup Event"
-				title="Get the official merchandising"
-				text="We want you to feel that you are part of something unique and special, and what better way to show it than with exclusive products that reflect your commitment to our organization."
-			/>
-			<MembershipCard
-				imgSrc={whiteboardPhoto}
-				imgAltText="Community workshop"
-				title="Access exclusive internal events"
-				text="Designed only for members, an unparalleled opportunity for you to immerse yourself in the enriching landscape of the cybersecurity community."
-			/>
-		</div>
-		
-			<h2 class="text-center">Supercharge your experience</h2>
+  <Page>
+    <!-- Div including Header and Main which pushes the footer at the bottom of the page  -->
+    <div>
+      <Header lang={lang} />
+      <Main>
+        <Heading>
+          <h1>Become a member</h1>
+          <p>
+            Join the largest cybersecurity community in Barcelona and boost your
+            growth.
+          </p>
+        </Heading>
+        <Content>
+          <section>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 py-12">
+              <MembershipCard
+                imgSrc={LauraLaptopPhoto}
+                imgAltText="Mentoring"
+                title="Get into our mentoring program"
+                text="We are excited to introduce our innovative mentoring program designed to connect cybersecurity professionals and help them grow together."
+              />
+              <MembershipCard
+                imgSrc={FinalEventTerracePhoto}
+                imgAltText="Community"
+                title="Check our internal Slack"
+                text="An exclusive space for members to share resources, articles, security reports, events and keep up to date with everything related to the world of cybersecurity."
+              />
+              <MembershipCard
+                imgSrc={MerchandisingTablePhoto}
+                imgAltText="Meetup Event"
+                title="Get the official merchandising"
+                text="We want you to feel that you are part of something unique and special, and what better way to show it than with exclusive products that reflect your commitment to our organization."
+              />
+              <MembershipCard
+                imgSrc={whiteboardPhoto}
+                imgAltText="Community workshop"
+                title="Access exclusive internal events"
+                text="Designed only for members, an unparalleled opportunity for you to immerse yourself in the enriching landscape of the cybersecurity community."
+              />
+            </div>
 
-			<div class="max-w-[1100px] m-auto  grid grid-cols-1 md:grid-cols-2 gap-6 py-12">
-				<div>
-					<h3 class="mb-6">Time-tested experiences...</h3>
-					<div class="flex flex-col gap-2">
-						<div class="rounded-lg bg-darkblue p-2">&check; Meetup events</div>
-						<div class="rounded-lg bg-darkblue p-2">&check; Afterworks</div>
-					</div>
-				</div>
-				<div>
-					<h3 class="mb-6">...Now enhanced</h3>
-					<div class="flex flex-col gap-2">
-						<div class="rounded-lg bg-darkblue p-2">&check; External events</div>
-						<div class="rounded-lg bg-darkblue p-2">&check; Mentoring</div>
-						<div class="rounded-lg bg-darkblue p-2">&check; Private slack community</div>
-						<div class="rounded-lg bg-darkblue p-2">&check; T-shirt</div>
-						<div class="rounded-lg bg-darkblue p-2">&check; Tote bag</div>
-						<div class="rounded-lg bg-darkblue p-2">&check; Internal member-only events</div>
-					</div>
-				</div>
-			</div>
-		</section>
+            <h2 class="text-center">Supercharge your experience</h2>
 
-		<div class="py-12">
-			<div class="max-w-[640px] mx-auto text-center">
-				<h1>Are you interested? Join us!</h1>
-				<p>Boost your career in cybersecurity</p>
-		
-				<div class="pt-6">
-					<CallToAction text="I want to become a member!" link="https://docs.google.com/forms/d/e/1FAIpQLSe5eRPaKk5GeACxzHxTSHIATE_VWyw-6jtt2lnBKgiFyVOlGA/viewform" />
-				</div>
-			
-			<p class="py-12">* Are you interested in having your company buy a membership pack? <a class="hover:border-b hover:border-b-brand text-brand" href="mailto:external.relations@cybersec.barcelona ">Let's talk!</a></p>
-		</div>
-		</div>
-		</Content>
-	</Main>
-</div>
-<Footer lang={lang}/>
-</Page>
+            <div
+              class="max-w-[1100px] m-auto grid grid-cols-1 md:grid-cols-2 gap-6 py-12"
+            >
+              <div>
+                <h3 class="mb-6">Time-tested experiences...</h3>
+                <div class="flex flex-col gap-2">
+                  <div class="rounded-lg bg-darkblue p-2">
+                    &check; Meetup events
+                  </div>
+                  <div class="rounded-lg bg-darkblue p-2">
+                    &check; Afterworks
+                  </div>
+                </div>
+              </div>
+              <div>
+                <h3 class="mb-6">...Now enhanced</h3>
+                <div class="flex flex-col gap-2">
+                  <div class="rounded-lg bg-darkblue p-2">
+                    &check; External events
+                  </div>
+                  <div class="rounded-lg bg-darkblue p-2">
+                    &check; Mentoring
+                  </div>
+                  <div class="rounded-lg bg-darkblue p-2">
+                    &check; Private slack community
+                  </div>
+                  <div class="rounded-lg bg-darkblue p-2">&check; T-shirt</div>
+                  <div class="rounded-lg bg-darkblue p-2">&check; Tote bag</div>
+                  <div class="rounded-lg bg-darkblue p-2">
+                    &check; Internal member-only events
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <div class="py-12">
+            <div class="max-w-[640px] mx-auto text-center">
+              <h1>Are you interested? Join us!</h1>
+              <p>Boost your career in cybersecurity</p>
+
+              <div class="pt-6">
+                <CallToAction
+                  text="I want to become a member!"
+                  link="https://docs.google.com/forms/d/e/1FAIpQLSe5eRPaKk5GeACxzHxTSHIATE_VWyw-6jtt2lnBKgiFyVOlGA/viewform"
+                />
+              </div>
+
+              <p class="py-12">
+                * Are you interested in having your company buy a membership
+                pack? <a
+                  class="hover:border-b hover:border-b-brand text-brand"
+                  href="mailto:external.relations@cybersec.barcelona "
+                  >Let's talk!</a
+                >
+              </p>
+            </div>
+          </div>
+        </Content>
+      </Main>
+    </div>
+    <Footer lang={lang} />
+  </Page>
 </Layout>
