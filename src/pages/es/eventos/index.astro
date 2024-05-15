@@ -4,26 +4,14 @@ import Header from "../../../components/screens/Header.astro";
 import Footer from "../../../components/screens/Footer.astro";
 import { Image } from "astro:assets";
 import UpcomingEventPhoto from "../../../../public/img/events/secure-sdlc.webp";
-import SecureSDLCPhoto from "../../../../public/img/events/secure-sdlc.webp";
-import MobileAppSecurityPhoto from "../../../../public/img/events/mobile-app-security.webp";
-import DeDevADevastacionPhoto from "../../../../public/img/events/de-dev-a-devastacion.webp";
-import SotaCaballoYReyPhoto from "../../../../public/img/events/red-team-sota-caballo-rey.webp";
-import SeguridadDeAlturaPhoto from "../../../../public/img/events/seguridad-de-altura.webp";
-import TrustButVerifyPhoto from "../../../../public/img/events/trust-but-verify.webp";
-import BarcelonaCyberAfterworkPhoto from "../../../../public/img/events/barcelona-cyber-afterwork.webp";
-import AI4CyberPhoto from "../../../../public/img/events/ai4cyber.webp";
-import ZeroTrustPhoto from "../../../../public/img/events/zero-trust.webp";
-import SecurityInSaasPhoto from "../../../../public/img/events/security-in-saas.webp";
-import HoneypotsPhoto from "../../../../public/img/events/honeypots.webp";
-import BarcelonaCisoPhoto from "../../../../public/img/events/barcelona-ciso.webp";
-import PrivacyJourneyPhoto from "../../../../public/img/events/journey-into-privacy.webp";
-import OpeningEvent2024 from "../../../../public/img/events/opening-event-2024.webp";
 import Main from "../../../components/ui/Main.astro";
 import EventCard from "../../../components/ui/EventCard.astro";
 import Content from "../../../components/ui/Content.astro";
 import Page from "../../../components/ui/Page.astro";
 import Heading from "../../../components/ui/Heading.astro";
 import Card from "../../../components/ui/Card.astro";
+
+import { events } from "../../../data/events.ts";
 
 const lang = "es";
 ---
@@ -91,84 +79,18 @@ const lang = "es";
             <div
               class="max-w-[1100px] m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 py-12"
             >
-              <EventCard
-                title="MobileApp Security: Everything you ever wanted to know and were too afraid to ask"
-                url="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/299766501/"
-                imgSrc={MobileAppSecurityPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="De Dev a Devastación: Explotación de Flujos CICD para Infiltración y Persistencia"
-                url="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/299273534/"
-                imgSrc={DeDevADevastacionPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="Barcelona Cybersecurity Opening Event 2024"
-                url="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/298549063/"
-                imgSrc={OpeningEvent2024}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="Explotaciones en Red Team, no todo es sota, caballo y rey."
-                url="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/297277260/"
-                imgSrc={SotaCaballoYReyPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="Seguridad de altura: un caso de ciberseguridad OT en transporte aéreo"
-                url="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/296833601/"
-                imgSrc={SeguridadDeAlturaPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="Trust, but verify, o porque Ronal Reagan no sabía de Zero Trust"
-                url="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/296121768/"
-                imgSrc={TrustButVerifyPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="Barcelona Cybersecurity's Afterwork: Opening the new season"
-                url="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/295583936/"
-                imgSrc={BarcelonaCyberAfterworkPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="AI4CYBER: AI aplicada a ciberseguridad"
-                url="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/293146261/"
-                imgSrc={AI4CyberPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="Zero Trust: A fundamental catalyst for a successful cyber resilience strategy"
-                url="https://www.meetup.com/es/barcelona-cybersecurity/events/292431804/"
-                imgSrc={ZeroTrustPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="Security in SaaS platforms"
-                url="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/291682269/"
-                imgSrc={SecurityInSaasPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="Honeypots, caer en la trampa"
-                url="https://www.meetup.com/es/barcelona-cybersecurity/events/290696272/"
-                imgSrc={HoneypotsPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="¿Necesitaría Barcelona una figura de CISO?"
-                url="https://www.meetup.com/es/barcelona-cybersecurity/events/289561917/"
-                imgSrc={BarcelonaCisoPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
-              <EventCard
-                title="My journey into privacy"
-                url="https://www.meetup.com/es/barcelona-cybersecurity/events/288976517/"
-                imgSrc={PrivacyJourneyPhoto}
-                imgAltText="Barcelona cybersecurity event photo"
-              />
+              {
+                events
+                  .sort((event1, event2) => (event1.id > event2.id ? -1 : 1))
+                  .map((event) => (
+                    <EventCard
+                      title={event.title}
+                      url={event.url}
+                      imgSrc={event.imgSrc}
+                      imgAltText={event.imgAltText}
+                    />
+                  ))
+              }
             </div>
           </section>
         </Content>

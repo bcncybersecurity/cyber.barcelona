@@ -5,6 +5,13 @@ import Card from "./Card.astro";
 ---
 
 <Card>
-  <Image class="rounded-lg w-full mx-auto mb-4" src={imgSrc} alt={imgAltText} />
+  <Image
+    src={imgSrc}
+    width={600}
+    height={338}
+    format="webp"
+    class="rounded-lg w-full mx-auto mb-4"
+    alt={imgAltText}
+  />
   <h3><a href={url}>{title}</a></h3>
 </Card>
