@@ -11,6 +11,7 @@ import Main from "../../components/ui/Main.astro";
 import IconCardWithTitleText from "../../components/ui/IconCardWithTitleText.astro";
 import SkylineGraphic from "../../components/ui/SkylineGraphic.astro";
 import Page from "../../components/ui/Page.astro";
+import Heading from "../../components/ui/Heading.astro";
 const lang = "en";
 ---
 
@@ -20,115 +21,111 @@ const lang = "en";
     <div>
       <Header lang={lang} />
       <Main>
-        <div class="p-6 text-center">
+        <div class="p-6 text-center text-balance">
           <SkylineGraphic />
+          <Heading>
+            <h1>The cybersecurity community in Barcelona</h1>
+            <p>
+              We are the NGO that inspires the security and privacy leaders of
+              the future.
+            </p>
+          </Heading>
 
-          <h1>The cybersecurity community in Barcelona</h1>
-          <p>
-            We are the NGO that inspires the security and privacy leaders of the
-            future.
-          </p>
-
-          <div class="py-12">
+          <div class="p-6">
             <h2>Do you want to join us?</h2>
             <p>New project ideas await you!</p>
-            <p>
+            <p class="mb-6">
               Join the largest cybersecurity community in Barcelona and boost
               your growth.
             </p>
-            <div class="pt-6">
-              <CallToAction
-                text="Join the Community"
-                link="/en/become-a-member"
-              />
-            </div>
+            <CallToAction
+              text="Join the Community"
+              link="/en/become-a-member"
+            />
           </div>
         </div>
-        <div class="p-6">
-          <div class="max-w-[640px] mx-auto text-center">
-            <h2>Our values</h2>
-            <div class="grid grid-cols-2 gap-4 my-12">
-              <IconCardWithTitleText
-                iconName="eye"
-                title="Our vision"
-                text="Expand cybersecurity knowledge in Spain."
-              />
-              <IconCardWithTitleText
-                iconName="compass"
-                title="Our mission"
-                text="Create a community where security and privacy enthusiasts come together to share knowledge and inspire tomorrow's security leaders."
-              />
-            </div>
+
+        <div class="max-w-2xl m-auto text-center p-6">
+          <h2>Our values</h2>
+          <div class="grid grid-cols-2 gap-4 my-12">
+            <IconCardWithTitleText
+              iconName="eye"
+              title="Our vision"
+              text="Expand cybersecurity knowledge in Spain."
+            />
+            <IconCardWithTitleText
+              iconName="compass"
+              title="Our mission"
+              text="Create a community where security and privacy enthusiasts come together to share knowledge and inspire tomorrow's security leaders."
+            />
           </div>
         </div>
-        <div class="p-6">
-          <div class="max-w-[640px] mx-auto text-center">
-            <h2>Our community in numbers</h2>
-            <p>
-              Since 2016, we launched over 40 events, and our community is
-              growing.
-            </p>
-            <div class="flex justify-center items-center p-6">
-              <div class="grid grid-cols-3 gap-24">
-                <div>
-                  <div class="text-5xl font-medium text-center text-white">
-                    1200
-                  </div>
-                  <p class="text-center">Members</p>
+
+        <div class="max-w-2xl m-auto text-center p-6">
+          <h2>Our community in numbers</h2>
+          <p class="text-balance">
+            Since 2016, we launched over 40 events, and our community is
+            growing.
+          </p>
+          <div class="flex justify-center items-center p-6">
+            <div class="grid grid-cols-3 gap-24">
+              <div>
+                <div class="text-5xl font-medium text-center text-white">
+                  1200
                 </div>
-                <div>
-                  <div class="text-5xl font-medium text-center text-white">
-                    30
-                  </div>
-                  <p class="text-center">Collaborations</p>
+                <p class="text-center">Members</p>
+              </div>
+              <div>
+                <div class="text-5xl font-medium text-center text-white">
+                  30
                 </div>
-                <div>
-                  <div class="text-5xl font-medium text-center text-white">
-                    50+
-                  </div>
-                  <p class="text-center">Speakers</p>
+                <p class="text-center">Collaborations</p>
+              </div>
+              <div>
+                <div class="text-5xl font-medium text-center text-white">
+                  50+
                 </div>
+                <p class="text-center">Speakers</p>
               </div>
             </div>
           </div>
         </div>
-        <div class="p-6">
-          <div class="max-w-[640px] mx-auto text-center">
-            <h2>Backed by the best</h2>
-            <div class="flex justify-center items-center gap-6 p-6">
-              <div
-                class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg"
-              >
-                <Image
-                  class="max-h-full w-auto"
-                  src={build38Logo}
-                  alt="Build38 logo"
-                />
-              </div>
-              <div
-                class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg"
-              >
-                <Image
-                  class="max-h-full w-auto"
-                  src={innoITLogo}
-                  alt="InnoIT consulting logo"
-                />
-              </div>
-              <div
-                class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg hidden"
-              >
-                <Image
-                  class="max-h-full w-auto"
-                  src={siemensLogo}
-                  alt="Siemens Healthineers logo"
-                />
-              </div>
+
+        <div class="max-w-2xl m-auto text-center p-6">
+          <h2>Backed by the best</h2>
+          <div class="flex justify-center items-center gap-6 p-6">
+            <div
+              class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg"
+            >
+              <Image
+                class="max-h-full w-auto"
+                src={build38Logo}
+                alt="Build38 logo"
+              />
+            </div>
+            <div
+              class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg"
+            >
+              <Image
+                class="max-h-full w-auto"
+                src={innoITLogo}
+                alt="InnoIT consulting logo"
+              />
+            </div>
+            <div
+              class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg hidden"
+            >
+              <Image
+                class="max-h-full w-auto"
+                src={siemensLogo}
+                alt="Siemens Healthineers logo"
+              />
             </div>
           </div>
         </div>
       </Main>
     </div>
-    <!-- End of div including Header and Main which pushes the footer at the bottom of the page -->
-    <Footer lang={lang} />
   </Page>
+  <!-- End of div including Header and Main which pushes the footer at the bottom of the page -->
+  <Footer lang={lang} />
 </Layout>

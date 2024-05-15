@@ -29,122 +29,119 @@ const lang = "en";
           </p>
         </Heading>
         <Content>
-          <div class="max-w-[640px] m-auto py-12">
-            <h2>The egg has a sturdy shell... right?</h2>
-            <p>
-              If you haven't yet gotten the chance to, fetch and read a deep
-              dive into the operations of dismantled ransomware operations. It's
-              fascinating. They have specialised so far into their craft,
-              they're basically companies themselves. Managers, vacation time,
-              bonuses, objectives… and outsourcing. There's something that's
-              appeared alongside these organizations to cover a step of the
-              attack chain: initial access brokers. These are companies that are
-              really, really good at obtaining initial access into your
-              environment. But they don't exploit it where they'd risk getting
-              linked themselves – why make the effort of negotiating with you,
-              when that access is already quite valuable?
-            </p>
-            <p>
-              So, they sell it. A ransomware company buys that VPN credential,
-              that SMS code that gives your admin access to Slack management,
-              and that gsuite service account that you forgot about in a
-              migration that just so happens to retain its blanket “read all
-              documents” permission. They walk right past your eggshell, and two
-              weeks later you're explaining to the European Union just how many
-              people's credit card access credentials are now in a pastebin
-              being sold to any bidder with an internet connection and a dream.
-              Surprise external backup for you, and a hefty fine to go with it.
-            </p>
+          <h2>The egg has a sturdy shell... right?</h2>
+          <p>
+            If you haven't yet gotten the chance to, fetch and read a deep dive
+            into the operations of dismantled ransomware operations. It's
+            fascinating. They have specialised so far into their craft, they're
+            basically companies themselves. Managers, vacation time, bonuses,
+            objectives… and outsourcing. There's something that's appeared
+            alongside these organizations to cover a step of the attack chain:
+            initial access brokers. These are companies that are really, really
+            good at obtaining initial access into your environment. But they
+            don't exploit it where they'd risk getting linked themselves – why
+            make the effort of negotiating with you, when that access is already
+            quite valuable?
+          </p>
+          <p>
+            So, they sell it. A ransomware company buys that VPN credential,
+            that SMS code that gives your admin access to Slack management, and
+            that gsuite service account that you forgot about in a migration
+            that just so happens to retain its blanket “read all documents”
+            permission. They walk right past your eggshell, and two weeks later
+            you're explaining to the European Union just how many people's
+            credit card access credentials are now in a pastebin being sold to
+            any bidder with an internet connection and a dream. Surprise
+            external backup for you, and a hefty fine to go with it.
+          </p>
 
-            <h2>Greener fields filled with onion leaves</h2>
-            <p>
-              So let's say your egg hasn't been scrambled into an omelette of
-              lawyer emails yet. What can you do to improve defenses against
-              this kind of vulnerability? Well, you need to understand the onion
-              approach to security, or what I call the “I want to change my home
-              electric company” approach: make it so the attacker interacting
-              with your environment has an unbearably inconvenient experience
-              every step of the way.
-            </p>
-            <p>
-              This approach consists on making it so every step to complete
-              control an attacker would need to make has independent security
-              controls implemented to stop them on their tracks. The longer the
-              kill chain they need, the more chances they can be stopped. That
-              is the base concept, but the implementation differs in every case,
-              which is what we came to talk about today: in a world of remote
-              work and curated developer experience, the path forward is Zero
-              Trust security architecture.
-            </p>
+          <h2>Greener fields filled with onion leaves</h2>
+          <p>
+            So let's say your egg hasn't been scrambled into an omelette of
+            lawyer emails yet. What can you do to improve defenses against this
+            kind of vulnerability? Well, you need to understand the onion
+            approach to security, or what I call the “I want to change my home
+            electric company” approach: make it so the attacker interacting with
+            your environment has an unbearably inconvenient experience every
+            step of the way.
+          </p>
+          <p>
+            This approach consists on making it so every step to complete
+            control an attacker would need to make has independent security
+            controls implemented to stop them on their tracks. The longer the
+            kill chain they need, the more chances they can be stopped. That is
+            the base concept, but the implementation differs in every case,
+            which is what we came to talk about today: in a world of remote work
+            and curated developer experience, the path forward is Zero Trust
+            security architecture.
+          </p>
 
-            <h2>Never trust, Always verify</h2>
-            <p>
-              Every vendor you come across is going to try to sell you on their
-              own special flavor of Zero Trust implementation, but they all boil
-              down to the same idea: you need a way to verify whoever is
-              accessing a resource is who they say they are. You may be saying
-              “hey, that's what a user account does”- yeah, so do initial access
-              brokers, right?
-            </p>
-            <p>
-              Even multi-factor authentication is being bypassed these days. SMS
-              or automated call authentication? SIM-swapping is all the rage
-              these days. Give a listen to Darknet Diaries' episode 112 “Dirty
-              Coms” after this, it's well worth it. Dashing out of a phone store
-              with the unlocked privileged tablet and SIM-swapping inside of a
-              speeding minivan sounds like a B-series film until it happens to
-              you.
-            </p>
-            <p>
-              Linus Tech Tips, one of the top technology youtube channels out
-              there, was hacked a couple weeks before this post with a stolen
-              browser access token, ignoring 2FA protection completely. Hell,
-              even LastPass, a security-focused password management company, had
-              their master vault accessed through a security breach in a
-              worker's personal machine. No one's environment is completely safe
-              in the past models, big or small, they're all targets. And chances
-              are that includes you.
-            </p>
+          <h2>Never trust, Always verify</h2>
+          <p>
+            Every vendor you come across is going to try to sell you on their
+            own special flavor of Zero Trust implementation, but they all boil
+            down to the same idea: you need a way to verify whoever is accessing
+            a resource is who they say they are. You may be saying “hey, that's
+            what a user account does”- yeah, so do initial access brokers,
+            right?
+          </p>
+          <p>
+            Even multi-factor authentication is being bypassed these days. SMS
+            or automated call authentication? SIM-swapping is all the rage these
+            days. Give a listen to Darknet Diaries' episode 112 “Dirty Coms”
+            after this, it's well worth it. Dashing out of a phone store with
+            the unlocked privileged tablet and SIM-swapping inside of a speeding
+            minivan sounds like a B-series film until it happens to you.
+          </p>
+          <p>
+            Linus Tech Tips, one of the top technology youtube channels out
+            there, was hacked a couple weeks before this post with a stolen
+            browser access token, ignoring 2FA protection completely. Hell, even
+            LastPass, a security-focused password management company, had their
+            master vault accessed through a security breach in a worker's
+            personal machine. No one's environment is completely safe in the
+            past models, big or small, they're all targets. And chances are that
+            includes you.
+          </p>
 
-            <h2>The better path forward</h2>
-            <p>
-              So, what do? What can you trust? well, your mileage may vary
-              depending on who you are and what you do, but your
-              corporate-provided environment, like your issued laptops, are
-              (hopefully) properly configured, secured, monitored and hardened.
-              Unless reported stolen, and if your employee is following proper
-              physical protection practices with it, like screen locking when
-              away, you can be pretty sure that device is being used by an
-              authorized user.
-            </p>
-            <p>
-              So you can trust access to resources by that user, only coming
-              from that device. Access from anything else is opening up a risk-
-              best case scenario your user is trying to look at their email from
-              their phone, worst case scenario your Google Drive billing folder
-              now has a regional replica in someone's basement USB drive.
-            </p>
-            <p>
-              Depending on your size, this is obviously a hell of an
-              undertaking. You're potentially looking at moving hundreds, maybe
-              thousands of accounts, credentials and systems into a completely
-              new paradigm. You can start small with a group, or with your
-              critical platforms, or do incremental fixes. But after enough
-              disclosure reports from big company after big company, I'd start
-              giving onion resources a read next Monday before someone cracks
-              your shell and fries you sunny side up.
-            </p>
+          <h2>The better path forward</h2>
+          <p>
+            So, what do? What can you trust? well, your mileage may vary
+            depending on who you are and what you do, but your
+            corporate-provided environment, like your issued laptops, are
+            (hopefully) properly configured, secured, monitored and hardened.
+            Unless reported stolen, and if your employee is following proper
+            physical protection practices with it, like screen locking when
+            away, you can be pretty sure that device is being used by an
+            authorized user.
+          </p>
+          <p>
+            So you can trust access to resources by that user, only coming from
+            that device. Access from anything else is opening up a risk- best
+            case scenario your user is trying to look at their email from their
+            phone, worst case scenario your Google Drive billing folder now has
+            a regional replica in someone's basement USB drive.
+          </p>
+          <p>
+            Depending on your size, this is obviously a hell of an undertaking.
+            You're potentially looking at moving hundreds, maybe thousands of
+            accounts, credentials and systems into a completely new paradigm.
+            You can start small with a group, or with your critical platforms,
+            or do incremental fixes. But after enough disclosure reports from
+            big company after big company, I'd start giving onion resources a
+            read next Monday before someone cracks your shell and fries you
+            sunny side up.
+          </p>
 
-            <div class="py-12">
-              <a href="https://www.linkedin.com/in/ivanmendezrodriguez/"
-                >Iván Méndez</a
-              >
-              <p>
-                Always looking for something new to poke at (and to write about
-                after). Reading documentation is not my thing, I like pulling
-                levers and pressing buttons!
-              </p>
-            </div>
+          <div class="py-12">
+            <a href="https://www.linkedin.com/in/ivanmendezrodriguez/"
+              >Iván Méndez</a
+            >
+            <p>
+              Always looking for something new to poke at (and to write about
+              after). Reading documentation is not my thing, I like pulling
+              levers and pressing buttons!
+            </p>
           </div>
         </Content>
       </Main>

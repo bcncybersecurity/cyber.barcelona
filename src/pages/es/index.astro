@@ -11,6 +11,7 @@ import Main from "../../components/ui/Main.astro";
 import IconCardWithTitleText from "../../components/ui/IconCardWithTitleText.astro";
 import SkylineGraphic from "../../components/ui/SkylineGraphic.astro";
 import Page from "../../components/ui/Page.astro";
+import Heading from "../../components/ui/Heading.astro";
 
 const lang = "es";
 ---
@@ -21,105 +22,101 @@ const lang = "es";
     <div>
       <Header lang={lang} />
       <Main>
-        <div class="p-6 text-center">
+        <div class="p-6 text-center text-balance">
           <SkylineGraphic />
-          <h1>La comunidad de ciberseguridad en Barcelona</h1>
-          <p>
-            Somos la NGO que inspira el liderazgo de ciberseguridad y privacidad
-            del futuro.
-          </p>
-
-          <div class="py-12">
+          <Heading>
+            <h1>La comunidad de ciberseguridad en Barcelona</h1>
+            <p>
+              Somos la NGO que inspira el liderazgo de ciberseguridad y
+              privacidad del futuro.
+            </p>
+          </Heading>
+          <div class="p-6">
             <h2>¿Quieres ser parte de la comunidad?</h2>
             <p>¡Te esperan nuevas ideas de proyecto!</p>
-            <p>
-              Join the largest cybersecurity community in Barcelona and boost
-              your growth.
+            <p class="mb-6">
+              Únete a la mayor comunidad de ciberseguridad de Barcelona e
+              impulsa tu crecimiento.
             </p>
-            <div class="pt-6">
-              <CallToAction text="¡Quiero unirme!" link="/es/hazte-miembro/" />
+            <CallToAction text="¡Quiero unirme!" link="/es/hazte-miembro/" />
+          </div>
+        </div>
+
+        <div class="max-w-2xl m-auto text-center p-6">
+          <h2>Nuestros valores</h2>
+          <div class="grid grid-cols-2 gap-4 my-12">
+            <IconCardWithTitleText
+              iconName="eye"
+              title="Nuestra visión"
+              text="Expandir el conocimiento de ciberseguridad en España"
+            />
+            <IconCardWithTitleText
+              iconName="compass"
+              title="Nuestra misión"
+              text="Crear una comunidad donde entusiastas de la ciberseguridad se reúnan para compartir conocimientos e inspirar a líderes de seguridad del futuro."
+            />
+          </div>
+        </div>
+
+        <div class="max-w-2xl m-auto text-center p-6">
+          <h2>Nuestra comunidad, en cifras</h2>
+          <p>
+            Nuestra comunidad de Meetup nació en 2016.<br />
+            Desde entonces hemos organizado más de 40 eventos
+          </p>
+          <div class="flex justify-center items-center p-6">
+            <div class="grid grid-cols-3 gap-24">
+              <div>
+                <div class="text-5xl font-medium text-center text-white">
+                  1200
+                </div>
+                <p class="text-center">Miembros</p>
+              </div>
+              <div>
+                <div class="text-5xl font-medium text-center text-white">
+                  30
+                </div>
+                <p class="text-center">Colaboraciones</p>
+              </div>
+              <div>
+                <div class="text-5xl font-medium text-center text-white">
+                  50+
+                </div>
+                <p class="text-center">Ponentes</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="p-6">
-          <div class="max-w-[640px] mx-auto text-center">
-            <h2>Nuestros valores</h2>
-            <div class="grid grid-cols-2 gap-4 my-12">
-              <IconCardWithTitleText
-                iconName="eye"
-                title="Nuestra visión"
-                text="Expandir el conocimiento de ciberseguridad en España"
+
+        <div class="max-w-2xl m-auto text-center p-6">
+          <h2>Con soporte de los mejores</h2>
+          <div class="flex justify-center items-center gap-6 p-6">
+            <div
+              class="h-32 w-32 flex items-center justify-center p-4 rounded-lg"
+            >
+              <Image
+                class="max-h-full w-auto"
+                src={build38Logo}
+                alt="Build38 logo"
               />
-              <IconCardWithTitleText
-                iconName="compass"
-                title="Nuestra misión"
-                text="Crear una comunidad donde entusiastas de la ciberseguridad se reúnan para compartir conocimientos e inspirar a líderes de seguridad del futuro."
+            </div>
+            <div
+              class="h-32 w-32 flex items-center justify-center p-4 rounded-lg"
+            >
+              <Image
+                class="max-h-full w-auto"
+                src={innoITLogo}
+                alt="InnoIT consulting logo"
               />
             </div>
-          </div>
-        </div>
-        <div class="p-6">
-          <div class="max-w-[640px] mx-auto text-center">
-            <h2>Nuestra comunidad, en cifras</h2>
-            <p>
-              Nuestra comunidad de Meetup nació en 2016.<br />
-              Desde entonces hemos organizado más de 40 eventos
-            </p>
-            <div class="flex justify-center items-center p-6">
-              <div class="grid grid-cols-3 gap-24">
-                <div>
-                  <div class="text-5xl font-medium text-center text-white">
-                    1200
-                  </div>
-                  <p class="text-center">Miembros</p>
-                </div>
-                <div>
-                  <div class="text-5xl font-medium text-center text-white">
-                    30
-                  </div>
-                  <p class="text-center">Colaboraciones</p>
-                </div>
-                <div>
-                  <div class="text-5xl font-medium text-center text-white">
-                    50+
-                  </div>
-                  <p class="text-center">Ponentes</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="p-6">
-          <div class="max-w-[640px] mx-auto text-center">
-            <h2>Con soporte de los mejores</h2>
-            <div class="flex justify-center items-center gap-6 p-6">
-              <div
-                class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg"
-              >
-                <Image
-                  class="max-h-full w-auto"
-                  src={build38Logo}
-                  alt="Build38 logo"
-                />
-              </div>
-              <div
-                class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg"
-              >
-                <Image
-                  class="max-h-full w-auto"
-                  src={innoITLogo}
-                  alt="InnoIT consulting logo"
-                />
-              </div>
-              <div
-                class="h-32 w-32 flex items-center justify-center border border-dark p-4 rounded-lg hidden"
-              >
-                <Image
-                  class="max-h-full w-auto"
-                  src={siemensLogo}
-                  alt="Siemens Healthineers logo"
-                />
-              </div>
+            <div
+              class="h-32 w-32 flex items-center justify-center p-4 rounded-lg hidden"
+            >
+              <Image
+                class="max-h-full w-auto"
+                src={siemensLogo}
+                alt="Siemens Healthineers logo"
+              />
             </div>
           </div>
         </div>

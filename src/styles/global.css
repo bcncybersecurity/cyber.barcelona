@@ -46,7 +46,7 @@
     @apply bg-gradient-to-t from-black to-dark text-sm leading-6 text-white antialiased;
   }
   footer {
-    @apply border-t border-dark px-6 py-12;
+    @apply px-6 py-12;
   }
   section {
     @apply py-24;
