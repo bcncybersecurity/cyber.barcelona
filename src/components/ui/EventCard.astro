@@ -1,0 +1,17 @@
+---
+const { imgSrc, imgAltText, title, url } = Astro.props;
+import { Image } from "astro:assets";
+import Card from "./Card.astro";
+---
+
+<Card>
+  <Image
+    src={imgSrc}
+    width={600}
+    height={338}
+    format="webp"
+    class="rounded-lg w-full mx-auto mb-4"
+    alt={imgAltText}
+  />
+  <h3><a href={url}>{title}</a></h3>
+</Card>

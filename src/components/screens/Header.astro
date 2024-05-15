@@ -1,148 +1,156 @@
 ---
-import { Astronav, MenuItems, MenuIcon,  Dropdown, DropdownItems } from "astro-navbar";
+import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import CallToAction from "../ui/CallToAction.astro";
 const { lang } = Astro.props;
-const homeLink = "/" + lang + "/"
+const homeLink = "/" + lang + "/";
 const slugTranslations = {
   AboutTheProjectLink: {
     en: "/en/about-the-project",
-    es: "/es/sobre-el-proyecto"
+    es: "/es/sobre-el-proyecto",
   },
   WhatWeDoLink: {
     en: "/en/what-we-do",
-    es: "/es/que-hacemos"
+    es: "/es/que-hacemos",
   },
   EventsLink: {
     en: "/en/events",
-    es: "/es/eventos"
+    es: "/es/eventos",
   },
   GalleryLink: {
     en: "/en/gallery",
-    es: "/es/galeria"
+    es: "/es/galeria",
   },
   JoinTheCommunityLink: {
     en: "/en/become-a-member",
-    es: "/es/hazte-miembro"
+    es: "/es/hazte-miembro",
   },
   BlogLink: {
     en: "/en/blog",
-    es: "/es/blog"
+    es: "/es/blog",
   },
   LanguageLink: {
     en: "/es/",
-    es: "/en/"
-  }
-}
+    es: "/en/",
+  },
+};
 
-function getSlugTranslation(key: keyof typeof slugTranslations, lang: 'en' | 'es'): string {
+function getSlugTranslation(
+  key: keyof typeof slugTranslations,
+  lang: "en" | "es",
+): string {
   return slugTranslations[key][lang];
 }
 
-let AboutTheProjectLink = getSlugTranslation('AboutTheProjectLink', lang);
-let WhatWeDoLink = getSlugTranslation('WhatWeDoLink', lang);
-let EventsLink = getSlugTranslation('EventsLink', lang);
-let GalleryLink = getSlugTranslation('GalleryLink', lang);
-let BlogLink = getSlugTranslation('BlogLink', lang);
-let JoinTheCommunityLink = getSlugTranslation('JoinTheCommunityLink', lang);
-let LanguageLink = getSlugTranslation('LanguageLink', lang);
+let AboutTheProjectLink = getSlugTranslation("AboutTheProjectLink", lang);
+let WhatWeDoLink = getSlugTranslation("WhatWeDoLink", lang);
+let EventsLink = getSlugTranslation("EventsLink", lang);
+let GalleryLink = getSlugTranslation("GalleryLink", lang);
+let BlogLink = getSlugTranslation("BlogLink", lang);
+let JoinTheCommunityLink = getSlugTranslation("JoinTheCommunityLink", lang);
+let LanguageLink = getSlugTranslation("LanguageLink", lang);
 
 const stringTranslations = {
   HomeString: {
     en: "Home",
-    es: "Inicio"
+    es: "Inicio",
   },
   AboutTheProjectString: {
     en: "About the project",
-    es: "Sobre el proyecto"
+    es: "Sobre el proyecto",
   },
   WhatWeDoString: {
     en: "What we do",
-    es: "Qué hacemos"
+    es: "Qué hacemos",
   },
   EventsString: {
     en: "Events",
-    es: "Eventos"
+    es: "Eventos",
   },
   GalleryString: {
     en: "Gallery",
-    es: "Galería"
+    es: "Galería",
   },
   JoinTheCommunityString: {
     en: "Join the community",
-    es: "Únete a la comunidad"
+    es: "Únete a la comunidad",
   },
   BlogString: {
     en: "Blog",
-    es: "Blog"
+    es: "Blog",
   },
   LanguageString: {
     en: "Cambiar a Español",
-    es: "Switch to English"
-  }
-}
+    es: "Switch to English",
+  },
+};
 
-function getStringTranslation(key: keyof typeof stringTranslations, lang: 'en' | 'es'): string {
+function getStringTranslation(
+  key: keyof typeof stringTranslations,
+  lang: "en" | "es",
+): string {
   return stringTranslations[key][lang];
 }
-let HomeString = getStringTranslation('HomeString', lang);
-let AboutTheProjectString = getStringTranslation('AboutTheProjectString', lang);
-let WhatWeDoString = getStringTranslation('WhatWeDoString', lang);
-let EventsString = getStringTranslation('EventsString', lang);
-let GalleryString = getStringTranslation('GalleryString', lang);
-let BlogString = getStringTranslation('BlogString', lang);
-let JoinTheCommunityString = getStringTranslation('JoinTheCommunityString', lang);
-let LanguageString = getStringTranslation('LanguageString', lang);
-
+let HomeString = getStringTranslation("HomeString", lang);
+let AboutTheProjectString = getStringTranslation("AboutTheProjectString", lang);
+let WhatWeDoString = getStringTranslation("WhatWeDoString", lang);
+let EventsString = getStringTranslation("EventsString", lang);
+let GalleryString = getStringTranslation("GalleryString", lang);
+let BlogString = getStringTranslation("BlogString", lang);
+let JoinTheCommunityString = getStringTranslation(
+  "JoinTheCommunityString",
+  lang,
+);
+let LanguageString = getStringTranslation("LanguageString", lang);
 ---
-<header class="md:flex p-5 gap-5 max-w-screen-xl mx-auto">
-  <Astronav>
-    <div class="md:flex w-full justify-between items-center">
-      <a href={homeLink} class="hidden md:flex items-center space-x-3 rtl:space-x-reverse">
-        <img src="/img/bcncyber-logo-purple.png" class="h-16" alt="BCNCybersecurity Logo">
-      </a>
-      <div class="flex lg:hidden">
-        <MenuIcon class="w-8 h-8 text-gray-800 mr-4" />
-      </div>
-    <MenuItems class="hidden md:flex">
-        <ul class="md:flex w-full flex-col p-4 md:p-0 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white items-center">
-          <li class="pb-2 md:pb-0">
-            <a href={homeLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0" aria-current="page">{HomeString}</a>
-          </li>
-          <li class="pb-2 md:pb-0">
-            <a href={AboutTheProjectLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{AboutTheProjectString}</a>
-          </li>
-          <li class="pb-2 md:pb-0">
-            <a href={WhatWeDoLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{WhatWeDoString}</a>
-          </li>
-          <li class="pb-2 md:pb-0">
-            <a href={EventsLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{EventsString}</a>
-          </li>
-          <li class="pb-2 md:pb-0">
-            <a href={GalleryLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{GalleryString}</a>
-          </li>
-          <li class="pb-2 md:pb-0">
-            <a href={BlogLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{BlogString}</a>
-          </li>
-          <li class="md:hidden pb-2 md:pb-0">
-            <a href={JoinTheCommunityLink} class="block py-2 px-3 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0">{JoinTheCommunityString}</a>
-          </li>
-        </ul>
-        <a class="md:hidden order-2 space-x-0 rtl:space-x-reverse items-left underline" href={LanguageLink}>
-          <div>
-            {LanguageString}
-          </div>
-        </a>
-    </MenuItems>
 
-		<a class="hidden md:flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse md:items-center" href={JoinTheCommunityLink}>
-			<div>
-				<button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-4 py-2 text-center">{JoinTheCommunityString}</button>
-			</div>
-		</a>
-		<a class="hidden md:flex md:order-2 space-x-3 md:space-x-0 rtl:space-x-reverse md:items-left underline" href={LanguageLink}>
-			<div>
-				{LanguageString}
-			</div>
-		</a>
+<header>
+  <div class="bg-black px-6 py-3">
+    <div class="max-w-[1100px] m-auto flex items-center justify-between">
+      <div class="text-white"><a href={LanguageLink}>{LanguageString}</a></div>
+      <CallToAction text={JoinTheCommunityString} link={JoinTheCommunityLink} />
+    </div>
   </div>
+
+  <Astronav>
+    <div class="p-6">
+      <div class="max-w-[1100px] m-auto">
+        <div class="md:flex w-full justify-between items-center">
+          <div class="flex justify-between">
+            <a href={homeLink}>
+              <img
+                src="/img/bcncyber-logo-purple.png"
+                class="h-16"
+                alt="BCNCybersecurity Logo"
+              />
+            </a>
+            <div class="flex md:hidden">
+              <MenuIcon class="w-8 h-8 text-white" />
+            </div>
+          </div>
+          <MenuItems class="hidden md:flex">
+            <ul class="md:flex w-full flex-col py-6 md:py-0 md:flex-row gap-3">
+              <li class="flex py-2 md:py-0">
+                <a href={homeLink} aria-current="page">{HomeString}</a>
+              </li>
+              <li class="flex py-2 md:py-0">
+                <a href={AboutTheProjectLink}>{AboutTheProjectString}</a>
+              </li>
+              <li class="flex py-2 md:py-0">
+                <a href={WhatWeDoLink}>{WhatWeDoString}</a>
+              </li>
+              <li class="flex py-2 md:py-0">
+                <a href={EventsLink}>{EventsString}</a>
+              </li>
+              <li class="flex py-2 md:py-0">
+                <a href={GalleryLink}>{GalleryString}</a>
+              </li>
+              <li class="flex py-2 md:py-0">
+                <a href={BlogLink}>{BlogString}</a>
+              </li>
+            </ul>
+          </MenuItems>
+        </div>
+      </div>
+    </div>
   </Astronav>
 </header>

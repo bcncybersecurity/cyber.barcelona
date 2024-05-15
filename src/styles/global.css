@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "JetBrains Mono var";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url("/fonts/JetBrainsMono[wght].ttf") format("woff2");
+}
+
+@font-face {
+  font-family: "JetBrains Mono var";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: block;
+  src: url("/fonts/JetBrainsMono-Italic[wght].ttf") format("woff2");
+  font-named-instance: "Italic";
+}
+@font-face {
+  font-family: "Inter var";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: block;
+  src: url("/fonts/Inter-roman.latin.var.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Inter var";
+  font-style: italic;
+  font-weight: 100 900;
+  font-display: block;
+  src: url("/fonts/Inter-italic.latin.var.woff2") format("woff2");
+  font-named-instance: "Italic";
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-gradient-to-t from-black to-dark text-sm leading-6 text-white antialiased;
+  }
+  footer {
+    @apply px-6 py-12;
+  }
+  section {
+    @apply py-24;
+  }
+  nav {
+    @apply flex gap-6;
+  }
+  a:hover {
+    @apply text-brand;
+  }
+  h1 {
+    @apply text-2xl mb-4;
+  }
+  h2 {
+    @apply text-lg my-4;
+  }
+  h1,
+  h2,
+  h3 {
+    @apply text-white font-medium;
+  }
+  h3 {
+    @apply font-medium;
+  }
+  p {
+    @apply text-gray;
+  }
+  li {
+    @apply text-gray;
+  }
+  b,
+  strong {
+    @apply font-normal text-gray;
+  }
+}

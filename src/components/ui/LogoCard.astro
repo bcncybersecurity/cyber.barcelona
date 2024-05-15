@@ -1,0 +1,8 @@
+---
+const { imgSrc, imgAltText } = Astro.props;
+import { Image } from "astro:assets";
+---
+
+<div class="h-32 w-32 flex items-center justify-center p-4 rounded-lg">
+  <Image class="max-h-full w-auto" src={imgSrc} alt={imgAltText} />
+</div>
