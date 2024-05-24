@@ -7,7 +7,8 @@ import MediumTitle from '../../../components/primitives/text/MediumTitle.astro';
 import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
 import Paragraph from '../../../components/primitives/text/Paragraph.astro';
 import { Image } from 'astro:assets';
-import UpcomingEventPhoto from '../../../../public/img/events/secure-sdlc.webp'
+import UpcomingEventPhoto from '../../../../public/img/events/summer-break-2024.webp'
+import SummerEvent2024 from '../../../../public/img/events/summer-break-2024.webp'
 import SecureSDLCPhoto from '../../../../public/img/events/secure-sdlc.webp'
 import MobileAppSecurityPhoto from '../../../../public/img/events/mobile-app-security.webp'
 import DeDevADevastacionPhoto from '../../../../public/img/events/de-dev-a-devastacion.webp'
@@ -43,10 +44,10 @@ const lang = "en"
 		</div>
 		<div class="mx-4 max-w-6xl grid md:grid-cols-[3.5fr,0.1fr,3fr] md:grid-rows-1 gap-4 md:mx-auto content-center p-6 md:p-12 rounded-3xl bg-gradient-to-br from-[#3E37C9] to-[#000000]">
 			<div>
-				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/300478646/" target="blank">
-					<MediumTitle titleText="Barcelona Cybersecurity's Afterwork: What do we need to know about secure SDLC?" extraCss="text-left underline"/>
+				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/301022964/" target="blank">
+					<MediumTitle titleText="Barcelona Cybersecurity - Summer Break Event" extraCss="text-left underline"/>
 				</a>
-				<Paragraph text="Thursday May 9th, 18:45, Cloudworks Passeig de Gràcia" extraCss="text-justify"/>
+				<Paragraph text="Saturday June 8th, 12:00, Aticco Bogatell" extraCss="text-justify"/>
 			</div>
 			<div class="hidden md:inline"/>
 			<div class="my-1 md:my-auto h-auto">
@@ -58,6 +59,13 @@ const lang = "en"
 		<Paragraph text="Explore all the events organized by Barcelona Cybersecurity! Join us and be part of the growth and strengthening of the cybersecurity industry!" extraCss="max-w-7xl text-center md:px-0 px-6"/>
 		<br/>
 		<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-8 mx-auto content-center w-4/5 p-6 rounded-3xl">
+			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
+				<Image class="rounded-3xl w-full mx-auto" src={SecureSDLCPhoto} alt="Barcelona cybersecurity event photo"/>
+				<br/>
+				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/300478646/">
+					<Paragraph text="Barcelona Cybersecurity’s Afterwork: What do we need to know about secure SDLC?" extraCss="text-[#465FFF] underline text-center">
+				</a>
+			</div>
 			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
 				<Image class="rounded-3xl w-full mx-auto" src={MobileAppSecurityPhoto} alt="Barcelona cybersecurity event photo"/>
 				<br/>
