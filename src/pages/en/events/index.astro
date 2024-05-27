@@ -8,20 +8,9 @@ import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
 import Paragraph from '../../../components/primitives/text/Paragraph.astro';
 import { Image } from 'astro:assets';
 import UpcomingEventPhoto from '../../../../public/img/events/secure-sdlc.webp'
-import SecureSDLCPhoto from '../../../../public/img/events/secure-sdlc.webp'
-import MobileAppSecurityPhoto from '../../../../public/img/events/mobile-app-security.webp'
-import DeDevADevastacionPhoto from '../../../../public/img/events/de-dev-a-devastacion.webp'
-import SotaCaballoYReyPhoto from '../../../../public/img/events/red-team-sota-caballo-rey.webp'
-import SeguridadDeAlturaPhoto from '../../../../public/img/events/seguridad-de-altura.webp'
-import TrustButVerifyPhoto from '../../../../public/img/events/trust-but-verify.webp'
-import BarcelonaCyberAfterworkPhoto from '../../../../public/img/events/barcelona-cyber-afterwork.webp'
-import AI4CyberPhoto from '../../../../public/img/events/ai4cyber.webp'
-import ZeroTrustPhoto from '../../../../public/img/events/zero-trust.webp'
-import SecurityInSaasPhoto from '../../../../public/img/events/security-in-saas.webp'
-import HoneypotsPhoto from '../../../../public/img/events/honeypots.webp'
-import BarcelonaCisoPhoto from '../../../../public/img/events/barcelona-ciso.webp'
-import PrivacyJourneyPhoto from '../../../../public/img/events/journey-into-privacy.webp'
-import OpeningEvent2024 from '../../../../public/img/events/opening-event-2024.webp'
+
+import EventCard from "../../../components/blocks/EventCard.astro";
+import { events } from "../../../data/events.ts";
 
 const lang = "en"
 ---
@@ -56,101 +45,22 @@ const lang = "en"
 		<br/>
 		<BigTitle titleText="Past events" extraCss="text-center mx-2 md:mx-auto"/>
 		<Paragraph text="Explore all the events organized by Barcelona Cybersecurity! Join us and be part of the growth and strengthening of the cybersecurity industry!" extraCss="max-w-7xl text-center md:px-0 px-6"/>
-		<br/>
-		<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-8 mx-auto content-center w-4/5 p-6 rounded-3xl">
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={MobileAppSecurityPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/299766501/">
-					<Paragraph text="MobileApp Security: Everything you ever wanted to know and were too afraid to ask" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={DeDevADevastacionPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/299273534/">
-					<Paragraph text="De Dev a Devastación: Explotación de Flujos CICD para Infiltración y Persistencia" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={OpeningEvent2024} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/298549063/">
-					<Paragraph text="Barcelona Cybersecurity Opening Event 2024" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={SotaCaballoYReyPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/297277260/">
-					<Paragraph text="Explotaciones en Red Team, no todo es sota, caballo y rey." extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={SeguridadDeAlturaPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/296833601/">
-					<Paragraph text="Seguridad de altura: un caso de ciberseguridad OT en transporte aéreo" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={TrustButVerifyPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/296121768/">
-					<Paragraph text="Trust, but verify, o porque Ronal Reagan no sabía de Zero Trust" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={BarcelonaCyberAfterworkPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/295583936/">
-					<Paragraph text="Barcelona Cybersecurity's Afterwork: Opening the new season" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={AI4CyberPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/293146261/">
-					<Paragraph text="AI4CYBER: AI aplicada a ciberseguridad" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={ZeroTrustPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es/barcelona-cybersecurity/events/292431804/">
-					<Paragraph text="Zero Trust: A fundamental catalyst for a successful cyber resilience strategy" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={SecurityInSaasPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es-ES/barcelona-cybersecurity/events/291682269/">
-					<Paragraph text="Security in SaaS platforms" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={HoneypotsPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es/barcelona-cybersecurity/events/290696272/">
-					<Paragraph text="Honeypots, caer en la trampa" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={BarcelonaCisoPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es/barcelona-cybersecurity/events/289561917/">
-					<Paragraph text="¿Necesitaría Barcelona una figura de CISO?" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-			<div class="mx-auto content-center w-auto p-6 rounded-3xl bg-gradient-to-br from-[#A8ACFF] to-[#FFFFFF]">
-				<Image class="rounded-3xl w-full mx-auto" src={PrivacyJourneyPhoto} alt="Barcelona cybersecurity event photo"/>
-				<br/>
-				<a href="https://www.meetup.com/es/barcelona-cybersecurity/events/288976517/">
-					<Paragraph text="My journey into privacy" extraCss="text-[#465FFF] underline text-center">
-				</a>
-			</div>
-		</div>
-		<br/>
+		<div
+		class="max-w-[1100px] m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6"
+	>
+		{
+			events
+				.sort((event1, event2) => (event1.id > event2.id ? -1 : 1))
+				.map((event) => (
+					<EventCard
+						title={event.title}
+						url={event.url}
+						imgSrc={event.imgSrc}
+						imgAltText={event.imgAltText}
+					/>
+				))
+		}
+	</div>
 	</main>
 	<Footer lang={lang}/>
 </Layout>
