@@ -1,6 +1,8 @@
 ---
 const { titleText, extraCss } = Astro.props;
-var titleCssClass ="mb-4 text-7xl font-semibold tracking-tight max-w-5xl mx-auto"  
-titleCssClass = titleCssClass + " " + extraCss
+var titleCssClass =
+  "mb-4 text-7xl font-semibold tracking-tight max-w-5xl mx-auto";
+titleCssClass = titleCssClass + " " + extraCss;
 ---
+
 <h1 class={titleCssClass}>{titleText}</h1>

@@ -1,83 +1,193 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import Header from '../../../components/screens/Header.astro';
-import Footer from '../../../components/screens/Footer.astro';
-import BigTitle from '../../../components/primitives/text/BigTitle.astro';
-import { Image } from 'astro:assets';
-import CallToAction from '../../../components/blocks/CallToAction.astro';
-import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
-import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
-import LauraLaptopPhoto from '../../../../public/img/pictures/laura-laptop.png'
-import MerchandisingTablePhoto from '../../../../public/img/pictures/merchandising-table.jpeg'
-import whiteboardPhoto from '../../../../public/img/pictures/postits-whiteboard.jpeg'
-import Paragraph from '../../../components/primitives/text/Paragraph.astro';
-const lang = "en"
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/screens/Header.astro";
+import Footer from "../../../components/screens/Footer.astro";
+import BigTitle from "../../../components/primitives/text/BigTitle.astro";
+import { Image } from "astro:assets";
+import CallToAction from "../../../components/blocks/CallToAction.astro";
+import SmallTitle from "../../../components/primitives/text/SmallTitle.astro";
+import FinalEventTerracePhoto from "../../../../public/img/pictures/final-event-terrace.jpeg";
+import LauraLaptopPhoto from "../../../../public/img/pictures/laura-laptop.png";
+import MerchandisingTablePhoto from "../../../../public/img/pictures/merchandising-table.jpeg";
+import whiteboardPhoto from "../../../../public/img/pictures/postits-whiteboard.jpeg";
+import Paragraph from "../../../components/primitives/text/Paragraph.astro";
+const lang = "en";
 ---
 
 <Layout lang={lang} title="Become a member">
-	<Header lang={lang}/>
-	<main class="bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] max-w-7xl md:max-w-none">
-		<br/>
-		<BigTitle titleText="Become a member" extraCss="text-center"/>
-		<SmallTitle titleText="Join the largest cybersecurity community in Barcelona and boost your growth" extraCss="text-center px-2"/>
-		<br/>
-		<div class="md:grid md:grid-cols-4 grid-cols-1 md:grid-rows-1 gap-12 mx-auto content-center px-4 rounded-3xl md:mb-16">
-			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
-				<br/>
-				<SmallTitle titleText="GET INTO OUR MENTORING PROGRAM" extraCss="text-[#3E37C9] px-2 text-center"/>
-				<Paragraph text="We are excited to introduce our innovative mentoring program designed to connect cybersecurity professionals and help them grow together." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
-				<Image class="rounded-7xl w-5/6 px-2 md:px-8 mx-auto pb-4" src={LauraLaptopPhoto} alt="Mentoring"/>
-			</div>
-			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
-				<br/>
-				<SmallTitle titleText="CHECK OUR INTERNAL SLACK ENHANCED" extraCss="text-[#3E37C9] px-2 text-center"/>
-				<Paragraph text="An exclusive space for members to share resources, articles, security reports, events and keep up to date with everything related to the world of cybersecurity." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
-				<Image class="rounded-7xl w-5/6 px-2 mx-auto pb-4" src={FinalEventTerracePhoto} alt="Community"/>
-			</div>
-			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
-				<br/>
-				<SmallTitle titleText="GET THE OFFICIAL MERCHANDISING" extraCss="text-[#3E37C9] px-2 text-center"/>
-				<Paragraph text="We want you to feel that you are part of something unique and special, and what better way to show it than with exclusive products that reflect your commitment to our organization." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
-				<Image class="rounded-7xl w-5/6 px-2 mx-auto pb-4" src={MerchandisingTablePhoto} alt="Meetup event"/>
-			</div>
-			<div class="mx-auto content-center w-auto rounded-3xl bg-[#E3E0FA] mb-8 md:mb-0">
-				<br/>
-				<SmallTitle titleText="ACCESS EXCLUSIVE INTERNAL EVENTS" extraCss="text-[#3E37C9] px-2 text-center"/>
-				<Paragraph text="designed only for members, an unparalleled opportunity for you to immerse yourself in the enriching landscape of the cybersecurity community." extraCss="text-[#3E37C9] px-6 pb-4 text-justify"/>
-				<Image class="rounded-7xl w-5/6 px-2 mx-auto pb-4" src={whiteboardPhoto} alt="Community workshop"/>
-			</div>
-		</div>
-		<br/>
-		<SmallTitle titleText="Supercharge your experience" extraCss="text-center"/>
-		<div class="grid md:grid-cols-2 grid-cols-1 gap-4 md:gap-8 max-w-5xl mx-auto mb-4">
-			<div class=" md:pt-4 pb-2 md:px-12 content-center md:w-auto p-6 rounded-3xl flex flex-col items-center bg-[#E3E0FA] mb-4 mx-4 md:m-0">
-				<SmallTitle titleText="Time-tested experiences..." extraCss="text-center text-[#3E37C9]"/>
-				<div class=" mx-auto w-full content-center p-2 rounded-3xl">
-					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Meetup events</div>
-					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Afterworks</div>
-				</div>
-			</div>
-			<div class=" md:pt-4 pb-2 md:px-12 content-center md:w-auto p-6 rounded-3xl flex flex-col items-center bg-[#E3E0FA] mb-8 mx-4 md:m-0">
-				<SmallTitle titleText="...Now enhanced" extraCss="text-center text-[#3E37C9]"/>
-				<div class=" mx-auto w-full content-center p-2 rounded-3xl">
-					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; External events</div>
-					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Mentoring</div>
-					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Private slack community</div>
-					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; T-shirt</div>
-					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Tote bag</div>
-					<div class="rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 m-2 text-[#FFFFFF] text-center">&check; Internal member-only events</div>
-				</div>
-			</div>
-		</div>
-		<div class="max-w-7xl mx-auto mb-4">
-			<CallToAction title="ARE YOU INTERESTED? JOIN US!" subtitle="Boost your career in cybersecurity" buttonText="I want to become a member!" buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSe5eRPaKk5GeACxzHxTSHIATE_VWyw-6jtt2lnBKgiFyVOlGA/viewform"/>
-		</div>
-		<div>
-			<p class="text-2xl font-normal tracking-tight mx-auto text-center">
-				*Are you interested in having your company buy a membership pack? <a class="underline text-[#44546aff]" href="mailto:external.relations@cybersec.barcelona ">Let's talk!</a>
-			</p>
-		</div>
-		<br/>
-	</main>
-	<Footer lang={lang}/>
+  <Header lang={lang} />
+  <main
+    class="max-w-7xl bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] md:max-w-none"
+  >
+    <br />
+    <BigTitle titleText="Become a member" extraCss="text-center" />
+    <SmallTitle
+      titleText="Join the largest cybersecurity community in Barcelona and boost your growth"
+      extraCss="text-center px-2"
+    />
+    <br />
+    <div
+      class="mx-auto grid-cols-1 content-center gap-12 rounded-3xl px-4 md:mb-16 md:grid md:grid-cols-4 md:grid-rows-1"
+    >
+      <div
+        class="mx-auto mb-8 w-auto content-center rounded-3xl bg-[#E3E0FA] md:mb-0"
+      >
+        <br />
+        <SmallTitle
+          titleText="GET INTO OUR MENTORING PROGRAM"
+          extraCss="text-[#3E37C9] px-2 text-center"
+        />
+        <Paragraph
+          text="We are excited to introduce our innovative mentoring program designed to connect cybersecurity professionals and help them grow together."
+          extraCss="text-[#3E37C9] px-6 pb-4 text-justify"
+        />
+        <Image
+          class="rounded-7xl mx-auto w-5/6 px-2 pb-4 md:px-8"
+          src={LauraLaptopPhoto}
+          alt="Mentoring"
+        />
+      </div>
+      <div
+        class="mx-auto mb-8 w-auto content-center rounded-3xl bg-[#E3E0FA] md:mb-0"
+      >
+        <br />
+        <SmallTitle
+          titleText="CHECK OUR INTERNAL SLACK ENHANCED"
+          extraCss="text-[#3E37C9] px-2 text-center"
+        />
+        <Paragraph
+          text="An exclusive space for members to share resources, articles, security reports, events and keep up to date with everything related to the world of cybersecurity."
+          extraCss="text-[#3E37C9] px-6 pb-4 text-justify"
+        />
+        <Image
+          class="rounded-7xl mx-auto w-5/6 px-2 pb-4"
+          src={FinalEventTerracePhoto}
+          alt="Community"
+        />
+      </div>
+      <div
+        class="mx-auto mb-8 w-auto content-center rounded-3xl bg-[#E3E0FA] md:mb-0"
+      >
+        <br />
+        <SmallTitle
+          titleText="GET THE OFFICIAL MERCHANDISING"
+          extraCss="text-[#3E37C9] px-2 text-center"
+        />
+        <Paragraph
+          text="We want you to feel that you are part of something unique and special, and what better way to show it than with exclusive products that reflect your commitment to our organization."
+          extraCss="text-[#3E37C9] px-6 pb-4 text-justify"
+        />
+        <Image
+          class="rounded-7xl mx-auto w-5/6 px-2 pb-4"
+          src={MerchandisingTablePhoto}
+          alt="Meetup event"
+        />
+      </div>
+      <div
+        class="mx-auto mb-8 w-auto content-center rounded-3xl bg-[#E3E0FA] md:mb-0"
+      >
+        <br />
+        <SmallTitle
+          titleText="ACCESS EXCLUSIVE INTERNAL EVENTS"
+          extraCss="text-[#3E37C9] px-2 text-center"
+        />
+        <Paragraph
+          text="designed only for members, an unparalleled opportunity for you to immerse yourself in the enriching landscape of the cybersecurity community."
+          extraCss="text-[#3E37C9] px-6 pb-4 text-justify"
+        />
+        <Image
+          class="rounded-7xl mx-auto w-5/6 px-2 pb-4"
+          src={whiteboardPhoto}
+          alt="Community workshop"
+        />
+      </div>
+    </div>
+    <br />
+    <SmallTitle
+      titleText="Supercharge your experience"
+      extraCss="text-center"
+    />
+    <div
+      class="mx-auto mb-4 grid max-w-5xl grid-cols-1 gap-4 md:grid-cols-2 md:gap-8"
+    >
+      <div
+        class="mx-4 mb-4 flex flex-col content-center items-center rounded-3xl bg-[#E3E0FA] p-6 pb-2 md:m-0 md:w-auto md:px-12 md:pt-4"
+      >
+        <SmallTitle
+          titleText="Time-tested experiences..."
+          extraCss="text-center text-[#3E37C9]"
+        />
+        <div class="mx-auto w-full content-center rounded-3xl p-2">
+          <div
+            class="m-2 rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 text-center text-[#FFFFFF]"
+          >
+            &check; Meetup events
+          </div>
+          <div
+            class="m-2 rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 text-center text-[#FFFFFF]"
+          >
+            &check; Afterworks
+          </div>
+        </div>
+      </div>
+      <div
+        class="mx-4 mb-8 flex flex-col content-center items-center rounded-3xl bg-[#E3E0FA] p-6 pb-2 md:m-0 md:w-auto md:px-12 md:pt-4"
+      >
+        <SmallTitle
+          titleText="...Now enhanced"
+          extraCss="text-center text-[#3E37C9]"
+        />
+        <div class="mx-auto w-full content-center rounded-3xl p-2">
+          <div
+            class="m-2 rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 text-center text-[#FFFFFF]"
+          >
+            &check; External events
+          </div>
+          <div
+            class="m-2 rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 text-center text-[#FFFFFF]"
+          >
+            &check; Mentoring
+          </div>
+          <div
+            class="m-2 rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 text-center text-[#FFFFFF]"
+          >
+            &check; Private slack community
+          </div>
+          <div
+            class="m-2 rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 text-center text-[#FFFFFF]"
+          >
+            &check; T-shirt
+          </div>
+          <div
+            class="m-2 rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 text-center text-[#FFFFFF]"
+          >
+            &check; Tote bag
+          </div>
+          <div
+            class="m-2 rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-2 text-center text-[#FFFFFF]"
+          >
+            &check; Internal member-only events
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="mx-auto mb-4 max-w-7xl">
+      <CallToAction
+        title="ARE YOU INTERESTED? JOIN US!"
+        subtitle="Boost your career in cybersecurity"
+        buttonText="I want to become a member!"
+        buttonLink="https://docs.google.com/forms/d/e/1FAIpQLSe5eRPaKk5GeACxzHxTSHIATE_VWyw-6jtt2lnBKgiFyVOlGA/viewform"
+      />
+    </div>
+    <div>
+      <p class="mx-auto text-center text-2xl font-normal tracking-tight">
+        *Are you interested in having your company buy a membership pack? <a
+          class="text-[#44546aff] underline"
+          href="mailto:external.relations@cybersec.barcelona ">Let's talk!</a
+        >
+      </p>
+    </div>
+    <br />
+  </main>
+  <Footer lang={lang} />
 </Layout>

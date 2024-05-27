@@ -1,68 +1,106 @@
 ---
-import Layout from '../../../layouts/Layout.astro';
-import Header from '../../../components/screens/Header.astro';
-import Footer from '../../../components/screens/Footer.astro';
-import BigTitle from '../../../components/primitives/text/BigTitle.astro';
-import Paragraph from '../../../components/primitives/text/Paragraph.astro';
-import SmallTitle from '../../../components/primitives/text/SmallTitle.astro';
-import { Image } from 'astro:assets';
-import eventPhoto from '../../../../public/img/pictures/meetup-photo.jpeg'
-import whiteboardPhoto from '../../../../public/img/pictures/postits-whiteboard.jpeg'
-import FinalEventTerracePhoto from '../../../../public/img/pictures/final-event-terrace.jpeg'
+import Layout from "../../../layouts/Layout.astro";
+import Header from "../../../components/screens/Header.astro";
+import Footer from "../../../components/screens/Footer.astro";
+import BigTitle from "../../../components/primitives/text/BigTitle.astro";
+import Paragraph from "../../../components/primitives/text/Paragraph.astro";
+import SmallTitle from "../../../components/primitives/text/SmallTitle.astro";
+import { Image } from "astro:assets";
+import eventPhoto from "../../../../public/img/pictures/meetup-photo.jpeg";
+import whiteboardPhoto from "../../../../public/img/pictures/postits-whiteboard.jpeg";
+import FinalEventTerracePhoto from "../../../../public/img/pictures/final-event-terrace.jpeg";
 
-const lang = "es"
+const lang = "es";
 ---
 
 <Layout lang={lang} title="Qué hacemos">
-	<Header lang={lang}/>
-	<main class="bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] max-w-3xl md:max-w-none">
-		<br/>
-		<BigTitle titleText="Qué hacemos" extraCss="text-center md:px-0 px-2"/>
-		<Paragraph text="Más información sobre los eventos que organizamos" extraCss="text-center md:px-0 px-4"/>
-		<br/>
-		<div class="grid md:grid-cols-3 grid-cols-1 md:grid-rows-1 gap-24 mx-auto content-center w-5/6 md:w-2/3 p-4 rounded-3xl">
-			<div>
-				<SmallTitle titleText="Meetup" extraCss="text-left"/>
-				<Image class="rounded-3xl w-auto mx-auto" src={eventPhoto} alt="Meetup event"/>
-				<br/>
-				<Paragraph text="Conversaciones con expertos sobre temas técnicos con una sesión de networking al final." extraCss="text-justify"/>
-				<br/>
-				<Paragraph text="Un evento nuevo cada mes!" extraCss="text-justify"/>
-			</div>
-			<div>
-				<div class="grid md:grid-cols-[3.5fr,0.5fr] grid-cols-2gap-4 mx-auto content-center">
-					<div class="my-auto">
-						<SmallTitle titleText="Startups Hub" extraCss="text-left"/>
-					</div>
-					<div class="my-auto mb-4">
-						<a role="button" class="bg-black text-white text-md px-4 py-2 border rounded-full">
-							Nuevo
-				 		</a>
-					</div>
-				</div>
-				<Image class="rounded-3xl w-auto mx-auto" src={whiteboardPhoto} alt="Brainstorming session"/>
-				<br/>
-				<Paragraph text="El lugar donde se reunirán las startups de ciberseguridad más punteras"  extraCss="text-justify"/>
-				<br/>
-				<Paragraph text="Más información muy pronto!" extraCss="text-justify"/>
-			</div>
-			<div>
-				<div class="grid md:grid-cols-[3.5fr,0.5fr] grid-cols-2gap-4 mx-auto content-center">
-					<div class="my-auto">
-						<SmallTitle titleText="Membresía" extraCss="text-left"/>
-					</div>
-					<div class="my-auto mb-4">
-						<a role="button" class="bg-black text-white text-md px-4 py-2 border rounded-full">
-							Nuevo
-				 		</a>
-					</div>
-				</div>
-				<Image class="rounded-3xl w-auto mx-auto" src={FinalEventTerracePhoto} alt="Final event community photo"/>
-				<br/>
-				<Paragraph text="la membresía de Barcelona Cybersecurity te da acceso a beneficios como eventos exclusivos para miembros, una comunidad privada en slack y nuestro programa de mentores para que puedas impulsar tu carrera!" extraCss="text-justify"/>
-			</div>
-		</div>
-		<br/>
-	</main>
-	<Footer lang={lang}/>
+  <Header lang={lang} />
+  <main
+    class="max-w-3xl bg-gradient-to-br from-[#465FFF] to-[#A8ACFF] md:max-w-none"
+  >
+    <br />
+    <BigTitle titleText="Qué hacemos" extraCss="text-center md:px-0 px-2" />
+    <Paragraph
+      text="Más información sobre los eventos que organizamos"
+      extraCss="text-center md:px-0 px-4"
+    />
+    <br />
+    <div
+      class="mx-auto grid w-5/6 grid-cols-1 content-center gap-24 rounded-3xl p-4 md:w-2/3 md:grid-cols-3 md:grid-rows-1"
+    >
+      <div>
+        <SmallTitle titleText="Meetup" extraCss="text-left" />
+        <Image
+          class="mx-auto w-auto rounded-3xl"
+          src={eventPhoto}
+          alt="Meetup event"
+        />
+        <br />
+        <Paragraph
+          text="Conversaciones con expertos sobre temas técnicos con una sesión de networking al final."
+          extraCss="text-justify"
+        />
+        <br />
+        <Paragraph text="Un evento nuevo cada mes!" extraCss="text-justify" />
+      </div>
+      <div>
+        <div
+          class="grid-cols-2gap-4 mx-auto grid content-center md:grid-cols-[3.5fr,0.5fr]"
+        >
+          <div class="my-auto">
+            <SmallTitle titleText="Startups Hub" extraCss="text-left" />
+          </div>
+          <div class="my-auto mb-4">
+            <a
+              role="button"
+              class="text-md rounded-full border bg-black px-4 py-2 text-white"
+            >
+              Nuevo
+            </a>
+          </div>
+        </div>
+        <Image
+          class="mx-auto w-auto rounded-3xl"
+          src={whiteboardPhoto}
+          alt="Brainstorming session"
+        />
+        <br />
+        <Paragraph
+          text="El lugar donde se reunirán las startups de ciberseguridad más punteras"
+          extraCss="text-justify"
+        />
+        <br />
+        <Paragraph text="Más información muy pronto!" extraCss="text-justify" />
+      </div>
+      <div>
+        <div
+          class="grid-cols-2gap-4 mx-auto grid content-center md:grid-cols-[3.5fr,0.5fr]"
+        >
+          <div class="my-auto">
+            <SmallTitle titleText="Membresía" extraCss="text-left" />
+          </div>
+          <div class="my-auto mb-4">
+            <a
+              role="button"
+              class="text-md rounded-full border bg-black px-4 py-2 text-white"
+            >
+              Nuevo
+            </a>
+          </div>
+        </div>
+        <Image
+          class="mx-auto w-auto rounded-3xl"
+          src={FinalEventTerracePhoto}
+          alt="Final event community photo"
+        />
+        <br />
+        <Paragraph
+          text="la membresía de Barcelona Cybersecurity te da acceso a beneficios como eventos exclusivos para miembros, una comunidad privada en slack y nuestro programa de mentores para que puedas impulsar tu carrera!"
+          extraCss="text-justify"
+        />
+      </div>
+    </div>
+    <br />
+  </main>
+  <Footer lang={lang} />
 </Layout>

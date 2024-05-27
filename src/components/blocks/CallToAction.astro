@@ -1,17 +1,22 @@
 ---
 const { title, subtitle, buttonText, buttonLink } = Astro.props;
-import { Image } from 'astro:assets';
-import SmallTitle from '../primitives/text/SmallTitle.astro';
-import Paragraph from '../primitives/text/Paragraph.astro';
-import MediumTitle from '../primitives/text/MediumTitle.astro';
+import { Image } from "astro:assets";
+import SmallTitle from "../primitives/text/SmallTitle.astro";
+import Paragraph from "../primitives/text/Paragraph.astro";
+import MediumTitle from "../primitives/text/MediumTitle.astro";
 ---
-<div class="md:py-16 md:px-32 content-center md:w-auto p-6 rounded-3xl flex flex-col items-center bg-gradient-to-br from-[#465FFF] to-[#837EDC] m-6 md:m-0">
-    <MediumTitle titleText={title} extraCss="text-center"/>
-    <SmallTitle titleText={subtitle} extraCss="text-center"/>
-    <br/>
-    <a href={buttonLink} target="_blank">
-        <button class="mx-auto bg-transparent text-white font-bold py-2 px-4 rounded-full border hover:bg-white hover:text-[#465FFF] hover:transition">
-            {buttonText}
-        </button>
-    </a>
+
+<div
+  class="m-6 flex flex-col content-center items-center rounded-3xl bg-gradient-to-br from-[#465FFF] to-[#837EDC] p-6 md:m-0 md:w-auto md:px-32 md:py-16"
+>
+  <MediumTitle titleText={title} extraCss="text-center" />
+  <SmallTitle titleText={subtitle} extraCss="text-center" />
+  <br />
+  <a href={buttonLink} target="_blank">
+    <button
+      class="mx-auto rounded-full border bg-transparent px-4 py-2 font-bold text-white hover:bg-white hover:text-[#465FFF] hover:transition"
+    >
+      {buttonText}
+    </button>
+  </a>
 </div>
