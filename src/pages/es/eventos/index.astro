@@ -13,6 +13,7 @@ import EventCard from "../../../components/blocks/EventCard.astro";
 import { events } from "../../../data/events.ts";
 import UpcomingEventPhoto from '../../../../public/img/events/summer-break-2024.webp'
 
+
 const lang = "es"
 ---
 
@@ -46,7 +47,7 @@ const lang = "es"
 		<br/>
 		<BigTitle titleText="Eventos pasados" extraCss="text-center mx-2 md:mx-auto"/>
 		<Paragraph text="¡Explora todos los eventos organizados por Barcelona Cybersecurity! ¡Únete a nosotros y forma parte del crecimiento de la industria de la ciberseguridad!" extraCss="max-w-7xl text-center md:px-0 px-6"/>
-		
+	
 		<div
 		class="max-w-[1100px] m-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6"
 	>
@@ -63,7 +64,6 @@ const lang = "es"
 				))
 		}
 	</div>
-	
 	</main>
 	<Footer lang={lang}/>
 </Layout>

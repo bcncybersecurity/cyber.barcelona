@@ -94,4 +94,12 @@ export const events = [
     imgSrc: "/img/events/mobile-app-security.webp",
     imgAltText: "Barcelona cybersecurity event photo",
   },
+  {
+    id: 14,
+    title:
+      "Barcelona Cybersecuritys Afterwork: What do we need to know about secure SDLC?",
+    url: "https://www.meetup.com/es-ES/barcelona-cybersecurity/events/300478646/",
+    imgSrc: "/img/events/secure-sdlc.webp",
+    imgAltText: "Barcelona cybersecurity event photo",
+  },
 ];
